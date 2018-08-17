@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TBaseViewcontroller.h"
+#import "TNavViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    NSLog(@"ssssssss");
+    if (@available(iOS 11.0, *)){
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.clipsToBounds =YES;
+    
+    TBaseViewcontroller *baseViewVc = [[TBaseViewcontroller alloc] init];
+    TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:baseViewVc];
+    self.window.rootViewController = nav;
+    
+    
     
     // Override point for customization after application launch.
     return YES;
