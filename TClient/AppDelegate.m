@@ -9,12 +9,14 @@
 #import "AppDelegate.h"
 #import "TBaseViewcontroller.h"
 #import "TNavViewController.h"
+#import "TCHomeViewController.h"
+#import "TCOrderViewController.h"
+#import "TCMineViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -25,17 +27,17 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     self.window.clipsToBounds =YES;
-    
-    TBaseViewcontroller *baseViewVc = [[TBaseViewcontroller alloc] init];
-    TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:baseViewVc];
-    self.window.rootViewController = nav;
-    
-    
-    
-    // Override point for customization after application launch.
+    [self initTabbarVc];
     return YES;
 }
-
+- (void)initTabbarVc {
+    TTabbarConfig *home = [[TTabbarConfig alloc] initWithTitle:@"首页" imaName:@"tab_icon_home_normal" imaSelectName:@"tab_icon_home_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCHomeViewController alloc] init]]];
+    TTabbarConfig *order = [[TTabbarConfig alloc] initWithTitle:@"订单" imaName:@"tab_icon_tk_normal" imaSelectName:@"tab_icon_tk_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCOrderViewController alloc] init]]];
+    TTabbarConfig *mine = [[TTabbarConfig alloc] initWithTitle:@"我的" imaName:@"tab_icon_grzx_normal" imaSelectName:@"tab_icon_grzx_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCMineViewController alloc] init]]];
+    
+    self.tabBarVc = [[TTabBarViewController alloc] initWithConfigArr:@[home,order,mine]];
+    self.window.rootViewController = self.tabBarVc;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
