@@ -7,7 +7,7 @@
 //
 
 #import "TBaseViewcontroller.h"
-
+#import "UIImage+TUtil.h"
 @interface TBaseViewcontroller ()
 
 @end
@@ -19,39 +19,38 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)configNavBar {
-    
-    
-//    NSDictionary* attrs = @{NSForegroundColorAttributeName:
-//                                [UIColor whiteColor],
-//                            NSFontAttributeName:
-//                                [UIFont systemFontOfSize:17.0],
-//                            };
-//    
-//    UIColor *bgColor = kContentLightColor;
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-//
-//    if (style == TNavBarLightStyle) {
-//        attrs = @{NSForegroundColorAttributeName:
-//                      RGB_1(51, 51, 51),
-//                  NSFontAttributeName:
-//                      [UIFont systemFontOfSize:17.0],
-//                  };
-//
-//        bgColor = RGB_1(245, 245, 245);
-//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
-//    }
-//    [self.navigationController.navigationBar setTitleTextAttributes:attrs];
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:bgColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
-//    NSString *backImgString = _navBarStyle == TNavBarRedStyle ? @"btn_back_white" : @"btn_back_red";
-//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem  itemWithIcon:backImgString target:self action:@selector(navBackAction)];
-//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self configNavBar];
     
 }
 
+- (void)configNavBar {
+    NSDictionary* attrs = @{NSForegroundColorAttributeName:
+                                [UIColor whiteColor],
+                            NSFontAttributeName:
+                                [UIFont systemFontOfSize:17.0],
+                            };
+    
+    UIColor *bgColor = [UIColor colorWithHexString:@"#279AF9"];;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+
+    [self.navigationController.navigationBar setTitleTextAttributes:attrs];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:bgColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    NSString *backImgString =  @"btn_back_white";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem  itemWithIcon:backImgString target:self action:@selector(navBackAction)];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)navBackAction {
-    
-    
+    if (self.navigationController.viewControllers.count > 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else if(self.navigationController) {
+      
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

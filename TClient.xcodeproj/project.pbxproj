@@ -40,6 +40,9 @@
 		4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5D921269F52009FDA22 /* TCHomeViewController.m */; };
 		4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5DC21269F5F009FDA22 /* TCOrderViewController.m */; };
 		4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5DF21269F69009FDA22 /* TCMineViewController.m */; };
+		4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7E6082126A9B4009FDA22 /* LaunchScreen.xib */; };
+		4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */; };
+		4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +118,11 @@
 		4DB7E5DC21269F5F009FDA22 /* TCOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCOrderViewController.m; sourceTree = "<group>"; };
 		4DB7E5DE21269F69009FDA22 /* TCMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMineViewController.h; sourceTree = "<group>"; };
 		4DB7E5DF21269F69009FDA22 /* TCMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMineViewController.m; sourceTree = "<group>"; };
+		4DB7E6082126A9B4009FDA22 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WB.m"; sourceTree = "<group>"; };
+		4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WB.h"; sourceTree = "<group>"; };
+		4DB7E60F2126B1BD009FDA22 /* TComputerTextHeightTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TComputerTextHeightTool.h; sourceTree = "<group>"; };
+		4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TComputerTextHeightTool.m; sourceTree = "<group>"; };
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +177,7 @@
 				4DB7E56521266255009FDA22 /* TKits */,
 				4DAEDFE5212563C5009FFB4B /* Assets.xcassets */,
 				4DAEDFEA212563C5009FFB4B /* Info.plist */,
+				4DB7E6082126A9B4009FDA22 /* LaunchScreen.xib */,
 				4DB7E5B32126632D009FDA22 /* TClient.pch */,
 				4DAEDFEB212563C5009FFB4B /* main.m */,
 			);
@@ -214,6 +223,8 @@
 			children = (
 				4DB7E5672126626B009FDA22 /* T2TView.m */,
 				4DB7E5682126626B009FDA22 /* T2TView.h */,
+				4DB7E60F2126B1BD009FDA22 /* TComputerTextHeightTool.h */,
+				4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -283,6 +294,8 @@
 		4DB7E58E2126626B009FDA22 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
+				4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */,
 				4DB7E5CF21269E55009FDA22 /* UIImage+TUtil.h */,
 				4DB7E5D021269E55009FDA22 /* UIImage+TUtil.m */,
 				4DB7E5952126626B009FDA22 /* UIView+Nib.h */,
@@ -398,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -486,6 +500,7 @@
 				4DB7E5A52126626B009FDA22 /* MMAlertView.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
+				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
 				4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */,
@@ -503,6 +518,7 @@
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
+				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
 			);

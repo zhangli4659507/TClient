@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"首页";
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationItem.leftBarButtonItem = nil;
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -57,5 +57,16 @@ NS_INLINE NSString *TimeYMDTextWithDatestr(NSString *originalText)
 //iPhone X 下部安全区域高度
 #define kSafeBottomLayGuideHeight (Device_Is_iPhoneX ? 34 : 0)
 #define kCurrentWindow [UIApplication sharedApplication].keyWindow
+#define kUnNilStr(str) ((str && ![str isEqual:[NSNull null]])?str:@"")
+
+//整数转换成字符串
+#define kStrWithInter(i) [NSString stringWithFormat:@"%d",i]
+//float转换成字符串
+#define kStrWithFloat(f) [NSString stringWithFormat:@"%0.1f",f]
+#define kBOOLToBoolStr(state) (state)?@"True":@"False"
+//app名称
+#define kAppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+//app版本
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"
 
 #endif /* TBasicDefine_h */
