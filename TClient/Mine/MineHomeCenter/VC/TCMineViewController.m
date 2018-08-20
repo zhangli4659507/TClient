@@ -10,9 +10,20 @@
 #import "TCMHTableFootView.h"
 #import "TCMHCellConfigModel.h"
 #import "TCMineHeaderSection.h"
+#import "TCMHInfoSection.h"
 #import "TOTableViewTool.h"
 #import "TNUHeadBgView.h"
 #import "UIImage+TUtil.h"
+#import "TCAppDownloadViewController.h"
+#import "TCChangePwdViewController.h"
+#import "TCChangeAvoidViewController.h"
+#import "TCUserInfoViewController.h"
+#import "TCConnetServiceViewController.h"
+#import "TCUserChangeViewController.h"
+#import "TCMyFriendViewController.h"
+#import "TCAcountSetViewController.h"
+#import "TCInventFriendVC.h"
+
 #define TMCHHeadViewHeight (152.f + kNavBarHeight)
 @interface TCMineViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -81,28 +92,42 @@
     TCMineHeaderSection *section = [[TCMineHeaderSection alloc] init];
     [section tableViewRegisterView:self.tableView];
     section.dataSource = @[@1];
-    self.tableViewTool.sectionArray = @[section];
+
+    TCMHInfoSection *secondSection = [[TCMHInfoSection alloc] init];
+    [secondSection tableViewRegisterView:self.tableView];
+    secondSection.dataSource = [self seccondSectionItems];
+    
+    TCMHInfoSection *thirdSection = [[TCMHInfoSection alloc] init];
+    [thirdSection tableViewRegisterView:self.tableView];
+    thirdSection.dataSource = [self thirdSectionItems];
+    
+    self.tableViewTool.sectionArray = @[section,secondSection,thirdSection];
     [self.tableView reloadData];
+    
+    
 }
 
 - (NSArray<TCMHCellConfigModel *> *)seccondSectionItems {
     
     TCMHInfoCellConfigModel *superiorItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的上级" actionHandleBlock:^{
-        
+
     }];
     superiorItem.info = @"12345567";
     
     TCMHBasicCellConfigModel *inventFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"邀请好友" actionHandleBlock:^{
-        
+        TCInventFriendVC *ivc = [[TCInventFriendVC alloc] init];
+        [self.navigationController pushViewController:ivc animated:YES];
     }];
     
     TCMHBasicCellConfigModel *profitSetItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"利润设置" actionHandleBlock:^{
-        
+        TCAcountSetViewController *avc = [[TCAcountSetViewController alloc] init];
+        [self.navigationController pushViewController:avc animated:YES];
     }];
     profitSetItem.rightInfo = @"已设置";
     
     TCMHBasicCellConfigModel *myFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的伙伴" actionHandleBlock:^{
-        
+        TCMyFriendViewController *mvc = [[TCMyFriendViewController alloc] init];
+        [self.navigationController pushViewController:mvc animated:YES];
     }];
     
     return @[superiorItem,inventFriendItem,profitSetItem,myFriendItem];
@@ -110,23 +135,28 @@
 
 - (NSArray<TCMHCellConfigModel *> *)thirdSectionItems {
     TCMHBasicCellConfigModel *accountChangeItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"账户变动" actionHandleBlock:^{
-        
+        TCUserChangeViewController *cvc = [[TCUserChangeViewController alloc] init];
+        [self.navigationController pushViewController:cvc animated:YES];
     }];
     
     TCMHBasicCellConfigModel *collectServiceItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"联系客服" actionHandleBlock:^{
-        
+        TCConnetServiceViewController *cvc  = [[TCConnetServiceViewController alloc] init];
+        [self.navigationController pushViewController:cvc animated:YES];
     }];
     
     TCMHBasicCellConfigModel *userInfoItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"个人资料" actionHandleBlock:^{
-        
+        TCUserInfoViewController *uvc = [[TCUserInfoViewController alloc] init];
+        [self.navigationController pushViewController:uvc animated:YES];
     }];
     
     TCMHBasicCellConfigModel *changeAvoidItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"修改解禁" actionHandleBlock:^{
-        
+        TCChangeAvoidViewController *avc = [[TCChangeAvoidViewController alloc] init];
+        [self.navigationController pushViewController:avc animated:YES];
     }];
     
     TCMHBasicCellConfigModel *changePwdItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"修改密码" actionHandleBlock:^{
-        
+        TCChangePwdViewController *cvc = [[TCChangePwdViewController alloc] init];
+        [self.navigationController pushViewController:cvc animated:YES];
     }];
     
     TCMHSwitchCellConfigModel *voiceSwitchItem = [[TCMHSwitchCellConfigModel alloc] initWithHeadImaName:@"" title:@"语音提醒" actionHandleBlock:^{
@@ -134,7 +164,8 @@
     }];
     
     TCMHBasicCellConfigModel *downloadAppItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"APP下载" actionHandleBlock:^{
-        
+        TCAppDownloadViewController *avc = [[TCAppDownloadViewController alloc] init];
+        [self.navigationController pushViewController:avc animated:YES];
     }];
     
     return @[accountChangeItem,collectServiceItem,userInfoItem,changeAvoidItem,changePwdItem,voiceSwitchItem,downloadAppItem];

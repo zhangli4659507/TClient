@@ -21,6 +21,20 @@ NSString *const TCMHInfoTableViewCellClassName = @"TCMHInfoTableViewCell";
     
     self.headImav.image = kImaWithImaName(itemModel.headImaName);
     self.titleLbl.text = kUnNilStr(itemModel.title);
+    self.switchBgView.hidden = self.infoTextBgView.hidden = self.rightImaBgView.hidden = YES;
+    if ([itemModel isKindOfClass:[TCMHBasicCellConfigModel class]]) {
+        self.rightImaBgView.hidden = NO;
+        TCMHBasicCellConfigModel *infoItemModel = (TCMHBasicCellConfigModel *)itemModel;
+        self.rightInfoLbl.hidden = infoItemModel.rightInfo.length == 0;
+        self.rightInfoLbl.text = kUnNilStr(infoItemModel.rightInfo);
+    } else if ([itemModel isKindOfClass:[TCMHSwitchCellConfigModel class]]) {
+        self.switchBgView.hidden = NO;
+        
+    } else if ([itemModel isKindOfClass:[TCMHInfoCellConfigModel class]]) {
+        self.infoTextBgView.hidden = NO;
+        TCMHInfoCellConfigModel *infoItemModel = (TCMHInfoCellConfigModel *)itemModel;
+        self.infoTextLbl.text = infoItemModel.info;
+    }
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "TCMHInfoSection.h"
 #import "TCMHInfoTableViewCell.h"
+#import "TCMHCellConfigModel.h"
 @implementation TCMHInfoSection
 
 - (void)tableViewRegisterView:(UITableView *)tableView {
@@ -17,7 +18,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndex:(NSInteger)index {
     TCMHInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TCMHInfoTableViewCellClassName];
+    [cell configCellWithItemModel:self.dataSource[index]];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndex:(NSInteger)index {
+    
+    TCMHCellConfigModel *configModel = self.dataSource[index];
+    (!configModel.actionHandleBlock)?:configModel.actionHandleBlock();
+}
+
+- (CGFloat)heightForFooterInTableView:(UITableView *)tableView {
+    
+    return 10.f;
+}
+
+- (UIView *)viewForFooterInTableView:(UITableView *)tableView {
+    UIView *view = [[UIView alloc] init];
+    return view;
+}
+
 
 @end

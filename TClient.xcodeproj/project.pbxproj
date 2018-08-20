@@ -45,7 +45,6 @@
 		4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */; };
 		4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF627212A4C270087EE00 /* TOTableViewTool.m */; };
 		4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF628212A4C270087EE00 /* TOBaseSection.m */; };
-		4DCAF663212AB7800087EE00 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF662212AB7800087EE00 /* TCMHCellConfigModel.m */; };
 		4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF665212AB7930087EE00 /* TCMineHeaderSection.m */; };
 		4DCAF66A212AB7930087EE00 /* TCMHInfoSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF666212AB7930087EE00 /* TCMHInfoSection.m */; };
 		4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF66C212AB7AF0087EE00 /* TCMHTableFootView.m */; };
@@ -55,8 +54,18 @@
 		4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF672212AB7B00087EE00 /* TCMHHeaderCell.m */; };
 		4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */; };
 		4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */; };
-		4DCAF686212AB8D80087EE00 /* UIImage+TUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF685212AB8D70087EE00 /* UIImage+TUtil.m */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
+		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
+		BCC722DE212AE560002AB760 /* UIImage+TUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722DD212AE560002AB760 /* UIImage+TUtil.m */; };
+		BCC722E6212AEF6A002AB760 /* TCInventFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */; };
+		BCC722EB212AEF96002AB760 /* TCAcountSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */; };
+		BCC722EF212AEFB9002AB760 /* TCMyFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */; };
+		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
+		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
+		BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */; };
+		BCC72303212AF085002AB760 /* TCChangeAvoidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */; };
+		BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */; };
+		BCC7230E212AF0EE002AB760 /* TCAppDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,8 +149,6 @@
 		4DCAF626212A4C260087EE00 /* TOBaseSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOBaseSection.h; sourceTree = "<group>"; };
 		4DCAF627212A4C270087EE00 /* TOTableViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTableViewTool.m; sourceTree = "<group>"; };
 		4DCAF628212A4C270087EE00 /* TOBaseSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOBaseSection.m; sourceTree = "<group>"; };
-		4DCAF661212AB7800087EE00 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
-		4DCAF662212AB7800087EE00 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
 		4DCAF665212AB7930087EE00 /* TCMineHeaderSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMineHeaderSection.m; sourceTree = "<group>"; };
 		4DCAF666212AB7930087EE00 /* TCMHInfoSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHInfoSection.m; sourceTree = "<group>"; };
 		4DCAF667212AB7930087EE00 /* TCMineHeaderSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMineHeaderSection.h; sourceTree = "<group>"; };
@@ -157,9 +164,29 @@
 		4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHInfoTableViewCell.m; sourceTree = "<group>"; };
 		4DCAF67A212AB7E10087EE00 /* TNUHeadBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNUHeadBgView.h; sourceTree = "<group>"; };
 		4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNUHeadBgView.m; sourceTree = "<group>"; };
-		4DCAF684212AB8D70087EE00 /* UIImage+TUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+TUtil.h"; path = "../../../../T2TTest/Examda/Examda/TKits/Categorys/UIImage+TUtil.h"; sourceTree = "<group>"; };
-		4DCAF685212AB8D70087EE00 /* UIImage+TUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TUtil.m"; path = "../../../../T2TTest/Examda/Examda/TKits/Categorys/UIImage+TUtil.m"; sourceTree = "<group>"; };
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
+		BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
+		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
+		BCC722DC212AE560002AB760 /* UIImage+TUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+TUtil.h"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/UIImage+TUtil.h"; sourceTree = "<group>"; };
+		BCC722DD212AE560002AB760 /* UIImage+TUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TUtil.m"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/UIImage+TUtil.m"; sourceTree = "<group>"; };
+		BCC722E4212AEF6A002AB760 /* TCInventFriendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCInventFriendVC.h; sourceTree = "<group>"; };
+		BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCInventFriendVC.m; sourceTree = "<group>"; };
+		BCC722E9212AEF96002AB760 /* TCAcountSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAcountSetViewController.h; sourceTree = "<group>"; };
+		BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAcountSetViewController.m; sourceTree = "<group>"; };
+		BCC722ED212AEFB9002AB760 /* TCMyFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendViewController.h; sourceTree = "<group>"; };
+		BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendViewController.m; sourceTree = "<group>"; };
+		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
+		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
+		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
+		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
+		BCC722FD212AF055002AB760 /* TCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoViewController.h; sourceTree = "<group>"; };
+		BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoViewController.m; sourceTree = "<group>"; };
+		BCC72301212AF085002AB760 /* TCChangeAvoidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangeAvoidViewController.h; sourceTree = "<group>"; };
+		BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangeAvoidViewController.m; sourceTree = "<group>"; };
+		BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangePwdViewController.h; sourceTree = "<group>"; };
+		BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangePwdViewController.m; sourceTree = "<group>"; };
+		BCC7230C212AF0EE002AB760 /* TCAppDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDownloadViewController.h; sourceTree = "<group>"; };
+		BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDownloadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,8 +358,8 @@
 		4DB7E58E2126626B009FDA22 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				4DCAF684212AB8D70087EE00 /* UIImage+TUtil.h */,
-				4DCAF685212AB8D70087EE00 /* UIImage+TUtil.m */,
+				BCC722DC212AE560002AB760 /* UIImage+TUtil.h */,
+				BCC722DD212AE560002AB760 /* UIImage+TUtil.m */,
 				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
 				4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */,
 				4DB7E5CF21269E55009FDA22 /* UIImage+TUtil.h */,
@@ -356,6 +383,15 @@
 		4DB7E5D521269F06009FDA22 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				BCC7230A212AF0C9002AB760 /* AppDownload */,
+				BCC72305212AF09A002AB760 /* ChangePwd */,
+				BCC72300212AF064002AB760 /* ChangeAvoid */,
+				BCC722FB212AF032002AB760 /* UserInfo */,
+				BCC722F6212AF002002AB760 /* ConnectService */,
+				BCC722F1212AEFC9002AB760 /* UserChange */,
+				BCC722EC212AEF9E002AB760 /* MyFriend */,
+				BCC722E7212AEF79002AB760 /* AcountSet */,
+				BCC722DF212AEF00002AB760 /* InventFriend */,
 				4DCAF62C212A4F4F0087EE00 /* MineHomeCenter */,
 			);
 			path = Mine;
@@ -402,8 +438,8 @@
 		4DCAF62C212A4F4F0087EE00 /* MineHomeCenter */ = {
 			isa = PBXGroup;
 			children = (
+				BCC722DB212AE4FA002AB760 /* Model */,
 				4DCAF664212AB7930087EE00 /* Tool */,
-				4DCAF660212AB7800087EE00 /* Model */,
 				4DCAF62D212A4F650087EE00 /* View */,
 				4DCAF62B212A4F440087EE00 /* VC */,
 			);
@@ -428,16 +464,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4DCAF660212AB7800087EE00 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4DCAF661212AB7800087EE00 /* TCMHCellConfigModel.h */,
-				4DCAF662212AB7800087EE00 /* TCMHCellConfigModel.m */,
-			);
-			name = Model;
-			path = ../../../../T2TTest/Examda/Examda/Other/Model;
-			sourceTree = "<group>";
-		};
 		4DCAF664212AB7930087EE00 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +481,176 @@
 				377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCC722DB212AE4FA002AB760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */,
+				BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCC722DF212AEF00002AB760 /* InventFriend */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722E1212AEF1C002AB760 /* Vc */,
+				BCC722E0212AEF16002AB760 /* Model */,
+			);
+			path = InventFriend;
+			sourceTree = "<group>";
+		};
+		BCC722E0212AEF16002AB760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCC722E1212AEF1C002AB760 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722E4212AEF6A002AB760 /* TCInventFriendVC.h */,
+				BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		BCC722E7212AEF79002AB760 /* AcountSet */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722E8212AEF84002AB760 /* VC */,
+			);
+			path = AcountSet;
+			sourceTree = "<group>";
+		};
+		BCC722E8212AEF84002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722E9212AEF96002AB760 /* TCAcountSetViewController.h */,
+				BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC722EC212AEF9E002AB760 /* MyFriend */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722F0212AEFBC002AB760 /* VC */,
+			);
+			path = MyFriend;
+			sourceTree = "<group>";
+		};
+		BCC722F0212AEFBC002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722ED212AEFB9002AB760 /* TCMyFriendViewController.h */,
+				BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC722F1212AEFC9002AB760 /* UserChange */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722F2212AEFDF002AB760 /* VC */,
+			);
+			path = UserChange;
+			sourceTree = "<group>";
+		};
+		BCC722F2212AEFDF002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */,
+				BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC722F6212AF002002AB760 /* ConnectService */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722F7212AF012002AB760 /* VC */,
+			);
+			path = ConnectService;
+			sourceTree = "<group>";
+		};
+		BCC722F7212AF012002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */,
+				BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC722FB212AF032002AB760 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722FC212AF046002AB760 /* VC */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		BCC722FC212AF046002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC722FD212AF055002AB760 /* TCUserInfoViewController.h */,
+				BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC72300212AF064002AB760 /* ChangeAvoid */ = {
+			isa = PBXGroup;
+			children = (
+				BCC72304212AF088002AB760 /* VC */,
+			);
+			path = ChangeAvoid;
+			sourceTree = "<group>";
+		};
+		BCC72304212AF088002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC72301212AF085002AB760 /* TCChangeAvoidViewController.h */,
+				BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC72305212AF09A002AB760 /* ChangePwd */ = {
+			isa = PBXGroup;
+			children = (
+				BCC72306212AF0A5002AB760 /* VC */,
+			);
+			path = ChangePwd;
+			sourceTree = "<group>";
+		};
+		BCC72306212AF0A5002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */,
+				BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCC7230A212AF0C9002AB760 /* AppDownload */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7230B212AF0D7002AB760 /* VC */,
+			);
+			path = AppDownload;
+			sourceTree = "<group>";
+		};
+		BCC7230B212AF0D7002AB760 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7230C212AF0EE002AB760 /* TCAppDownloadViewController.h */,
+				BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +688,7 @@
 				TargetAttributes = {
 					4DAEDFD8212563C2009FFB4B = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -600,16 +797,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
+				BCC722E6212AEF6A002AB760 /* TCInventFriendVC.m in Sources */,
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
+				BCC7230E212AF0EE002AB760 /* TCAppDownloadViewController.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
 				4DB7E5A92126626B009FDA22 /* MMPopupView.m in Sources */,
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
+				BCC722EF212AEFB9002AB760 /* TCMyFriendViewController.m in Sources */,
+				BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
-				4DCAF663212AB7800087EE00 /* TCMHCellConfigModel.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
+				BCC722EB212AEF96002AB760 /* TCAcountSetViewController.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
@@ -620,26 +821,31 @@
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
-				4DCAF686212AB8D80087EE00 /* UIImage+TUtil.m in Sources */,
+				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
+				BCC722DE212AE560002AB760 /* UIImage+TUtil.m in Sources */,
 				4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
+				BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
 				4DB7E5AC2126626B009FDA22 /* UIView+Nib.m in Sources */,
+				BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */,
 				4DCAF66A212AB7930087EE00 /* TCMHInfoSection.m in Sources */,
 				4DB7E5AF2126626B009FDA22 /* UIView+AddOther.m in Sources */,
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
+				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
 				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
+				BCC72303212AF085002AB760 /* TCChangeAvoidViewController.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
 			);
@@ -763,6 +969,7 @@
 			baseConfigurationReference = 1901D53F14175A9E42ED3884 /* Pods-TClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UF52T2NV2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
@@ -771,6 +978,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.233.TClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -780,6 +989,7 @@
 			baseConfigurationReference = 668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UF52T2NV2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
@@ -788,6 +998,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.233.TClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

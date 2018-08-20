@@ -27,8 +27,8 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsC-Iw-xQZ">
-                        <rect key="frame" x="55" y="97" width="125" height="8"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsC-Iw-xQZ">
+                        <rect key="frame" x="195" y="0.0" width="125" height="103.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3x456t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKT-DM-517">
                                 <rect key="frame" x="65" y="43" width="50" height="18"/>
@@ -81,6 +81,13 @@
                             <constraint firstItem="3Ra-bT-UiX" firstAttribute="centerY" secondItem="0RX-mA-5tD" secondAttribute="centerY" id="wGr-Ug-GEi"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-bn-foa">
+                        <rect key="frame" x="0.0" y="103" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="plG-id-ewj"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="0RX-mA-5tD" secondAttribute="trailing" id="91a-LV-W9J"/>
@@ -92,9 +99,12 @@
                     <constraint firstItem="EsC-Iw-xQZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dYI-it-liX"/>
                     <constraint firstItem="oJc-h5-fqh" firstAttribute="leading" secondItem="bAk-gN-fpt" secondAttribute="trailing" constant="8" id="exF-w6-Zyo"/>
                     <constraint firstAttribute="bottom" secondItem="EsC-Iw-xQZ" secondAttribute="bottom" id="hR4-Lq-7m3"/>
+                    <constraint firstItem="EsC-Iw-xQZ" firstAttribute="bottom" secondItem="d9z-bn-foa" secondAttribute="bottom" id="hXX-2i-oD4"/>
                     <constraint firstItem="bAk-gN-fpt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iJh-gQ-dwU"/>
                     <constraint firstAttribute="trailing" secondItem="EsC-Iw-xQZ" secondAttribute="trailing" id="mpc-xQ-3uZ"/>
                     <constraint firstItem="bAk-gN-fpt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qUm-oJ-iLK"/>
+                    <constraint firstItem="d9z-bn-foa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v5u-fT-WGr"/>
+                    <constraint firstAttribute="trailing" secondItem="d9z-bn-foa" secondAttribute="trailing" id="xcy-zN-10I"/>
                     <constraint firstItem="0RX-mA-5tD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ywt-Xt-k9b"/>
                 </constraints>
             </tableViewCellContentView>

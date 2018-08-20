@@ -156,11 +156,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufw-Ni-bQT">
-                                <rect key="frame" x="106.5" y="127" width="0.5" height="30"/>
+                                <rect key="frame" x="106.5" y="15" width="0.5" height="255.5"/>
                                 <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="0.5" id="jG6-eR-Oz3"/>
-                                    <constraint firstAttribute="height" constant="30" id="r23-t6-3H8"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -169,12 +168,14 @@
                             <constraint firstItem="95M-cH-ADa" firstAttribute="top" secondItem="Nnn-A9-qww" secondAttribute="top" id="0mX-o2-p8t"/>
                             <constraint firstItem="Ufw-Ni-bQT" firstAttribute="centerY" secondItem="Nnn-A9-qww" secondAttribute="centerY" id="12Z-is-Hj2"/>
                             <constraint firstItem="95M-cH-ADa" firstAttribute="width" secondItem="GOS-iG-xgn" secondAttribute="width" multiplier="5:4" id="4dI-uZ-wJK"/>
+                            <constraint firstAttribute="bottom" secondItem="Ufw-Ni-bQT" secondAttribute="bottom" constant="15" id="E6S-oW-jqS"/>
                             <constraint firstAttribute="bottom" secondItem="95M-cH-ADa" secondAttribute="bottom" id="JIE-49-lQo"/>
                             <constraint firstAttribute="trailing" secondItem="95M-cH-ADa" secondAttribute="trailing" id="QX1-9d-0Hg"/>
                             <constraint firstItem="GOS-iG-xgn" firstAttribute="top" secondItem="Nnn-A9-qww" secondAttribute="top" id="TfW-Mc-2NG"/>
                             <constraint firstItem="Ufw-Ni-bQT" firstAttribute="leading" secondItem="GOS-iG-xgn" secondAttribute="trailing" id="Zaq-PU-m2m"/>
                             <constraint firstAttribute="bottom" secondItem="GOS-iG-xgn" secondAttribute="bottom" id="aEd-ss-4BW"/>
                             <constraint firstItem="GOS-iG-xgn" firstAttribute="leading" secondItem="Nnn-A9-qww" secondAttribute="leading" id="jAr-Fu-Dpz"/>
+                            <constraint firstItem="Ufw-Ni-bQT" firstAttribute="top" secondItem="Nnn-A9-qww" secondAttribute="top" constant="15" id="s0c-N9-6cE"/>
                             <constraint firstItem="95M-cH-ADa" firstAttribute="leading" secondItem="Ufw-Ni-bQT" secondAttribute="trailing" id="uYo-mN-QpB"/>
                         </constraints>
                     </view>
