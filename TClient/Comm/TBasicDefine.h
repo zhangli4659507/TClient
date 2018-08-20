@@ -41,7 +41,8 @@ NS_INLINE NSString *TimeYMDTextWithDatestr(NSString *originalText)
     NSString *timeText = [formatter stringFromDate:date];
     return timeText;
 }
-
+#define WEAK_REF(obj)\
+__weak typeof(obj) weak_##obj = obj; \
 
 #define kIsIOS8 (device_version() >= 8.0)
 #define kIsIOS10 (device_version() >= 10.0)
@@ -68,5 +69,7 @@ NS_INLINE NSString *TimeYMDTextWithDatestr(NSString *originalText)
 #define kAppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 //app版本
 #define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"
+#define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define kImaWithImaName(str)  [UIImage imageNamed:str]
 
 #endif /* TBasicDefine_h */
