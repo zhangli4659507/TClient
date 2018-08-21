@@ -1,14 +1,14 @@
 //
-//  TCRechargeRecordCell.m
+//  TCMyFriendCell.m
 //  TClient
 //
 //  Created by mark_zhang on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCRechargeRecordCell.h"
-NSString *const TCRechargeRecordCellClassName = @"TCRechargeRecordCell";
-@implementation TCRechargeRecordCell
+#import "TCMyFriendCell.h"
+NSString *const TCMyFriendCellClassName = @"TCMyFriendCell";
+@implementation TCMyFriendCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

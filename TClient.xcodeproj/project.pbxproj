@@ -67,9 +67,17 @@
 		4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */; };
 		4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
+		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
+		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
+		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
 		BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */; };
 		BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */; };
+		BC61732A212C432A003AA3C4 /* TCAccountChangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617328212C432A003AA3C4 /* TCAccountChangeCell.m */; };
+		BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617329212C432A003AA3C4 /* TCAccountChangeCell.xib */; };
+		BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC61732E212C447D003AA3C4 /* TCAccountChangeSection.m */; };
+		BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617334212C46F8003AA3C4 /* TCMyFriendCell.m */; };
+		BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617335212C46F8003AA3C4 /* TCMyFriendCell.xib */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
@@ -197,11 +205,24 @@
 		4DCAF67A212AB7E10087EE00 /* TNUHeadBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNUHeadBgView.h; sourceTree = "<group>"; };
 		4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNUHeadBgView.m; sourceTree = "<group>"; };
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
+		BC0FB791212C4B7B005F8C57 /* TCMyFriendSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSection.h; sourceTree = "<group>"; };
+		BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSection.m; sourceTree = "<group>"; };
+		BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSectionHeaderView.h; sourceTree = "<group>"; };
+		BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSectionHeaderView.m; sourceTree = "<group>"; };
+		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
 		BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordSection.h; sourceTree = "<group>"; };
 		BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordSection.m; sourceTree = "<group>"; };
 		BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordCell.h; sourceTree = "<group>"; };
 		BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordCell.m; sourceTree = "<group>"; };
 		BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRechargeRecordCell.xib; sourceTree = "<group>"; };
+		BC617327212C432A003AA3C4 /* TCAccountChangeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAccountChangeCell.h; sourceTree = "<group>"; };
+		BC617328212C432A003AA3C4 /* TCAccountChangeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAccountChangeCell.m; sourceTree = "<group>"; };
+		BC617329212C432A003AA3C4 /* TCAccountChangeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCAccountChangeCell.xib; sourceTree = "<group>"; };
+		BC61732D212C447D003AA3C4 /* TCAccountChangeSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAccountChangeSection.h; sourceTree = "<group>"; };
+		BC61732E212C447D003AA3C4 /* TCAccountChangeSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAccountChangeSection.m; sourceTree = "<group>"; };
+		BC617333212C46F8003AA3C4 /* TCMyFriendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendCell.h; sourceTree = "<group>"; };
+		BC617334212C46F8003AA3C4 /* TCMyFriendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendCell.m; sourceTree = "<group>"; };
+		BC617335212C46F8003AA3C4 /* TCMyFriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendCell.xib; sourceTree = "<group>"; };
 		BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
 		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
 		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
@@ -257,8 +278,9 @@
 		4D0FEEC3212BB2570021E9E8 /* accountChange */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FEEC4212BB27E0021E9E8 /* TCAccountChangeVC.h */,
-				4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */,
+				BC61732C212C4458003AA3C4 /* Tool */,
+				BC617326212C430E003AA3C4 /* View */,
+				BC617325212C4303003AA3C4 /* VC */,
 			);
 			path = accountChange;
 			sourceTree = "<group>";
@@ -272,13 +294,14 @@
 			path = inviteFriend;
 			sourceTree = "<group>";
 		};
-		4D0FEECB212BB2DD0021E9E8 /* Friends */ = {
+		4D0FEECB212BB2DD0021E9E8 /* UnderMerchan */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FEECC212BB3370021E9E8 /* TCUnderMerchantVC.h */,
-				4D0FEECD212BB3370021E9E8 /* TCUnderMerchantVC.m */,
+				BC617332212C46D3003AA3C4 /* View */,
+				BC617331212C46CC003AA3C4 /* Tool */,
+				BC617330212C46C0003AA3C4 /* VC */,
 			);
-			path = Friends;
+			path = UnderMerchan;
 			sourceTree = "<group>";
 		};
 		4D0FEECF212BB35A0021E9E8 /* CommonSense */ = {
@@ -519,7 +542,7 @@
 			children = (
 				4D0FEED3212BE5F80021E9E8 /* RechargeCash */,
 				4D0FEECF212BB35A0021E9E8 /* CommonSense */,
-				4D0FEECB212BB2DD0021E9E8 /* Friends */,
+				4D0FEECB212BB2DD0021E9E8 /* UnderMerchan */,
 				4D0FEEC7212BB28F0021E9E8 /* inviteFriend */,
 				4D0FEEC3212BB2570021E9E8 /* accountChange */,
 				4D0FEEBF212BB20F0021E9E8 /* rechargeRecord */,
@@ -647,6 +670,65 @@
 				BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC617325212C4303003AA3C4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEC4212BB27E0021E9E8 /* TCAccountChangeVC.h */,
+				4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC617326212C430E003AA3C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC617327212C432A003AA3C4 /* TCAccountChangeCell.h */,
+				BC617328212C432A003AA3C4 /* TCAccountChangeCell.m */,
+				BC617329212C432A003AA3C4 /* TCAccountChangeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC61732C212C4458003AA3C4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC61732D212C447D003AA3C4 /* TCAccountChangeSection.h */,
+				BC61732E212C447D003AA3C4 /* TCAccountChangeSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC617330212C46C0003AA3C4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEECC212BB3370021E9E8 /* TCUnderMerchantVC.h */,
+				4D0FEECD212BB3370021E9E8 /* TCUnderMerchantVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC617331212C46CC003AA3C4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC0FB791212C4B7B005F8C57 /* TCMyFriendSection.h */,
+				BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC617332212C46D3003AA3C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC617333212C46F8003AA3C4 /* TCMyFriendCell.h */,
+				BC617334212C46F8003AA3C4 /* TCMyFriendCell.m */,
+				BC617335212C46F8003AA3C4 /* TCMyFriendCell.xib */,
+				BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */,
+				BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */,
+				BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BCC722DB212AE4FA002AB760 /* Model */ = {
@@ -791,11 +873,14 @@
 			files = (
 				BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */,
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
+				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
+				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
+				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,8 +956,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
+				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
 				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
@@ -907,6 +994,7 @@
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
 				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,
+				BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */,
 				BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
@@ -918,6 +1006,7 @@
 				4DB7E5AF2126626B009FDA22 /* UIView+AddOther.m in Sources */,
 				4D0FEED2212BB37B0021E9E8 /* TCCommonSenseVC.m in Sources */,
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
+				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
@@ -929,6 +1018,7 @@
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
 				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,
+				BC61732A212C432A003AA3C4 /* TCAccountChangeCell.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -132,7 +132,7 @@
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"邀请好友" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"下级号商" actionHandleBlock:^{
         TCUnderMerchantVC *ivc = [[TCUnderMerchantVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];

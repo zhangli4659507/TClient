@@ -1,14 +1,14 @@
 //
-//  TCRechargeRecordCell.m
+//  TCAccountChangeCell.m
 //  TClient
 //
 //  Created by mark_zhang on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCRechargeRecordCell.h"
-NSString *const TCRechargeRecordCellClassName = @"TCRechargeRecordCell";
-@implementation TCRechargeRecordCell
+#import "TCAccountChangeCell.h"
+NSString *const TCAccountChangeCellClassName = @"TCAccountChangeCell";
+@implementation TCAccountChangeCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
