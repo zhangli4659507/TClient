@@ -1,22 +1,22 @@
 //
-//  TCInventFriendVC.m
+//  TCInviteFriendVC.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCInventFriendVC.h"
+#import "TCInviteFriendVC.h"
 
-@interface TCInventFriendVC ()
+@interface TCInviteFriendVC ()
 
 @end
 
-@implementation TCInventFriendVC
+@implementation TCInviteFriendVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"邀请好友";
+    self.title = @"邀请号商";
     // Do any additional setup after loading the view.
 }
 

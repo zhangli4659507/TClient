@@ -1,22 +1,22 @@
 //
-//  TCAppDownloadViewController.m
+//  TCAccountChangeVC.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCAppDownloadViewController.h"
+#import "TCAccountChangeVC.h"
 
-@interface TCAppDownloadViewController ()
+@interface TCAccountChangeVC ()
 
 @end
 
-@implementation TCAppDownloadViewController
+@implementation TCAccountChangeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"APP下载";
+    self.title = @"账户变动";
     // Do any additional setup after loading the view.
 }
 

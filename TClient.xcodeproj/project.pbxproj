@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
+		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
+		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
+		4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC9212BB2D80021E9E8 /* TCInviteFriendVC.m */; };
+		4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEECD212BB3370021E9E8 /* TCUnderMerchantVC.m */; };
+		4D0FEED2212BB37B0021E9E8 /* TCCommonSenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEED1212BB37B0021E9E8 /* TCCommonSenseVC.m */; };
+		4D0FEED6212BE63A0021E9E8 /* TCRechargeCashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEED5212BE63A0021E9E8 /* TCRechargeCashVC.m */; };
+		4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEED9212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m */; };
+		4D0FEEDE212BF5900021E9E8 /* TCUnlockTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */; };
+		4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */; };
+		4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */; };
+		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
 		4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFDD212563C2009FFB4B /* AppDelegate.m */; };
 		4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEDFE5212563C5009FFB4B /* Assets.xcassets */; };
 		4DAEDFEC212563C5009FFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFEB212563C5009FFB4B /* main.m */; };
@@ -56,20 +68,38 @@
 		4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
-		BCC722E6212AEF6A002AB760 /* TCInventFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */; };
-		BCC722EB212AEF96002AB760 /* TCAcountSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */; };
-		BCC722EF212AEFB9002AB760 /* TCMyFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
 		BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */; };
-		BCC72303212AF085002AB760 /* TCChangeAvoidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */; };
 		BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */; };
-		BCC7230E212AF0EE002AB760 /* TCAppDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1901D53F14175A9E42ED3884 /* Pods-TClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.debug.xcconfig"; sourceTree = "<group>"; };
 		377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
+		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
+		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
+		4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordVC.m; sourceTree = "<group>"; };
+		4D0FEEC4212BB27E0021E9E8 /* TCAccountChangeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAccountChangeVC.h; sourceTree = "<group>"; };
+		4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAccountChangeVC.m; sourceTree = "<group>"; };
+		4D0FEEC8212BB2D80021E9E8 /* TCInviteFriendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCInviteFriendVC.h; sourceTree = "<group>"; };
+		4D0FEEC9212BB2D80021E9E8 /* TCInviteFriendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCInviteFriendVC.m; sourceTree = "<group>"; };
+		4D0FEECC212BB3370021E9E8 /* TCUnderMerchantVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnderMerchantVC.h; sourceTree = "<group>"; };
+		4D0FEECD212BB3370021E9E8 /* TCUnderMerchantVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnderMerchantVC.m; sourceTree = "<group>"; };
+		4D0FEED0212BB37B0021E9E8 /* TCCommonSenseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSenseVC.h; sourceTree = "<group>"; };
+		4D0FEED1212BB37B0021E9E8 /* TCCommonSenseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCommonSenseVC.m; sourceTree = "<group>"; };
+		4D0FEED4212BE63A0021E9E8 /* TCRechargeCashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeCashVC.h; sourceTree = "<group>"; };
+		4D0FEED5212BE63A0021E9E8 /* TCRechargeCashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeCashVC.m; sourceTree = "<group>"; };
+		4D0FEED8212BF4FE0021E9E8 /* TCQRCodeRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQRCodeRegisterVC.h; sourceTree = "<group>"; };
+		4D0FEED9212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRCodeRegisterVC.m; sourceTree = "<group>"; };
+		4D0FEEDC212BF5900021E9E8 /* TCUnlockTaskVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskVC.h; sourceTree = "<group>"; };
+		4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnlockTaskVC.m; sourceTree = "<group>"; };
+		4D0FEEE1212C04EA0021E9E8 /* TCQROrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQROrderCell.h; sourceTree = "<group>"; };
+		4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQROrderCell.m; sourceTree = "<group>"; };
+		4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQROrderCell.xib; sourceTree = "<group>"; };
+		4D0FEEE6212C08320021E9E8 /* TCQRSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQRSection.h; sourceTree = "<group>"; };
+		4D0FEEE7212C08320021E9E8 /* TCQRSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRSection.m; sourceTree = "<group>"; };
 		4DAEDFD9212563C2009FFB4B /* TClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAEDFDC212563C2009FFB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAEDFDD212563C2009FFB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,24 +196,14 @@
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
 		BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
 		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
-		BCC722E4212AEF6A002AB760 /* TCInventFriendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCInventFriendVC.h; sourceTree = "<group>"; };
-		BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCInventFriendVC.m; sourceTree = "<group>"; };
-		BCC722E9212AEF96002AB760 /* TCAcountSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAcountSetViewController.h; sourceTree = "<group>"; };
-		BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAcountSetViewController.m; sourceTree = "<group>"; };
-		BCC722ED212AEFB9002AB760 /* TCMyFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendViewController.h; sourceTree = "<group>"; };
-		BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendViewController.m; sourceTree = "<group>"; };
 		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
 		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
 		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
 		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
 		BCC722FD212AF055002AB760 /* TCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoViewController.h; sourceTree = "<group>"; };
 		BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoViewController.m; sourceTree = "<group>"; };
-		BCC72301212AF085002AB760 /* TCChangeAvoidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangeAvoidViewController.h; sourceTree = "<group>"; };
-		BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangeAvoidViewController.m; sourceTree = "<group>"; };
 		BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangePwdViewController.h; sourceTree = "<group>"; };
 		BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangePwdViewController.m; sourceTree = "<group>"; };
-		BCC7230C212AF0EE002AB760 /* TCAppDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDownloadViewController.h; sourceTree = "<group>"; };
-		BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDownloadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +225,116 @@
 				668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */,
+				4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */,
+			);
+			path = RegisterQuery;
+			sourceTree = "<group>";
+		};
+		4D0FEEBF212BB20F0021E9E8 /* rechargeRecord */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */,
+				4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */,
+			);
+			path = rechargeRecord;
+			sourceTree = "<group>";
+		};
+		4D0FEEC3212BB2570021E9E8 /* accountChange */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEC4212BB27E0021E9E8 /* TCAccountChangeVC.h */,
+				4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */,
+			);
+			path = accountChange;
+			sourceTree = "<group>";
+		};
+		4D0FEEC7212BB28F0021E9E8 /* inviteFriend */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEC8212BB2D80021E9E8 /* TCInviteFriendVC.h */,
+				4D0FEEC9212BB2D80021E9E8 /* TCInviteFriendVC.m */,
+			);
+			path = inviteFriend;
+			sourceTree = "<group>";
+		};
+		4D0FEECB212BB2DD0021E9E8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEECC212BB3370021E9E8 /* TCUnderMerchantVC.h */,
+				4D0FEECD212BB3370021E9E8 /* TCUnderMerchantVC.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		4D0FEECF212BB35A0021E9E8 /* CommonSense */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEED0212BB37B0021E9E8 /* TCCommonSenseVC.h */,
+				4D0FEED1212BB37B0021E9E8 /* TCCommonSenseVC.m */,
+			);
+			path = CommonSense;
+			sourceTree = "<group>";
+		};
+		4D0FEED3212BE5F80021E9E8 /* RechargeCash */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEED4212BE63A0021E9E8 /* TCRechargeCashVC.h */,
+				4D0FEED5212BE63A0021E9E8 /* TCRechargeCashVC.m */,
+			);
+			path = RechargeCash;
+			sourceTree = "<group>";
+		};
+		4D0FEED7212BF4E40021E9E8 /* QRCodeRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEE9212C083A0021E9E8 /* Tool */,
+				4D0FEEE0212C04C00021E9E8 /* View */,
+				4D0FEEDF212C04B30021E9E8 /* VC */,
+			);
+			path = QRCodeRegister;
+			sourceTree = "<group>";
+		};
+		4D0FEEDB212BF5080021E9E8 /* UnlockTask */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEDC212BF5900021E9E8 /* TCUnlockTaskVC.h */,
+				4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */,
+			);
+			path = UnlockTask;
+			sourceTree = "<group>";
+		};
+		4D0FEEDF212C04B30021E9E8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEED8212BF4FE0021E9E8 /* TCQRCodeRegisterVC.h */,
+				4D0FEED9212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		4D0FEEE0212C04C00021E9E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEE1212C04EA0021E9E8 /* TCQROrderCell.h */,
+				4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */,
+				4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D0FEEE9212C083A0021E9E8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEE6212C08320021E9E8 /* TCQRSection.h */,
+				4D0FEEE7212C08320021E9E8 /* TCQRSection.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		4DAEDFD0212563C2009FFB4B = {
@@ -378,15 +508,17 @@
 		4DB7E5D521269F06009FDA22 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				BCC7230A212AF0C9002AB760 /* AppDownload */,
+				4D0FEED3212BE5F80021E9E8 /* RechargeCash */,
+				4D0FEECF212BB35A0021E9E8 /* CommonSense */,
+				4D0FEECB212BB2DD0021E9E8 /* Friends */,
+				4D0FEEC7212BB28F0021E9E8 /* inviteFriend */,
+				4D0FEEC3212BB2570021E9E8 /* accountChange */,
+				4D0FEEBF212BB20F0021E9E8 /* rechargeRecord */,
+				4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */,
 				BCC72305212AF09A002AB760 /* ChangePwd */,
-				BCC72300212AF064002AB760 /* ChangeAvoid */,
 				BCC722FB212AF032002AB760 /* UserInfo */,
 				BCC722F6212AF002002AB760 /* ConnectService */,
 				BCC722F1212AEFC9002AB760 /* UserChange */,
-				BCC722EC212AEF9E002AB760 /* MyFriend */,
-				BCC722E7212AEF79002AB760 /* AcountSet */,
-				BCC722DF212AEF00002AB760 /* InventFriend */,
 				4DCAF62C212A4F4F0087EE00 /* MineHomeCenter */,
 			);
 			path = Mine;
@@ -395,6 +527,8 @@
 		4DB7E5D621269F0C009FDA22 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				4D0FEEDB212BF5080021E9E8 /* UnlockTask */,
+				4D0FEED7212BF4E40021E9E8 /* QRCodeRegister */,
 				4DB7E5DB21269F5F009FDA22 /* TCOrderViewController.h */,
 				4DB7E5DC21269F5F009FDA22 /* TCOrderViewController.m */,
 			);
@@ -487,65 +621,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BCC722DF212AEF00002AB760 /* InventFriend */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722E1212AEF1C002AB760 /* Vc */,
-				BCC722E0212AEF16002AB760 /* Model */,
-			);
-			path = InventFriend;
-			sourceTree = "<group>";
-		};
-		BCC722E0212AEF16002AB760 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BCC722E1212AEF1C002AB760 /* Vc */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722E4212AEF6A002AB760 /* TCInventFriendVC.h */,
-				BCC722E5212AEF6A002AB760 /* TCInventFriendVC.m */,
-			);
-			path = Vc;
-			sourceTree = "<group>";
-		};
-		BCC722E7212AEF79002AB760 /* AcountSet */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722E8212AEF84002AB760 /* VC */,
-			);
-			path = AcountSet;
-			sourceTree = "<group>";
-		};
-		BCC722E8212AEF84002AB760 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722E9212AEF96002AB760 /* TCAcountSetViewController.h */,
-				BCC722EA212AEF96002AB760 /* TCAcountSetViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		BCC722EC212AEF9E002AB760 /* MyFriend */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722F0212AEFBC002AB760 /* VC */,
-			);
-			path = MyFriend;
-			sourceTree = "<group>";
-		};
-		BCC722F0212AEFBC002AB760 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				BCC722ED212AEFB9002AB760 /* TCMyFriendViewController.h */,
-				BCC722EE212AEFB9002AB760 /* TCMyFriendViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		BCC722F1212AEFC9002AB760 /* UserChange */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,23 +672,6 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
-		BCC72300212AF064002AB760 /* ChangeAvoid */ = {
-			isa = PBXGroup;
-			children = (
-				BCC72304212AF088002AB760 /* VC */,
-			);
-			path = ChangeAvoid;
-			sourceTree = "<group>";
-		};
-		BCC72304212AF088002AB760 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				BCC72301212AF085002AB760 /* TCChangeAvoidViewController.h */,
-				BCC72302212AF085002AB760 /* TCChangeAvoidViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		BCC72305212AF09A002AB760 /* ChangePwd */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,23 +685,6 @@
 			children = (
 				BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */,
 				BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		BCC7230A212AF0C9002AB760 /* AppDownload */ = {
-			isa = PBXGroup;
-			children = (
-				BCC7230B212AF0D7002AB760 /* VC */,
-			);
-			path = AppDownload;
-			sourceTree = "<group>";
-		};
-		BCC7230B212AF0D7002AB760 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				BCC7230C212AF0EE002AB760 /* TCAppDownloadViewController.h */,
-				BCC7230D212AF0EE002AB760 /* TCAppDownloadViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -712,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
+				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
@@ -791,26 +833,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
+				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
-				BCC722E6212AEF6A002AB760 /* TCInventFriendVC.m in Sources */,
+				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
+				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
-				BCC7230E212AF0EE002AB760 /* TCAppDownloadViewController.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
 				4DB7E5A92126626B009FDA22 /* MMPopupView.m in Sources */,
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
-				BCC722EF212AEFB9002AB760 /* TCMyFriendViewController.m in Sources */,
 				BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */,
+				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
-				BCC722EB212AEF96002AB760 /* TCAcountSetViewController.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
+				4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */,
 				4DB7E5A52126626B009FDA22 /* MMAlertView.m in Sources */,
+				4D0FEED6212BE63A0021E9E8 /* TCRechargeCashVC.m in Sources */,
 				4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */,
+				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
@@ -825,21 +871,23 @@
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
+				4D0FEEDE212BF5900021E9E8 /* TCUnlockTaskVC.m in Sources */,
 				4DB7E5AC2126626B009FDA22 /* UIView+Nib.m in Sources */,
 				BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */,
 				4DCAF66A212AB7930087EE00 /* TCMHInfoSection.m in Sources */,
 				4DB7E5AF2126626B009FDA22 /* UIView+AddOther.m in Sources */,
+				4D0FEED2212BB37B0021E9E8 /* TCCommonSenseVC.m in Sources */,
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
+				4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */,
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
 				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
-				BCC72303212AF085002AB760 /* TCChangeAvoidViewController.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
 			);

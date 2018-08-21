@@ -18,10 +18,7 @@ extern NSString *const TCMHHeaderCellClassName;
 @property (weak, nonatomic) IBOutlet UIImageView *adImav;
 @property (weak, nonatomic) IBOutlet UIButton *msgBtn;
 @property (weak, nonatomic) IBOutlet UILabel *orderNumLbl;
-@property (weak, nonatomic) IBOutlet UILabel *teamNameLbl;
-@property (weak, nonatomic) IBOutlet UILabel *teamTotalOrderNumLbl;
-@property (weak, nonatomic) IBOutlet UILabel *teamPeopleNumLbl;
-@property (weak, nonatomic) IBOutlet UILabel *appealPercentLbl;
-@property (weak, nonatomic) IBOutlet UILabel *successPercentLbl;
+
+@property (weak, nonatomic) IBOutlet UIButton *RechargeBtn;
 
 @end

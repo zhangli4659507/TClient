@@ -1,22 +1,22 @@
 //
-//  TCMyFriendViewController.m
+//  TCRegisterQueryVC.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCMyFriendViewController.h"
+#import "TCRegisterQueryVC.h"
 
-@interface TCMyFriendViewController ()
+@interface TCRegisterQueryVC ()
 
 @end
 
-@implementation TCMyFriendViewController
+@implementation TCRegisterQueryVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的伙伴";
+    self.title = @"注册查询";
     // Do any additional setup after loading the view.
 }
 

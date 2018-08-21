@@ -1,22 +1,22 @@
 //
-//  TCChangeAvoidViewController.m
+//  TCUnderMerchantVC.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCChangeAvoidViewController.h"
+#import "TCUnderMerchantVC.h"
 
-@interface TCChangeAvoidViewController ()
+@interface TCUnderMerchantVC ()
 
 @end
 
-@implementation TCChangeAvoidViewController
+@implementation TCUnderMerchantVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"修改解禁";
+    self.title = @"下级号商";
     // Do any additional setup after loading the view.
 }
 

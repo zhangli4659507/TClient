@@ -1,13 +1,13 @@
 //
-//  TCInventFriendVC.h
+//  TCQRCodeRegisterVC.h
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
 #import "TBaseViewcontroller.h"
 
-@interface TCInventFriendVC : TBaseViewcontroller
+@interface TCQRCodeRegisterVC : TBaseViewcontroller
 
 @end

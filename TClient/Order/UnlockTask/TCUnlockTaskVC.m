@@ -1,22 +1,22 @@
 //
-//  TCAcountSetViewController.m
+//  TCUnlockTaskVC.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/8/21.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
-#import "TCAcountSetViewController.h"
+#import "TCUnlockTaskVC.h"
 
-@interface TCAcountSetViewController ()
+@interface TCUnlockTaskVC ()
 
 @end
 
-@implementation TCAcountSetViewController
+@implementation TCUnlockTaskVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"利润设置";
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
