@@ -67,6 +67,9 @@
 		4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */; };
 		4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
+		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
+		BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */; };
+		BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
@@ -194,6 +197,11 @@
 		4DCAF67A212AB7E10087EE00 /* TNUHeadBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNUHeadBgView.h; sourceTree = "<group>"; };
 		4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNUHeadBgView.m; sourceTree = "<group>"; };
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
+		BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordSection.h; sourceTree = "<group>"; };
+		BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordSection.m; sourceTree = "<group>"; };
+		BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordCell.h; sourceTree = "<group>"; };
+		BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordCell.m; sourceTree = "<group>"; };
+		BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRechargeRecordCell.xib; sourceTree = "<group>"; };
 		BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
 		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
 		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
@@ -239,8 +247,9 @@
 		4D0FEEBF212BB20F0021E9E8 /* rechargeRecord */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */,
-				4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */,
+				BC61731F212C3C21003AA3C4 /* Cell */,
+				BC617316212C3BCF003AA3C4 /* Tool */,
+				BC617315212C3BBE003AA3C4 /* VC */,
 			);
 			path = rechargeRecord;
 			sourceTree = "<group>";
@@ -612,6 +621,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC617315212C3BBE003AA3C4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */,
+				4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC617316212C3BCF003AA3C4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */,
+				BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC61731F212C3C21003AA3C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */,
+				BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */,
+				BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		BCC722DB212AE4FA002AB760 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +789,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */,
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
@@ -843,6 +881,7 @@
 				4DB7E5A92126626B009FDA22 /* MMPopupView.m in Sources */,
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
+				BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */,
 				BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */,
 				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
@@ -867,6 +906,7 @@
 				4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
+				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,
 				BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
