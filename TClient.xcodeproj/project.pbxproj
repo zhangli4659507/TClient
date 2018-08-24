@@ -19,6 +19,8 @@
 		4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */; };
 		4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */; };
 		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
+		4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */; };
+		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
 		4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFDD212563C2009FFB4B /* AppDelegate.m */; };
 		4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEDFE5212563C5009FFB4B /* Assets.xcassets */; };
 		4DAEDFEC212563C5009FFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFEB212563C5009FFB4B /* main.m */; };
@@ -113,6 +115,9 @@
 		4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQROrderCell.xib; sourceTree = "<group>"; };
 		4D0FEEE6212C08320021E9E8 /* TCQRSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQRSection.h; sourceTree = "<group>"; };
 		4D0FEEE7212C08320021E9E8 /* TCQRSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRSection.m; sourceTree = "<group>"; };
+		4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
+		4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
+		4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCLoginViewController.xib; sourceTree = "<group>"; };
 		4DAEDFD9212563C2009FFB4B /* TClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAEDFDC212563C2009FFB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAEDFDD212563C2009FFB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -374,6 +379,24 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		4D469DB2212FFD7B000E76B8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D469DB3212FFD86000E76B8 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4D469DB3212FFD86000E76B8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */,
+				4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */,
+				4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		4DAEDFD0212563C2009FFB4B = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +568,7 @@
 		4DB7E5D521269F06009FDA22 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				4D469DB2212FFD7B000E76B8 /* Login */,
 				BCA56B08212EE71E00999DA5 /* Register */,
 				4D0FEED3212BE5F80021E9E8 /* RechargeCash */,
 				4D0FEECF212BB35A0021E9E8 /* CommonSense */,
@@ -903,6 +927,7 @@
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
+				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
@@ -996,6 +1021,7 @@
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
+				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,

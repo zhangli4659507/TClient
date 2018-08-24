@@ -32,6 +32,7 @@
     IQKeyboardManager *manger =  [IQKeyboardManager sharedManager];
     [manger setEnable:YES];
     manger.shouldResignOnTouchOutside = YES;
+    [manger setEnableAutoToolbar:YES];
     
     [self initTabbarVc];
     return YES;
