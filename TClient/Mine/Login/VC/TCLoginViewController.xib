@@ -25,8 +25,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYk-Ai-Wjz">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="community_icon_no" translatesAutoresizingMaskIntoConstraints="NO" id="KIb-Z9-Xpb">
-                                    <rect key="frame" x="168" y="136" width="45" height="45"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="community_icon_no" translatesAutoresizingMaskIntoConstraints="NO" id="KIb-Z9-Xpb">
+                                    <rect key="frame" x="165" y="134" width="45" height="45"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-kR-mfy">
                                     <rect key="frame" x="277" y="94" width="88" height="30"/>
