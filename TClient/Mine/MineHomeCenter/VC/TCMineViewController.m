@@ -24,6 +24,7 @@
 #import "TCUserInfoViewController.h"
 #import "TCConnetServiceViewController.h"
 #import "TCUserChangeViewController.h"
+#import "TCRegisterViewController.h"
 #define TMCHHeadViewHeight (152.f + kNavBarHeight)
 @interface TCMineViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -123,7 +124,8 @@
     }];
     
     TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的推荐码" actionHandleBlock:^{
-
+        TCRegisterViewController *evc = [[TCRegisterViewController alloc] init];
+        [self.navigationController pushViewController:evc animated:YES];
     }];
     myInviteCodeItem.info = @"12345567";
     

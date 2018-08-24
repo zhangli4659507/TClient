@@ -12,6 +12,7 @@
 #import "TCHomeViewController.h"
 #import "TCOrderViewController.h"
 #import "TCMineViewController.h"
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -27,6 +28,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     self.window.clipsToBounds =YES;
+    
+    IQKeyboardManager *manger =  [IQKeyboardManager sharedManager];
+    [manger setEnable:YES];
+    manger.shouldResignOnTouchOutside = YES;
+    
     [self initTabbarVc];
     return YES;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7C75E3A65CBA525910B6AA9490F912AE'
-               BlueprintName = 'TOWebViewController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TOWebViewController.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EA7B20F334CA0DD5113C36621DF89082"
+               BlueprintName = "TOWebViewController"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "TOWebViewController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
