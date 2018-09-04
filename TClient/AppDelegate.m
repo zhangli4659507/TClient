@@ -13,6 +13,7 @@
 #import "TCOrderViewController.h"
 #import "TCMineViewController.h"
 #import "IQKeyboardManager.h"
+#import "TCLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -34,7 +35,12 @@
     manger.shouldResignOnTouchOutside = YES;
     [manger setEnableAutoToolbar:YES];
     
-    [self initTabbarVc];
+   
+    
+    TCLoginViewController *loginVc = [[TCLoginViewController alloc] init];
+     TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:loginVc];
+    self.window.rootViewController = nav;
+//    [self initTabbarVc];
     return YES;
 }
 - (void)initTabbarVc {

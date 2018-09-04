@@ -7,9 +7,10 @@
 //
 
 #import "TCLoginViewController.h"
-
+#import "TCRegisterViewController.h"
 @interface TCLoginViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *mobileTxt;
+@property (weak, nonatomic) IBOutlet UITextField *pwdTxt;
 @end
 
 @implementation TCLoginViewController
@@ -17,6 +18,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
+#pragma mark - actionFunc
+- (IBAction)actionRegiser:(id)sender {
+    TCRegisterViewController *rvc = [[TCRegisterViewController alloc] init];
+    [self.navigationController pushViewController:rvc animated:YES];
+}
+
+- (IBAction)actionLogin:(id)sender {
+    
+}
+
+- (IBAction)actionFindPwd:(id)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {

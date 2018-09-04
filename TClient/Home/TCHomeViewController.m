@@ -23,6 +23,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationItem.leftBarButtonItem = nil;
+    [THTTPRequestTool getRequestDataWithUrl:@"api/xiadan/index/index" par:nil finishBlock:^(TResponse *response) {
+        
+    }];
     
 }
 

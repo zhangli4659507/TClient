@@ -26,6 +26,8 @@
 		4DAEDFEC212563C5009FFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFEB212563C5009FFB4B /* main.m */; };
 		4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEE01721256786009FFB4B /* TBaseViewcontroller.m */; };
 		4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEE01A212573A8009FFB4B /* TNavViewController.m */; };
+		4DB48E2D213E567B00F6375C /* TResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB48E2C213E567B00F6375C /* TResponse.m */; };
+		4DB48E2E213E6A1A00F6375C /* THTTPRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB48E28213E565400F6375C /* THTTPRequestTool.m */; };
 		4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5672126626B009FDA22 /* T2TView.m */; };
 		4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E56A2126626B009FDA22 /* WMPageController.m */; };
 		4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5712126626B009FDA22 /* WMMenuItem.m */; };
@@ -128,6 +130,10 @@
 		4DAEE01721256786009FFB4B /* TBaseViewcontroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBaseViewcontroller.m; sourceTree = "<group>"; };
 		4DAEE019212573A8009FFB4B /* TNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNavViewController.h; sourceTree = "<group>"; };
 		4DAEE01A212573A8009FFB4B /* TNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNavViewController.m; sourceTree = "<group>"; };
+		4DB48E27213E565400F6375C /* THTTPRequestTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THTTPRequestTool.h; sourceTree = "<group>"; };
+		4DB48E28213E565400F6375C /* THTTPRequestTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THTTPRequestTool.m; sourceTree = "<group>"; };
+		4DB48E2B213E567B00F6375C /* TResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TResponse.h; sourceTree = "<group>"; };
+		4DB48E2C213E567B00F6375C /* TResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TResponse.m; sourceTree = "<group>"; };
 		4DB7E5672126626B009FDA22 /* T2TView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T2TView.m; sourceTree = "<group>"; };
 		4DB7E5682126626B009FDA22 /* T2TView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T2TView.h; sourceTree = "<group>"; };
 		4DB7E56A2126626B009FDA22 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
@@ -456,6 +462,17 @@
 			path = BaseVc;
 			sourceTree = "<group>";
 		};
+		4DB48E2A213E566200F6375C /* RequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				4DB48E27213E565400F6375C /* THTTPRequestTool.h */,
+				4DB48E28213E565400F6375C /* THTTPRequestTool.m */,
+				4DB48E2B213E567B00F6375C /* TResponse.h */,
+				4DB48E2C213E567B00F6375C /* TResponse.m */,
+			);
+			path = RequestTool;
+			sourceTree = "<group>";
+		};
 		4DB7E56521266255009FDA22 /* TKits */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +488,7 @@
 		4DB7E5662126626B009FDA22 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4DB48E2A213E566200F6375C /* RequestTool */,
 				4DCAF624212A4C140087EE00 /* TableViewTool */,
 				4DB7E5672126626B009FDA22 /* T2TView.m */,
 				4DB7E5682126626B009FDA22 /* T2TView.h */,
@@ -992,6 +1010,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB48E2E213E6A1A00F6375C /* THTTPRequestTool.m in Sources */,
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
@@ -1001,6 +1020,7 @@
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
+				4DB48E2D213E567B00F6375C /* TResponse.m in Sources */,
 				4DB7E5A92126626B009FDA22 /* MMPopupView.m in Sources */,
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
