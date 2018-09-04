@@ -30,6 +30,22 @@
     self.navigationController.navigationBar.hidden = NO;
 }
 
+#pragma mark - privateFunc
+
+- (void)requestLogin {
+    [MBProgressHUD showMessage:@"正在登录..."];
+    NSDictionary *par = @{@"mobile":kUnNilStr(self.mobileTxt.text),@"password":kUnNilStr(self.pwdTxt.text),@"type":@(1)};
+    [THTTPRequestTool postRequestDataWithUrl:@"api/user/login" par:@{@"data":par} finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD hideHUD];
+            
+        } else {
+            [MBProgressHUD showError:response.msg];
+        }
+    }];
+    
+}
+
 #pragma mark - actionFunc
 - (IBAction)actionRegiser:(id)sender {
     TCRegisterViewController *rvc = [[TCRegisterViewController alloc] init];
@@ -37,11 +53,19 @@
 }
 
 - (IBAction)actionLogin:(id)sender {
-    
+    [self.view endEditing:YES];
+    if (self.mobileTxt.text.length == 0) {
+        [MBProgressHUD showError:@"手机号不能为空"];
+        return;
+    } else if (self.pwdTxt.text.length == 0) {
+        [MBProgressHUD showError:@"密码不能为空"];
+        return;
+    }
+    [self requestLogin];
 }
 
 - (IBAction)actionFindPwd:(id)sender {
-    
+  [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
