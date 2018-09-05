@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 @interface TCMHTableFootView : UIView
 @property (weak, nonatomic) IBOutlet UIButton *loginOutBtn;
-@property (nonatomic, copy) void (^actionLoginOut)();
+@property (nonatomic, copy) void (^actionLoginOut)(void);
 @end

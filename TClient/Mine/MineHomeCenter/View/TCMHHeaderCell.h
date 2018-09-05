@@ -20,5 +20,5 @@ extern NSString *const TCMHHeaderCellClassName;
 @property (weak, nonatomic) IBOutlet UILabel *orderNumLbl;
 
 @property (weak, nonatomic) IBOutlet UIButton *RechargeBtn;
-
+- (void)reloadUi;
 @end

@@ -16,6 +16,10 @@
 @property (nonatomic, copy) NSString *token;
 @property (nonatomic, strong) TCUserInfoModel *userModel;
 - (void)loginSuccessReloadWithUserInfo:(NSDictionary *)userInfo mobile:(NSString *)mobile pwd:(NSString *)pwd;
+//刷新用户信息
 - (void)requestReloadUserInfoWithSuccessBlock:(void(^)(void))successBlock;
 - (void)loginOut;
+
++ (void)judgeLoginWithVc:(UIViewController *)vc finishBlock:(void(^)())finishBlock;
+
 @end

@@ -40,9 +40,9 @@
     _pageController.titleSizeSelected = 17.f;
     _pageController.automaticallyCalculatesItemWidths = YES;
     _pageController.titleColorNormal = [UIColor colorWithHexString:@"#333"];
-    _pageController.titleColorSelected = [UIColor colorWithHexString:@"#279AF9"];
+    _pageController.titleColorSelected = kThemeColor;
     _pageController.menuBGColor  = [UIColor whiteColor];
-    _pageController.progressColor = [UIColor colorWithHexString:@"#279AF9"];
+    _pageController.progressColor = kThemeColor;
     _pageController.menuHeight = 50.f;
     [self addChildViewController:_pageController];
     [self.view addSubview:_pageController.view];

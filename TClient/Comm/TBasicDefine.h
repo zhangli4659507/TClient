@@ -82,5 +82,6 @@ __weak typeof(obj) weak_##obj = obj; \
 #define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define kImaWithImaName(str)  [UIImage imageNamed:str]
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
-
+#define kDefaultHeadImg [UIImage imageNamed:@"ico_head_portrait"]
+#define kThemeColor  [UIColor colorWithHexString:@"#279AF9"]
 #endif /* TBasicDefine_h */

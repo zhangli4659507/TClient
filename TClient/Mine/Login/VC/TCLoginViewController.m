@@ -43,6 +43,7 @@
         if (response.code == TRequestSuccessCode) {
             [MBProgressHUD hideHUD];
             [[TCUserManger shareUserManger] loginSuccessReloadWithUserInfo:response.data[@"userinfo"] mobile:self.mobileTxt.text pwd:self.pwdTxt.text];
+            !self.loginSuccessBlock?:self.loginSuccessBlock();
         } else {
             [MBProgressHUD showError:response.msg];
         }

@@ -32,7 +32,7 @@
                                 [UIFont systemFontOfSize:17.0],
                             };
     
-    UIColor *bgColor = [UIColor colorWithHexString:@"#279AF9"];;
+    UIColor *bgColor = kThemeColor;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
 
     [self.navigationController.navigationBar setTitleTextAttributes:attrs];

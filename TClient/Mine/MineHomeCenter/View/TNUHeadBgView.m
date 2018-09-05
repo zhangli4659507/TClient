@@ -38,7 +38,7 @@
 - (void)setupImgView
 {
    
-    self.imgView.image = [UIImage imageWithColor:[UIColor colorWithHexString:@"#e13b29"]];
+    self.imgView.image = [UIImage imageWithColor:kThemeColor];
     
 }
 

@@ -18,6 +18,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndex:(NSInteger)index {
     
     TCMHHeaderCell *cell = [tableView dequeueReusableCellWithIdentifier:TCMHHeaderCellClassName];
+    [cell reloadUi];
     return cell;
     }
 

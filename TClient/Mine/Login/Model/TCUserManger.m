@@ -7,7 +7,6 @@
 //
 
 #import "TCUserManger.h"
-
 @implementation TCUserManger
 + (instancetype)shareUserManger {
     

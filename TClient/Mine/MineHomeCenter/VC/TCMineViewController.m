@@ -25,6 +25,7 @@
 #import "TCConnetServiceViewController.h"
 #import "TCUserChangeViewController.h"
 #import "TCRegisterViewController.h"
+#import "TCMHTableFootView.h"
 #define TMCHHeadViewHeight (152.f + kNavBarHeight)
 @interface TCMineViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -41,6 +42,8 @@
     [self setUpSubview];
     [self layoutSubview];
     [self setupData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupData) name:TLogin_Out_NotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupData) name:TLogin_success_notiName object:nil];
     // Do any additional setup after loading the view.
 }
 
@@ -49,6 +52,12 @@
     [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.tableView.tableFooterView.height = 90.f;
+    
 }
 
 #pragma mark - setupFunc
@@ -65,6 +74,13 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
     [self.view insertSubview:self.headBgView atIndex:0];
+    
+    TCMHTableFootView *footView = [TCMHTableFootView loadInstanceFromNib];
+    footView.height = 90.f;
+    self.tableView.tableFooterView = footView;
+    [footView setActionLoginOut:^{
+        [[TCUserManger shareUserManger] loginOut];
+    }];
 }
 
 #pragma mark - layoutFunc
@@ -107,6 +123,7 @@
 }
 
 - (NSArray<TCMHCellConfigModel *> *)seccondSectionItems {
+    TCUserInfoModel *userModel = [TCUserManger shareUserManger].userModel;
     
     TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"注册查询" actionHandleBlock:^{
         TCRegisterQueryVC *ivc = [[TCRegisterQueryVC alloc] init];
@@ -123,11 +140,8 @@
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的推荐码" actionHandleBlock:^{
-        TCRegisterViewController *evc = [[TCRegisterViewController alloc] init];
-        [self.navigationController pushViewController:evc animated:YES];
-    }];
-    myInviteCodeItem.info = @"12345567";
+    TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的推荐码" actionHandleBlock:nil];
+    myInviteCodeItem.info = userModel.referral_code;
     
     TCMHBasicCellConfigModel *inviteFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"邀请号商" actionHandleBlock:^{
         TCInviteFriendVC *ivc = [[TCInviteFriendVC alloc] init];
@@ -171,7 +185,7 @@
     
     if (!_headBgView) {
         _headBgView = [[TNUHeadBgView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, TMCHHeadViewHeight)];
-        _headBgView.imgView.image = [UIImage imageWithColor:[UIColor colorWithHexString:@"#e13b29"]];
+        _headBgView.imgView.image = [UIImage imageWithColor:kThemeColor];
     }
     return _headBgView;
 }

@@ -16,10 +16,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzj-jg-qZX">
-                    <rect key="frame" x="67.5" y="121" width="240" height="30"/>
-                    <color key="backgroundColor" red="0.88235294119999996" green="0.23137254900000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="30" y="91" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.60392156860000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="240" id="SU6-Y0-Rm8"/>
                         <constraint firstAttribute="height" constant="30" id="hG8-YL-77A"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -29,9 +28,11 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Mzj-jg-qZX" secondAttribute="bottom" constant="15" id="ZfT-jG-Aj6"/>
+                <constraint firstItem="Mzj-jg-qZX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="1zI-ft-mCh"/>
+                <constraint firstAttribute="bottom" secondItem="Mzj-jg-qZX" secondAttribute="bottom" constant="45" id="ZfT-jG-Aj6"/>
+                <constraint firstAttribute="trailing" secondItem="Mzj-jg-qZX" secondAttribute="trailing" constant="30" id="ZrH-ib-sYJ"/>
                 <constraint firstItem="Mzj-jg-qZX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jJz-EE-Loj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

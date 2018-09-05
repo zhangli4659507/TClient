@@ -9,5 +9,5 @@
 #import "TBaseViewcontroller.h"
 
 @interface TCLoginViewController : TBaseViewcontroller
-
+@property (nonatomic, copy) void (^loginSuccessBlock)();
 @end

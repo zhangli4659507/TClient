@@ -389,7 +389,7 @@
         self.splitColor         = MMHexColor(0xCCCCCCFF);
 
         self.itemNormalColor    = MMHexColor(0x333333FF);
-        self.itemHighlightColor = MMHexColor(0xE13B29);
+        self.itemHighlightColor = kThemeColor;
         self.itemPressedColor   = MMHexColor(0xEFEDE7FF);
         
         

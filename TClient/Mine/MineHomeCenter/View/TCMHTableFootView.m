@@ -7,8 +7,15 @@
 //
 
 #import "TCMHTableFootView.h"
-
+#import "T2TView.h"
 @implementation TCMHTableFootView
+
+- (void)awakeFromNib {
+    
+    [super awakeFromNib];
+    [T2TView setRoundCornerFor:self.loginOutBtn radiu:15.0f];
+}
+
 - (IBAction)actionLoginout:(id)sender {
     !_actionLoginOut?:_actionLoginOut();
 }
