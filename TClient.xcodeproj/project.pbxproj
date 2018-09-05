@@ -10,6 +10,8 @@
 		4D031E17213F67F000E0372F /* TCUserManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E16213F67F000E0372F /* TCUserManger.m */; };
 		4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E19213F687600E0372F /* TCUserInfoModel.m */; };
 		4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E1B213F707F00E0372F /* NSString+MD5.m */; };
+		4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E20213FCA9600E0372F /* TAreaModel.m */; };
+		4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E23213FCB0000E0372F /* TAreaTool.m */; };
 		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
 		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
 		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
@@ -103,6 +105,10 @@
 		4D031E19213F687600E0372F /* TCUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoModel.m; sourceTree = "<group>"; };
 		4D031E1B213F707F00E0372F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
 		4D031E1C213F707F00E0372F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
+		4D031E1F213FCA9500E0372F /* TAreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAreaModel.h; sourceTree = "<group>"; };
+		4D031E20213FCA9600E0372F /* TAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAreaModel.m; sourceTree = "<group>"; };
+		4D031E22213FCB0000E0372F /* TAreaTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAreaTool.h; sourceTree = "<group>"; };
+		4D031E23213FCB0000E0372F /* TAreaTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAreaTool.m; sourceTree = "<group>"; };
 		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
 		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
 		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
@@ -292,6 +298,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4D031E1E213FCA8000E0372F /* AreaTool */ = {
+			isa = PBXGroup;
+			children = (
+				4D031E1F213FCA9500E0372F /* TAreaModel.h */,
+				4D031E20213FCA9600E0372F /* TAreaModel.m */,
+				4D031E22213FCB0000E0372F /* TAreaTool.h */,
+				4D031E23213FCB0000E0372F /* TAreaTool.m */,
+			);
+			path = AreaTool;
+			sourceTree = "<group>";
+		};
 		4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +481,7 @@
 		4DAEE01421256715009FFB4B /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E1E213FCA8000E0372F /* AreaTool */,
 				4DB7E5B421266347009FDA22 /* TBasicDefine.h */,
 				4DAEE0152125671E009FFB4B /* BaseVc */,
 			);
@@ -522,10 +540,10 @@
 		4DB7E5692126626B009FDA22 /* WM */ = {
 			isa = PBXGroup;
 			children = (
-				4DB7E56A2126626B009FDA22 /* WMPageController.m */,
 				4DB7E56B2126626B009FDA22 /* WMPageConst.h */,
 				4DB7E56C2126626B009FDA22 /* WMMenuView */,
 				4DB7E5752126626B009FDA22 /* WMPageController.h */,
+				4DB7E56A2126626B009FDA22 /* WMPageController.m */,
 			);
 			path = WM;
 			sourceTree = "<group>";
@@ -1070,6 +1088,7 @@
 				4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
+				4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
 				4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */,
@@ -1096,6 +1115,7 @@
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
 				4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */,
+				4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,

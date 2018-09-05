@@ -57,7 +57,6 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.tableView.tableFooterView.height = 90.f;
-    
 }
 
 #pragma mark - setupFunc

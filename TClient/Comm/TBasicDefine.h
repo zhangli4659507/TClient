@@ -13,6 +13,12 @@
 
 #endif
 
+#ifdef DEBUG
+#define NSLog(...) printf("[%s] %s\n",[[[NSDate date] description] UTF8String],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+#else
+#define NSSLog(...)
+#endif
+
 NS_INLINE NSDateFormatter *DateFormatter()
 {
     static NSDateFormatter *formatter;
@@ -84,4 +90,8 @@ __weak typeof(obj) weak_##obj = obj; \
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
 #define kDefaultHeadImg [UIImage imageNamed:@"ico_head_portrait"]
 #define kThemeColor  [UIColor colorWithHexString:@"#279AF9"]
+#define kFilePathAtCachWithName(fileNAme) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:fileNAme]
+//缓存路径-document目录
+#define kFilePathAtDocumentWithName(fileNAme) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:fileNAme]
+
 #endif /* TBasicDefine_h */

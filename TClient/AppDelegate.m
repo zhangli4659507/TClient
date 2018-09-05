@@ -14,6 +14,7 @@
 #import "TCMineViewController.h"
 #import "IQKeyboardManager.h"
 #import "TCLoginViewController.h"
+#import "TAreaTool.h"
 @interface AppDelegate ()
 
 @end
@@ -38,6 +39,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_success_notiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_Out_NotiName object:nil];
     [self changeRootVc];
+    [TAreaTool areaModelListWithFinishBlock:nil];
     return YES;
 }
 
