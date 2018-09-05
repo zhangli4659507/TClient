@@ -26,6 +26,7 @@
 #import "TCUserChangeViewController.h"
 #import "TCRegisterViewController.h"
 #import "TCMHTableFootView.h"
+#import "EGetCacheSize.h"
 #define TMCHHeadViewHeight (152.f + kNavBarHeight)
 @interface TCMineViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -175,7 +176,31 @@
         TCCommonSenseVC *avc = [[TCCommonSenseVC alloc] init];
         [self.navigationController pushViewController:avc animated:YES];
     }];
-    return @[userInfoItem,collectServiceItem,changePwdItem,commonSenseItem];
+    TCMHBasicCellConfigModel *cacheItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"清除缓存" actionHandleBlock:nil];
+    WEAK_REF(cacheItem);
+    WEAK_REF(self);
+    [cacheItem setActionHandleBlock:^{
+        MMAlertView *alertView = [[MMAlertView alloc] initWithTitle:@"提示" CancelTitle:@"取消" otherTitle:@"确定" detail:@"是否清空缓存?"];
+        [alertView setHandler:^(NSInteger index){
+            if (index == 1) {
+                MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:weak_self.view animated:YES];
+                [EGetCacheSize clearCacheWithFinishBlock:^{
+                    // 清除图片缓存
+                    [hub hide:YES];
+                    [MBProgressHUD showSuccess:@"清除完成" toView:weak_self.view];
+                    weak_cacheItem.rightInfo = @"0.0M";
+                    [weak_self.tableView reloadData];
+                }];
+            }
+        }];
+        [alertView show];
+    }];
+    [EGetCacheSize getCacheSizeWithFinishBlock:^(NSString *size) {
+        cacheItem.rightInfo = size;
+        [self.tableView reloadData];
+    }];
+    
+    return @[userInfoItem,collectServiceItem,changePwdItem,commonSenseItem,cacheItem];
 }
 
 #pragma mark - getterFunc

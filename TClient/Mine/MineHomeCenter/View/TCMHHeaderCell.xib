@@ -148,7 +148,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="123" image="ico_-review">
+                                <state key="normal" title="123">
                                     <color key="titleColor" red="0.1529411765" green="0.60392156860000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -199,7 +199,4 @@
             <point key="canvasLocation" x="-6" y="88"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="ico_-review" width="15" height="16"/>
-    </resources>
 </document>

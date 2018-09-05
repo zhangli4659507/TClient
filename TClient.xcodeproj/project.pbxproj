@@ -12,6 +12,9 @@
 		4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E1B213F707F00E0372F /* NSString+MD5.m */; };
 		4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E20213FCA9600E0372F /* TAreaModel.m */; };
 		4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E23213FCB0000E0372F /* TAreaTool.m */; };
+		4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E25213FD56F00E0372F /* EGetCacheSize.m */; };
+		4D031E2A213FD59500E0372F /* ESystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E29213FD59400E0372F /* ESystemTool.m */; };
+		4D031E2D213FD5AD00E0372F /* ESandBoxTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */; };
 		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
 		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
 		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
@@ -109,6 +112,12 @@
 		4D031E20213FCA9600E0372F /* TAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAreaModel.m; sourceTree = "<group>"; };
 		4D031E22213FCB0000E0372F /* TAreaTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAreaTool.h; sourceTree = "<group>"; };
 		4D031E23213FCB0000E0372F /* TAreaTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAreaTool.m; sourceTree = "<group>"; };
+		4D031E25213FD56F00E0372F /* EGetCacheSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGetCacheSize.m; sourceTree = "<group>"; };
+		4D031E26213FD56F00E0372F /* EGetCacheSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGetCacheSize.h; sourceTree = "<group>"; };
+		4D031E28213FD59400E0372F /* ESystemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESystemTool.h; sourceTree = "<group>"; };
+		4D031E29213FD59400E0372F /* ESystemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESystemTool.m; sourceTree = "<group>"; };
+		4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESandBoxTool.m; sourceTree = "<group>"; };
+		4D031E2C213FD5AD00E0372F /* ESandBoxTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESandBoxTool.h; sourceTree = "<group>"; };
 		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
 		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
 		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
@@ -307,6 +316,19 @@
 				4D031E23213FCB0000E0372F /* TAreaTool.m */,
 			);
 			path = AreaTool;
+			sourceTree = "<group>";
+		};
+		4D031E2E213FD5BA00E0372F /* FileCacheTool */ = {
+			isa = PBXGroup;
+			children = (
+				4D031E26213FD56F00E0372F /* EGetCacheSize.h */,
+				4D031E25213FD56F00E0372F /* EGetCacheSize.m */,
+				4D031E28213FD59400E0372F /* ESystemTool.h */,
+				4D031E29213FD59400E0372F /* ESystemTool.m */,
+				4D031E2C213FD5AD00E0372F /* ESandBoxTool.h */,
+				4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */,
+			);
+			path = FileCacheTool;
 			sourceTree = "<group>";
 		};
 		4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */ = {
@@ -527,6 +549,7 @@
 		4DB7E5662126626B009FDA22 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E2E213FD5BA00E0372F /* FileCacheTool */,
 				4DB48E2A213E566200F6375C /* RequestTool */,
 				4DCAF624212A4C140087EE00 /* TableViewTool */,
 				4DB7E5672126626B009FDA22 /* T2TView.m */,
@@ -1053,6 +1076,7 @@
 			files = (
 				4DB48E2E213E6A1A00F6375C /* THTTPRequestTool.m in Sources */,
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
+				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
@@ -1101,11 +1125,13 @@
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
 				4D0FEEDE212BF5900021E9E8 /* TCUnlockTaskVC.m in Sources */,
+				4D031E2D213FD5AD00E0372F /* ESandBoxTool.m in Sources */,
 				4DB7E5AC2126626B009FDA22 /* UIView+Nib.m in Sources */,
 				BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */,
 				4DCAF66A212AB7930087EE00 /* TCMHInfoSection.m in Sources */,
 				4DB7E5AF2126626B009FDA22 /* UIView+AddOther.m in Sources */,
 				4D0FEED2212BB37B0021E9E8 /* TCCommonSenseVC.m in Sources */,
+				4D031E2A213FD59500E0372F /* ESystemTool.m in Sources */,
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
