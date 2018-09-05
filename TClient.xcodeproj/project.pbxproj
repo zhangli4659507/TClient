@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D031E17213F67F000E0372F /* TCUserManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E16213F67F000E0372F /* TCUserManger.m */; };
+		4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E19213F687600E0372F /* TCUserInfoModel.m */; };
+		4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E1B213F707F00E0372F /* NSString+MD5.m */; };
 		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
 		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
 		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
@@ -94,6 +97,12 @@
 /* Begin PBXFileReference section */
 		1901D53F14175A9E42ED3884 /* Pods-TClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.debug.xcconfig"; sourceTree = "<group>"; };
 		377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D031E15213F67F000E0372F /* TCUserManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserManger.h; sourceTree = "<group>"; };
+		4D031E16213F67F000E0372F /* TCUserManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserManger.m; sourceTree = "<group>"; };
+		4D031E18213F687600E0372F /* TCUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoModel.h; sourceTree = "<group>"; };
+		4D031E19213F687600E0372F /* TCUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoModel.m; sourceTree = "<group>"; };
+		4D031E1B213F707F00E0372F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
+		4D031E1C213F707F00E0372F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
 		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
 		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
 		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
@@ -272,6 +281,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4D031E13213F67C700E0372F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D031E15213F67F000E0372F /* TCUserManger.h */,
+				4D031E16213F67F000E0372F /* TCUserManger.m */,
+				4D031E18213F687600E0372F /* TCUserInfoModel.h */,
+				4D031E19213F687600E0372F /* TCUserInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +408,7 @@
 		4D469DB2212FFD7B000E76B8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E13213F67C700E0372F /* Model */,
 				4D469DB3212FFD86000E76B8 /* VC */,
 			);
 			path = Login;
@@ -563,6 +584,8 @@
 		4DB7E58E2126626B009FDA22 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E1C213F707F00E0372F /* NSString+MD5.h */,
+				4D031E1B213F707F00E0372F /* NSString+MD5.m */,
 				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
 				4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */,
 				4DB7E5CF21269E55009FDA22 /* UIImage+TUtil.h */,
@@ -1030,6 +1053,7 @@
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
+				4D031E17213F67F000E0372F /* TCUserManger.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
@@ -1043,6 +1067,7 @@
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
+				4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
@@ -1070,6 +1095,7 @@
 				4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */,
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
+				4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,

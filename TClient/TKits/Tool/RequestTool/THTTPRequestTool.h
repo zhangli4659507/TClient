@@ -36,8 +36,12 @@ extern NSInteger const TRequestNetConnectFailedCode;
 
 @interface THTTPRequestTool : NSObject
 
-+(void)getRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic finishBlock:(void(^)(TResponse *response))finshBlock;
++ (void)getRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic finishBlock:(void(^)(TResponse *response))finshBlock;
 
-+(void)postRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic finishBlock:(void(^)(TResponse *response))finshBlock;
++ (void)postRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic finishBlock:(void(^)(TResponse *response))finshBlock;
+
++ (void)getSignRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic signDicInfo:(NSDictionary *)signDicInfo finishBlock:(void(^)(TResponse *response))finshBlock;
+
++ (void)postSignRequestDataWithUrl:(NSString *)url par:(NSDictionary *)parDic signDicInfo:(NSDictionary *)signDicInfo finishBlock:(void(^)(TResponse *response))finshBlock;
 
 @end

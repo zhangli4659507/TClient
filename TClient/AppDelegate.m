@@ -34,20 +34,28 @@
     [manger setEnable:YES];
     manger.shouldResignOnTouchOutside = YES;
     [manger setEnableAutoToolbar:YES];
-    
-   
-    
-    TCLoginViewController *loginVc = [[TCLoginViewController alloc] init];
-     TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:loginVc];
-    self.window.rootViewController = nav;
-//    [self initTabbarVc];
+    [self initTabbarVc];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_success_notiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_Out_NotiName object:nil];
+    [self changeRootVc];
     return YES;
 }
+
+- (void)changeRootVc {
+    
+    if ([TCUserManger shareUserManger].loginState) {
+        self.window.rootViewController = self.tabBarVc;
+    } else {
+    TCLoginViewController *loginVc = [[TCLoginViewController alloc] init];
+    TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:loginVc];
+    self.window.rootViewController = nav;
+    }
+}
+
 - (void)initTabbarVc {
     TTabbarConfig *home = [[TTabbarConfig alloc] initWithTitle:@"首页" imaName:@"tab_icon_home_normal" imaSelectName:@"tab_icon_home_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCHomeViewController alloc] init]]];
     TTabbarConfig *order = [[TTabbarConfig alloc] initWithTitle:@"订单" imaName:@"tab_icon_tk_normal" imaSelectName:@"tab_icon_tk_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCOrderViewController alloc] init]]];
     TTabbarConfig *mine = [[TTabbarConfig alloc] initWithTitle:@"我的" imaName:@"tab_icon_grzx_normal" imaSelectName:@"tab_icon_grzx_selected" vc:[[TNavViewController alloc] initWithRootViewController:[[TCMineViewController alloc] init]]];
-    
     self.tabBarVc = [[TTabBarViewController alloc] initWithConfigArr:@[home,order,mine]];
     self.window.rootViewController = self.tabBarVc;
 }

@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.mobileTxt.text = [kUserDefaults objectForKey:TLogin_Mobile_saveKey];
+    self.pwdTxt.text = [kUserDefaults objectForKey:TLogin_pwd_saveKey];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -26,6 +28,7 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
 }
@@ -33,26 +36,28 @@
 #pragma mark - privateFunc
 
 - (void)requestLogin {
+    
     [MBProgressHUD showMessage:@"正在登录..."];
     NSDictionary *par = @{@"mobile":kUnNilStr(self.mobileTxt.text),@"password":kUnNilStr(self.pwdTxt.text),@"type":@(1)};
     [THTTPRequestTool postRequestDataWithUrl:@"api/user/login" par:@{@"data":par} finishBlock:^(TResponse *response) {
         if (response.code == TRequestSuccessCode) {
             [MBProgressHUD hideHUD];
-            
+            [[TCUserManger shareUserManger] loginSuccessReloadWithUserInfo:response.data[@"userinfo"] mobile:self.mobileTxt.text pwd:self.pwdTxt.text];
         } else {
             [MBProgressHUD showError:response.msg];
         }
     }];
-    
 }
 
 #pragma mark - actionFunc
 - (IBAction)actionRegiser:(id)sender {
+    
     TCRegisterViewController *rvc = [[TCRegisterViewController alloc] init];
     [self.navigationController pushViewController:rvc animated:YES];
 }
 
 - (IBAction)actionLogin:(id)sender {
+    
     [self.view endEditing:YES];
     if (self.mobileTxt.text.length == 0) {
         [MBProgressHUD showError:@"手机号不能为空"];
