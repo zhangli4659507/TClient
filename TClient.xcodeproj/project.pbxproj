@@ -15,6 +15,9 @@
 		4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E25213FD56F00E0372F /* EGetCacheSize.m */; };
 		4D031E2A213FD59500E0372F /* ESystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E29213FD59400E0372F /* ESystemTool.m */; };
 		4D031E2D213FD5AD00E0372F /* ESandBoxTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */; };
+		4D031E35213FDB0800E0372F /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E33213FDB0700E0372F /* UIImage+Scale.m */; };
+		4D031E38213FDB1600E0372F /* NSString+TDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E37213FDB1600E0372F /* NSString+TDigest.m */; };
+		4D031E3B213FDCEF00E0372F /* TUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E3A213FDCEF00E0372F /* TUploadTool.m */; };
 		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
 		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
 		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
@@ -118,6 +121,12 @@
 		4D031E29213FD59400E0372F /* ESystemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESystemTool.m; sourceTree = "<group>"; };
 		4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESandBoxTool.m; sourceTree = "<group>"; };
 		4D031E2C213FD5AD00E0372F /* ESandBoxTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESandBoxTool.h; sourceTree = "<group>"; };
+		4D031E33213FDB0700E0372F /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		4D031E34213FDB0800E0372F /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		4D031E36213FDB1500E0372F /* NSString+TDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TDigest.h"; sourceTree = "<group>"; };
+		4D031E37213FDB1600E0372F /* NSString+TDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TDigest.m"; sourceTree = "<group>"; };
+		4D031E39213FDCEF00E0372F /* TUploadTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUploadTool.h; sourceTree = "<group>"; };
+		4D031E3A213FDCEF00E0372F /* TUploadTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUploadTool.m; sourceTree = "<group>"; };
 		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
 		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
 		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
@@ -329,6 +338,15 @@
 				4D031E2B213FD5AC00E0372F /* ESandBoxTool.m */,
 			);
 			path = FileCacheTool;
+			sourceTree = "<group>";
+		};
+		4D031E2F213FDAC800E0372F /* UploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				4D031E39213FDCEF00E0372F /* TUploadTool.h */,
+				4D031E3A213FDCEF00E0372F /* TUploadTool.m */,
+			);
+			path = UploadImage;
 			sourceTree = "<group>";
 		};
 		4D0FEEBB212BB1B60021E9E8 /* RegisterQuery */ = {
@@ -549,6 +567,7 @@
 		4DB7E5662126626B009FDA22 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E2F213FDAC800E0372F /* UploadImage */,
 				4D031E2E213FD5BA00E0372F /* FileCacheTool */,
 				4DB48E2A213E566200F6375C /* RequestTool */,
 				4DCAF624212A4C140087EE00 /* TableViewTool */,
@@ -625,6 +644,10 @@
 		4DB7E58E2126626B009FDA22 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4D031E36213FDB1500E0372F /* NSString+TDigest.h */,
+				4D031E37213FDB1600E0372F /* NSString+TDigest.m */,
+				4D031E34213FDB0800E0372F /* UIImage+Scale.h */,
+				4D031E33213FDB0700E0372F /* UIImage+Scale.m */,
 				4D031E1C213F707F00E0372F /* NSString+MD5.h */,
 				4D031E1B213F707F00E0372F /* NSString+MD5.m */,
 				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
@@ -1086,6 +1109,7 @@
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
 				4DB48E2D213E567B00F6375C /* TResponse.m in Sources */,
+				4D031E38213FDB1600E0372F /* NSString+TDigest.m in Sources */,
 				4DB7E5A92126626B009FDA22 /* MMPopupView.m in Sources */,
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
@@ -1102,6 +1126,7 @@
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
 				4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */,
 				4DB7E5A52126626B009FDA22 /* MMAlertView.m in Sources */,
+				4D031E35213FDB0800E0372F /* UIImage+Scale.m in Sources */,
 				4D0FEED6212BE63A0021E9E8 /* TCRechargeCashVC.m in Sources */,
 				4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */,
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
@@ -1150,6 +1175,7 @@
 				BCA56B0D212EE76500999DA5 /* TCRegisterViewController.m in Sources */,
 				BC61732A212C432A003AA3C4 /* TCAccountChangeCell.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
+				4D031E3B213FDCEF00E0372F /* TUploadTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

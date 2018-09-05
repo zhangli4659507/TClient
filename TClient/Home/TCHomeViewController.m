@@ -7,7 +7,7 @@
 //
 
 #import "TCHomeViewController.h"
-
+#import "TUploadTool.h"
 @interface TCHomeViewController ()
 
 @end
@@ -23,7 +23,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationItem.leftBarButtonItem = nil;
-    [THTTPRequestTool getRequestDataWithUrl:@"api/xiadan/index/index" par:nil finishBlock:^(TResponse *response) {
+    UIImage *image = kImaWithImaName(@"ico_head_portrait");
+    [TUploadTool uploadImge:image finishBlock:^(NSString *imageUrlString) {
         
     }];
     
