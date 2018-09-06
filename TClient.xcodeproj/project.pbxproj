@@ -34,6 +34,8 @@
 		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
 		4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */; };
 		4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A30FA2140B8100084D8E4 /* TCUserInfoViewController.xib */; };
+		4D9A30FF2140FE270084D8E4 /* TCSelectAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30FE2140FE270084D8E4 /* TCSelectAreaView.m */; };
+		4D9A31012140FF700084D8E4 /* TCSelectAreaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A31002140FF700084D8E4 /* TCSelectAreaView.xib */; };
 		4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFDD212563C2009FFB4B /* AppDelegate.m */; };
 		4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEDFE5212563C5009FFB4B /* Assets.xcassets */; };
 		4DAEDFEC212563C5009FFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFEB212563C5009FFB4B /* main.m */; };
@@ -157,6 +159,9 @@
 		4D9A30F82140B8100084D8E4 /* TCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoViewController.h; sourceTree = "<group>"; };
 		4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoViewController.m; sourceTree = "<group>"; };
 		4D9A30FA2140B8100084D8E4 /* TCUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCUserInfoViewController.xib; sourceTree = "<group>"; };
+		4D9A30FD2140FE270084D8E4 /* TCSelectAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSelectAreaView.h; sourceTree = "<group>"; };
+		4D9A30FE2140FE270084D8E4 /* TCSelectAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCSelectAreaView.m; sourceTree = "<group>"; };
+		4D9A31002140FF700084D8E4 /* TCSelectAreaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCSelectAreaView.xib; sourceTree = "<group>"; };
 		4DAEDFD9212563C2009FFB4B /* TClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAEDFDC212563C2009FFB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAEDFDD212563C2009FFB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -325,6 +330,9 @@
 				4D031E20213FCA9600E0372F /* TAreaModel.m */,
 				4D031E22213FCB0000E0372F /* TAreaTool.h */,
 				4D031E23213FCB0000E0372F /* TAreaTool.m */,
+				4D9A30FD2140FE270084D8E4 /* TCSelectAreaView.h */,
+				4D9A30FE2140FE270084D8E4 /* TCSelectAreaView.m */,
+				4D9A31002140FF700084D8E4 /* TCSelectAreaView.xib */,
 			);
 			path = AreaTool;
 			sourceTree = "<group>";
@@ -622,22 +630,22 @@
 		4DB7E57C2126626B009FDA22 /* MMPopupView-private */ = {
 			isa = PBXGroup;
 			children = (
-				4DB7E57D2126626B009FDA22 /* TAlertController.m */,
-				4DB7E57E2126626B009FDA22 /* MMAlertView.m */,
-				4DB7E57F2126626B009FDA22 /* MMSheetView.m */,
-				4DB7E5802126626B009FDA22 /* MMPopupView.h */,
-				4DB7E5812126626B009FDA22 /* MMPopupCategory.m */,
-				4DB7E5822126626B009FDA22 /* MMPopupItem.h */,
-				4DB7E5832126626B009FDA22 /* TPopViewController.h */,
-				4DB7E5842126626B009FDA22 /* MMPopupWindow.m */,
-				4DB7E5852126626B009FDA22 /* TAlertController.h */,
-				4DB7E5862126626B009FDA22 /* MMSheetView.h */,
-				4DB7E5872126626B009FDA22 /* MMPopupDefine.h */,
 				4DB7E5882126626B009FDA22 /* MMAlertView.h */,
-				4DB7E5892126626B009FDA22 /* MMPopupView.m */,
-				4DB7E58A2126626B009FDA22 /* MMPopupWindow.h */,
-				4DB7E58B2126626B009FDA22 /* TPopViewController.m */,
+				4DB7E57E2126626B009FDA22 /* MMAlertView.m */,
+				4DB7E5862126626B009FDA22 /* MMSheetView.h */,
+				4DB7E57F2126626B009FDA22 /* MMSheetView.m */,
 				4DB7E58C2126626B009FDA22 /* MMPopupCategory.h */,
+				4DB7E5812126626B009FDA22 /* MMPopupCategory.m */,
+				4DB7E5832126626B009FDA22 /* TPopViewController.h */,
+				4DB7E58B2126626B009FDA22 /* TPopViewController.m */,
+				4DB7E5852126626B009FDA22 /* TAlertController.h */,
+				4DB7E57D2126626B009FDA22 /* TAlertController.m */,
+				4DB7E5872126626B009FDA22 /* MMPopupDefine.h */,
+				4DB7E58A2126626B009FDA22 /* MMPopupWindow.h */,
+				4DB7E5842126626B009FDA22 /* MMPopupWindow.m */,
+				4DB7E5802126626B009FDA22 /* MMPopupView.h */,
+				4DB7E5892126626B009FDA22 /* MMPopupView.m */,
+				4DB7E5822126626B009FDA22 /* MMPopupItem.h */,
 				4DB7E58D2126626B009FDA22 /* MMPopupItem.m */,
 			);
 			path = "MMPopupView-private";
@@ -1028,6 +1036,7 @@
 			files = (
 				BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */,
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
+				4D9A31012140FF700084D8E4 /* TCSelectAreaView.xib in Resources */,
 				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
@@ -1173,6 +1182,7 @@
 				4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,
+				4D9A30FF2140FE270084D8E4 /* TCSelectAreaView.m in Sources */,
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
 				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,

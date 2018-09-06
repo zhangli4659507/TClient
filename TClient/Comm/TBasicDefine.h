@@ -93,5 +93,11 @@ __weak typeof(obj) weak_##obj = obj; \
 #define kFilePathAtCachWithName(fileNAme) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:fileNAme]
 //缓存路径-document目录
 #define kFilePathAtDocumentWithName(fileNAme) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:fileNAme]
+//当前window
+#define kCurrentWindow [UIApplication sharedApplication].keyWindow
+//屏幕高度
+#define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+//屏幕宽
+#define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
 
 #endif /* TBasicDefine_h */

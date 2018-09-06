@@ -34,6 +34,8 @@
     IQKeyboardManager *manger =  [IQKeyboardManager sharedManager];
     [manger setEnable:YES];
     manger.shouldResignOnTouchOutside = YES;
+    manger.toolbarPreviousBarButtonItemImage = kImaWithImaName(@"icon_arrow_left");
+    manger.toolbarNextBarButtonItemImage = kImaWithImaName(@"icon_arrow_right");
     [manger setEnableAutoToolbar:YES];
     [self initTabbarVc];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_success_notiName object:nil];

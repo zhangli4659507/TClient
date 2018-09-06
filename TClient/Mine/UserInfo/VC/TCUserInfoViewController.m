@@ -7,7 +7,7 @@
 //
 
 #import "TCUserInfoViewController.h"
-
+#import "TCSelectAreaView.h"
 @interface TCUserInfoViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *nickNameTxt;
@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *realNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *aliPayTxt;
 @property (weak, nonatomic) IBOutlet UITextField *localAreaTxt;
+@property (weak, nonatomic) IBOutlet UIButton *editBtn;
 
 @end
 
@@ -23,10 +24,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"个人资料";
     // Do any additional setup after loading the view from its nib.
 }
+
+
 - (IBAction)actionSelectArea:(id)sender {
-    
+    [TCSelectAreaView showAreaSlectedViewWithFinshSelectedBlock:^(TAreaModel *areaModel) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -57,7 +57,7 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    self.tableView.tableFooterView.height = 90.f;
+    self.tableView.tableFooterView.height = 100.f;
 }
 
 #pragma mark - setupFunc
@@ -76,7 +76,7 @@
     [self.view insertSubview:self.headBgView atIndex:0];
     
     TCMHTableFootView *footView = [TCMHTableFootView loadInstanceFromNib];
-    footView.height = 90.f;
+    footView.height = 100.f;
     self.tableView.tableFooterView = footView;
     [footView setActionLoginOut:^{
         [[TCUserManger shareUserManger] loginOut];
