@@ -48,7 +48,6 @@
     self.realNameTxt.text = kUnNilStr(userInfoModel.realname);
     self.aliPayTxt.text = kUnNilStr(userInfoModel.alipay);
     self.localAreaTxt.text = kUnNilStr(userInfoModel.location);
-    
 }
 
 #pragma mark -privateFunc
