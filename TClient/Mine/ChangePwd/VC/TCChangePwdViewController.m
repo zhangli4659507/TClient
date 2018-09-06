@@ -133,6 +133,7 @@
     [THTTPRequestTool postRequestDataWithUrl:@"api/user/resetpwd" par:@{@"data":par} finishBlock:^(TResponse *response) {
         if (response.code == TRequestSuccessCode) {
             [MBProgressHUD showSuccess:[self.title stringByAppendingString:@"成功"]];
+            [[TCUserManger shareUserManger] reloadPWd:self.pwdTxt.text];
             [self navBackAction];
         } else {
             [MBProgressHUD showError:response.msg];

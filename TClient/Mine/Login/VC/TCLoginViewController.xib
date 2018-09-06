@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCLoginViewController">
             <connections>
+                <outlet property="loginBtn" destination="FDL-pP-IN3" id="zO0-9c-hB8"/>
                 <outlet property="mobileTxt" destination="aus-eI-aUq" id="vNK-e3-Q93"/>
                 <outlet property="pwdTxt" destination="SlO-2X-grc" id="ePa-LN-3LN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

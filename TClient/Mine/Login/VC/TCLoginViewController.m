@@ -8,21 +8,24 @@
 
 #import "TCLoginViewController.h"
 #import "TCRegisterViewController.h"
+#import "TCChangePwdViewController.h"
+#import "T2TView.h"
 @interface TCLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *mobileTxt;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTxt;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @end
 
 @implementation TCLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.mobileTxt.text = [kUserDefaults objectForKey:TLogin_Mobile_saveKey];
-    self.pwdTxt.text = [kUserDefaults objectForKey:TLogin_pwd_saveKey];
+    [self setupUI];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = YES;
 }
@@ -31,6 +34,15 @@
     
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
+}
+
+#pragma mark - setupUI
+
+- (void)setupUI {
+    
+    self.mobileTxt.text = [kUserDefaults objectForKey:TLogin_Mobile_saveKey];
+    self.pwdTxt.text = [kUserDefaults objectForKey:TLogin_pwd_saveKey];
+    [T2TView setRoundCornerFor:self.loginBtn radiu:20.f];
 }
 
 #pragma mark - privateFunc
@@ -72,6 +84,9 @@
 
 - (IBAction)actionFindPwd:(id)sender {
   [self.view endEditing:YES];
+    TCChangePwdViewController *findPwdVc = [[TCChangePwdViewController alloc] init];
+    findPwdVc.changePwdType = TChangePwdOfFind;
+    [self.navigationController pushViewController:findPwdVc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

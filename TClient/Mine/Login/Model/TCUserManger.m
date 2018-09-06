@@ -24,8 +24,9 @@
     if (![userInfo isKindOfClass:[NSDictionary class]]) {
         return;
     }
-    [kUserDefaults setObject:pwd forKey:TLogin_pwd_saveKey];
-    [kUserDefaults setObject:mobile forKey:TLogin_Mobile_saveKey];
+    [kUserDefaults setObject:kUnNilStr(pwd) forKey:TLogin_pwd_saveKey];
+    [kUserDefaults setObject:kUnNilStr(mobile) forKey:TLogin_Mobile_saveKey];
+    [kUserDefaults synchronize];
     WEAK_REF(self);
     self.token = userInfo[@"token"];
     self.user_id = [userInfo[@"user_id"] integerValue];
@@ -52,11 +53,18 @@
 }
 
 - (void)loginOut {
+    
     [kUserDefaults removeObjectForKey:TLogin_pwd_saveKey];
     self.loginState = NO;
     self.token = @"";
     self.user_id = 0;
     [[NSNotificationCenter defaultCenter] postNotificationName:TLogin_Out_NotiName object:nil];
+}
+
+- (void)reloadPWd:(NSString *)pwd {
+    
+    [kUserDefaults setObject:kUnNilStr(pwd) forKey:TLogin_pwd_saveKey];
+    [kUserDefaults synchronize];
 }
 
 @end
