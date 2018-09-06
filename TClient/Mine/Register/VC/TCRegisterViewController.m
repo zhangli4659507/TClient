@@ -77,10 +77,10 @@
     if (_timer) {
         dispatch_source_cancel(_timer);
     }
-    
 }
 
 - (void)setupDyCodeButtonReady {
+    
     self.sendAuthCodeBtn.userInteractionEnabled = YES;
     self.sendAuthCodeBtn.layer.cornerRadius = 4.0f;
     self.sendAuthCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
@@ -90,16 +90,19 @@
 }
 
 - (void)setupDyCodeButtonWait {
+    
     self.sendAuthCodeBtn.userInteractionEnabled = NO;
     self.sendAuthCodeBtn.layer.cornerRadius = 4.0f;
     self.sendAuthCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#cccccc"].CGColor;
     self.sendAuthCodeBtn.layer.borderWidth = 1.0f;
     [self.sendAuthCodeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.sendAuthCodeBtn setBackgroundColor:[UIColor colorWithHexString:@"#cccccc"]];
-    
 }
 
+#pragma mark - requestFunc
+
 - (void)requestSendCode {
+    
     [MBProgressHUD showMessage:@"正在加载..."];
     [THTTPRequestTool postRequestDataWithUrl:@"api/sms/send" par:@{@"data":@{@"mobile":kUnNilStr(self.userNameTxt.text),@"event":@"register"}} finishBlock:^(TResponse *response) {
         if (response.code == TRequestSuccessCode) {
@@ -112,6 +115,7 @@
 }
 
 - (void)requestRegister {
+    
     [MBProgressHUD showMessage:@"正在注册..."];
     NSDictionary *par = @{@"mobile":kUnNilStr(self.userNameTxt.text),@"password":kUnNilStr(self.pwdTxt.text),@"password_confirm":kUnNilStr(self.surePwdTxt.text),@"captcha":kUnNilStr(self.authCodeTxt.text),@"referral_code":kUnNilStr(self.referralCodeTxt.text),@"type":@(1)};
     
@@ -129,6 +133,7 @@
 #pragma mark - actionFunc
 
 - (IBAction)actionSendAuthCode:(id)sender {
+    
     [self.view endEditing:YES];
     if (self.userNameTxt.text.length > 0) {
         [self requestSendCode];
@@ -137,14 +142,17 @@
     }
 }
 - (IBAction)actionAgreeProtolBtn:(id)sender {
+    
   [self.view endEditing:YES];
 }
 
 - (IBAction)actionRegisterProtocol:(id)sender {
+    
    [self.view endEditing:YES];
 }
 
 - (IBAction)actionRegisterBtn:(id)sender {
+    
      [self.view endEditing:YES];
     NSString *errorMsg;
     if (self.userNameTxt.text.length == 0) {
@@ -164,13 +172,15 @@
 }
 
 - (IBAction)actionBackLoginBtn:(id)sender {
+    
      [self.view endEditing:YES];
     [self navBackAction];
 }
 
 - (void)dealloc {
-    
+
     NSLog(@" %@ %@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+    [self releaseTimer];
     
 }
 
@@ -178,15 +188,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

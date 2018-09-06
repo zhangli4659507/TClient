@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"注册查询";
+    self.title = @"订单查询";
     // Do any additional setup after loading the view.
 }
 

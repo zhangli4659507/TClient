@@ -125,7 +125,7 @@
 - (NSArray<TCMHCellConfigModel *> *)seccondSectionItems {
     TCUserInfoModel *userModel = [TCUserManger shareUserManger].userModel;
     
-    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_search" title:@"注册查询" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_search" title:@"订单查询" actionHandleBlock:^{
         TCRegisterQueryVC *ivc = [[TCRegisterQueryVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];

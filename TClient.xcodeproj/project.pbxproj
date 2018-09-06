@@ -18,6 +18,8 @@
 		4D031E35213FDB0800E0372F /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E33213FDB0700E0372F /* UIImage+Scale.m */; };
 		4D031E38213FDB1600E0372F /* NSString+TDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E37213FDB1600E0372F /* NSString+TDigest.m */; };
 		4D031E3B213FDCEF00E0372F /* TUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E3A213FDCEF00E0372F /* TUploadTool.m */; };
+		4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0BB70C2141211800926491 /* TCChangePwdViewController.m */; };
+		4D0BB70F2141211800926491 /* TCChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0BB70D2141211800926491 /* TCChangePwdViewController.xib */; };
 		4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */; };
 		4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC1212BB23D0021E9E8 /* TCRechargeRecordVC.m */; };
 		4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEC5212BB27E0021E9E8 /* TCAccountChangeVC.m */; };
@@ -102,7 +104,6 @@
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
-		BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,9 @@
 		4D031E37213FDB1600E0372F /* NSString+TDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TDigest.m"; sourceTree = "<group>"; };
 		4D031E39213FDCEF00E0372F /* TUploadTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUploadTool.h; sourceTree = "<group>"; };
 		4D031E3A213FDCEF00E0372F /* TUploadTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUploadTool.m; sourceTree = "<group>"; };
+		4D0BB70B2141211800926491 /* TCChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangePwdViewController.h; sourceTree = "<group>"; };
+		4D0BB70C2141211800926491 /* TCChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangePwdViewController.m; sourceTree = "<group>"; };
+		4D0BB70D2141211800926491 /* TCChangePwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCChangePwdViewController.xib; sourceTree = "<group>"; };
 		4D0FEEBC212BB2010021E9E8 /* TCRegisterQueryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterQueryVC.h; sourceTree = "<group>"; };
 		4D0FEEBD212BB2010021E9E8 /* TCRegisterQueryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterQueryVC.m; sourceTree = "<group>"; };
 		4D0FEEC0212BB23D0021E9E8 /* TCRechargeRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordVC.h; sourceTree = "<group>"; };
@@ -287,8 +291,6 @@
 		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
 		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
 		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
-		BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangePwdViewController.h; sourceTree = "<group>"; };
-		BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangePwdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -966,8 +968,9 @@
 		BCC72306212AF0A5002AB760 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */,
-				BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */,
+				4D0BB70B2141211800926491 /* TCChangePwdViewController.h */,
+				4D0BB70C2141211800926491 /* TCChangePwdViewController.m */,
+				4D0BB70D2141211800926491 /* TCChangePwdViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1039,6 +1042,7 @@
 				4D9A31012140FF700084D8E4 /* TCSelectAreaView.xib in Resources */,
 				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
+				4D0BB70F2141211800926491 /* TCChangePwdViewController.xib in Resources */,
 				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
 				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
@@ -1165,13 +1169,13 @@
 				4D0FEEDE212BF5900021E9E8 /* TCUnlockTaskVC.m in Sources */,
 				4D031E2D213FD5AD00E0372F /* ESandBoxTool.m in Sources */,
 				4DB7E5AC2126626B009FDA22 /* UIView+Nib.m in Sources */,
-				BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */,
 				4DCAF66A212AB7930087EE00 /* TCMHInfoSection.m in Sources */,
 				4DB7E5AF2126626B009FDA22 /* UIView+AddOther.m in Sources */,
 				4D0FEED2212BB37B0021E9E8 /* TCCommonSenseVC.m in Sources */,
 				4D031E2A213FD59500E0372F /* ESystemTool.m in Sources */,
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
+				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
