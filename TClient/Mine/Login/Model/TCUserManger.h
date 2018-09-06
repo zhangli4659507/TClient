@@ -20,6 +20,5 @@
 - (void)requestReloadUserInfoWithSuccessBlock:(void(^)(void))successBlock;
 - (void)loginOut;
 
-+ (void)judgeLoginWithVc:(UIViewController *)vc finishBlock:(void(^)())finishBlock;
 
 @end

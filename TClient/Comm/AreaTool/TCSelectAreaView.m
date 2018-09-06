@@ -9,6 +9,7 @@
 #import "TCSelectAreaView.h"
 #import "T2TView.h"
 #import "TAreaTool.h"
+#import "NSString+TDigest.h"
 static NSNotificationName const TCAreaViewHideNoti = @"TCAreaViewHideNoti";
 static CGFloat const TAreaViewHeight = 200.f;
 @interface TAreaBgView:UIView
@@ -115,12 +116,13 @@ static CGFloat const TAreaViewHeight = 200.f;
     return self.areaModelsArray.count;
 }
 
-- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component {
     if (self.areaModelsArray.count > row) {
         TAreaModel *areaModel = self.areaModelsArray[row];
-        return kUnNilStr(areaModel.name);
+        return [kUnNilStr(areaModel.name) attributeWithRangeOfString:kUnNilStr(areaModel.name) Font:[UIFont systemFontOfSize:14.f] color:[UIColor colorWithHexString:@"#333"]];
     }
-    return @"北京市";
+    return [[NSAttributedString alloc] initWithString:@""];
+    
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
