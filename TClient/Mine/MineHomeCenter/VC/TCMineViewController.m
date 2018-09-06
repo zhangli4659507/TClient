@@ -125,30 +125,30 @@
 - (NSArray<TCMHCellConfigModel *> *)seccondSectionItems {
     TCUserInfoModel *userModel = [TCUserManger shareUserManger].userModel;
     
-    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"注册查询" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_search" title:@"注册查询" actionHandleBlock:^{
         TCRegisterQueryVC *ivc = [[TCRegisterQueryVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *rechargeRecordItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"充值记录" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *rechargeRecordItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_czjl" title:@"充值记录" actionHandleBlock:^{
         TCRechargeRecordVC *ivc = [[TCRechargeRecordVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *accountChangeItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"账户变动" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *accountChangeItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_zhbd" title:@"账户变动" actionHandleBlock:^{
         TCAccountChangeVC *ivc = [[TCAccountChangeVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"" title:@"我的推荐码" actionHandleBlock:nil];
+    TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"icon_mine_wdtjm" title:@"我的推荐码" actionHandleBlock:nil];
     myInviteCodeItem.info = userModel.referral_code;
     
-    TCMHBasicCellConfigModel *inviteFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"邀请号商" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *inviteFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"incon_mine_yqhs" title:@"邀请号商" actionHandleBlock:^{
         TCInviteFriendVC *ivc = [[TCInviteFriendVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"下级号商" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_xjhs" title:@"下级号商" actionHandleBlock:^{
         TCUnderMerchantVC *ivc = [[TCUnderMerchantVC alloc] init];
         [self.navigationController pushViewController:ivc animated:YES];
     }];
@@ -158,25 +158,25 @@
 
 - (NSArray<TCMHCellConfigModel *> *)thirdSectionItems {
    
-    TCMHBasicCellConfigModel *userInfoItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"个人资料" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *userInfoItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_grzl" title:@"个人资料" actionHandleBlock:^{
         TCUserInfoViewController *uvc = [[TCUserInfoViewController alloc] init];
         [self.navigationController pushViewController:uvc animated:YES];
     }];
-    TCMHBasicCellConfigModel *collectServiceItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"联系客服" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *collectServiceItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_lxkf" title:@"联系客服" actionHandleBlock:^{
         TCConnetServiceViewController *cvc  = [[TCConnetServiceViewController alloc] init];
         [self.navigationController pushViewController:cvc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *changePwdItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"修改密码" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *changePwdItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_xgmm" title:@"修改密码" actionHandleBlock:^{
         TCChangePwdViewController *cvc = [[TCChangePwdViewController alloc] init];
         [self.navigationController pushViewController:cvc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *commonSenseItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"常见问题" actionHandleBlock:^{
+    TCMHBasicCellConfigModel *commonSenseItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_cjwt" title:@"常见问题" actionHandleBlock:^{
         TCCommonSenseVC *avc = [[TCCommonSenseVC alloc] init];
         [self.navigationController pushViewController:avc animated:YES];
     }];
-    TCMHBasicCellConfigModel *cacheItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"" title:@"清除缓存" actionHandleBlock:nil];
+    TCMHBasicCellConfigModel *cacheItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_qchc" title:@"清除缓存" actionHandleBlock:nil];
     WEAK_REF(cacheItem);
     WEAK_REF(self);
     [cacheItem setActionHandleBlock:^{

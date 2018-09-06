@@ -2,13 +2,20 @@
 //  TCUserInfoViewController.m
 //  TClient
 //
-//  Created by mark_zhang on 2018/8/20.
+//  Created by Mark on 2018/9/6.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
 #import "TCUserInfoViewController.h"
 
 @interface TCUserInfoViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *userNameTxt;
+@property (weak, nonatomic) IBOutlet UITextField *nickNameTxt;
+@property (weak, nonatomic) IBOutlet UITextField *QQTxt;
+@property (weak, nonatomic) IBOutlet UITextField *weChatTxt;
+@property (weak, nonatomic) IBOutlet UITextField *realNameTxt;
+@property (weak, nonatomic) IBOutlet UITextField *aliPayTxt;
+@property (weak, nonatomic) IBOutlet UITextField *localAreaTxt;
 
 @end
 
@@ -16,8 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"个人资料";
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
+}
+- (IBAction)actionSelectArea:(id)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {

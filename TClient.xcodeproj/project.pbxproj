@@ -32,6 +32,8 @@
 		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
 		4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */; };
 		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
+		4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */; };
+		4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A30FA2140B8100084D8E4 /* TCUserInfoViewController.xib */; };
 		4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFDD212563C2009FFB4B /* AppDelegate.m */; };
 		4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEDFE5212563C5009FFB4B /* Assets.xcassets */; };
 		4DAEDFEC212563C5009FFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEDFEB212563C5009FFB4B /* main.m */; };
@@ -98,7 +100,6 @@
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
-		BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */; };
 		BCC72309212AF0B7002AB760 /* TCChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +154,9 @@
 		4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
 		4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
 		4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCLoginViewController.xib; sourceTree = "<group>"; };
+		4D9A30F82140B8100084D8E4 /* TCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoViewController.h; sourceTree = "<group>"; };
+		4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoViewController.m; sourceTree = "<group>"; };
+		4D9A30FA2140B8100084D8E4 /* TCUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCUserInfoViewController.xib; sourceTree = "<group>"; };
 		4DAEDFD9212563C2009FFB4B /* TClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAEDFDC212563C2009FFB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAEDFDD212563C2009FFB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -278,8 +282,6 @@
 		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
 		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
 		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
-		BCC722FD212AF055002AB760 /* TCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoViewController.h; sourceTree = "<group>"; };
-		BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoViewController.m; sourceTree = "<group>"; };
 		BCC72307212AF0B7002AB760 /* TCChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCChangePwdViewController.h; sourceTree = "<group>"; };
 		BCC72308212AF0B7002AB760 /* TCChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCChangePwdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -938,8 +940,9 @@
 		BCC722FC212AF046002AB760 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				BCC722FD212AF055002AB760 /* TCUserInfoViewController.h */,
-				BCC722FE212AF055002AB760 /* TCUserInfoViewController.m */,
+				4D9A30F82140B8100084D8E4 /* TCUserInfoViewController.h */,
+				4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */,
+				4D9A30FA2140B8100084D8E4 /* TCUserInfoViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1029,6 +1032,7 @@
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
+				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
@@ -1130,6 +1134,7 @@
 				4D0FEED6212BE63A0021E9E8 /* TCRechargeCashVC.m in Sources */,
 				4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */,
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
+				4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
@@ -1145,7 +1150,6 @@
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
 				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,
 				BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */,
-				BCC722FF212AF055002AB760 /* TCUserInfoViewController.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
