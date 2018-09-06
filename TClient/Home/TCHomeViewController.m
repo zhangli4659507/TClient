@@ -23,10 +23,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationItem.leftBarButtonItem = nil;
-    UIImage *image = kImaWithImaName(@"ico_head_portrait");
-    [TUploadTool uploadImge:image finishBlock:^(NSString *imageUrlString) {
-        
-    }];
+//    UIImage *image = kImaWithImaName(@"ico_head_portrait");
+//    [TUploadTool uploadImge:image finishBlock:^(NSString *imageUrlString) {
+//        
+//    }];
     
 }
 
