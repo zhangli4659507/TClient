@@ -13,7 +13,7 @@
  */
 extern NSInteger const TRequestSuccessCode;
 /**
- 未授权 401
+ 未授权 401 //未登录或者登录超时
  */
 extern NSInteger const TRequestUnauthorizedCode;
 /**

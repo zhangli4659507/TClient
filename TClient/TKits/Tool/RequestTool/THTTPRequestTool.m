@@ -72,6 +72,9 @@ NSInteger const TRequestNetConnectFailedCode = 500;
         responseObj.data = response[@"data"];
         responseObj.code = [response[@"code"] integerValue];
         !finshBlock?:finshBlock(responseObj);
+        if (responseObj.code == TRequestUnauthorizedCode) {
+            [[TCUserManger shareUserManger] loginOut];
+        }
     }
 }
 
