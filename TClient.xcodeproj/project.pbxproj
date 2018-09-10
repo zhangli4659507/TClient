@@ -92,6 +92,7 @@
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
 		BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
+		BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
 		BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */; };
 		BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */; };
@@ -272,6 +273,8 @@
 		BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
 		BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderListModel.h; sourceTree = "<group>"; };
 		BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderListModel.m; sourceTree = "<group>"; };
+		BC5CA2232146BA530050BA68 /* TCUnlockTaskListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskListModel.h; sourceTree = "<group>"; };
+		BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnlockTaskListModel.m; sourceTree = "<group>"; };
 		BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordSection.h; sourceTree = "<group>"; };
 		BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordSection.m; sourceTree = "<group>"; };
 		BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordCell.h; sourceTree = "<group>"; };
@@ -444,6 +447,7 @@
 		4D0FEEDB212BF5080021E9E8 /* UnlockTask */ = {
 			isa = PBXGroup;
 			children = (
+				BC5CA2222146BA150050BA68 /* Model */,
 				4D0FEEDC212BF5900021E9E8 /* TCUnlockTaskVC.h */,
 				4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */,
 			);
@@ -800,6 +804,15 @@
 			children = (
 				BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */,
 				BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC5CA2222146BA150050BA68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA2232146BA530050BA68 /* TCUnlockTaskListModel.h */,
+				BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1162,6 +1175,7 @@
 				4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */,
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
 				4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */,
+				BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
