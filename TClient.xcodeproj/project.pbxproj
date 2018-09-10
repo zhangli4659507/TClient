@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D031E17213F67F000E0372F /* TCUserManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E16213F67F000E0372F /* TCUserManger.m */; };
 		4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E19213F687600E0372F /* TCUserInfoModel.m */; };
-		4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E1B213F707F00E0372F /* NSString+MD5.m */; };
 		4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E20213FCA9600E0372F /* TAreaModel.m */; };
 		4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E23213FCB0000E0372F /* TAreaTool.m */; };
 		4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D031E25213FD56F00E0372F /* EGetCacheSize.m */; };
@@ -91,6 +90,7 @@
 		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
+		BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
 		BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */; };
 		BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */; };
@@ -113,8 +113,6 @@
 		4D031E16213F67F000E0372F /* TCUserManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserManger.m; sourceTree = "<group>"; };
 		4D031E18213F687600E0372F /* TCUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserInfoModel.h; sourceTree = "<group>"; };
 		4D031E19213F687600E0372F /* TCUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserInfoModel.m; sourceTree = "<group>"; };
-		4D031E1B213F707F00E0372F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
-		4D031E1C213F707F00E0372F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../T2T/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
 		4D031E1F213FCA9500E0372F /* TAreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAreaModel.h; sourceTree = "<group>"; };
 		4D031E20213FCA9600E0372F /* TAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAreaModel.m; sourceTree = "<group>"; };
 		4D031E22213FCB0000E0372F /* TAreaTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAreaTool.h; sourceTree = "<group>"; };
@@ -269,6 +267,8 @@
 		BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSectionHeaderView.h; sourceTree = "<group>"; };
 		BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSectionHeaderView.m; sourceTree = "<group>"; };
 		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
+		BC5CA21B2146AEE90050BA68 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
+		BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
 		BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordSection.h; sourceTree = "<group>"; };
 		BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordSection.m; sourceTree = "<group>"; };
 		BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordCell.h; sourceTree = "<group>"; };
@@ -660,8 +660,8 @@
 				4D031E37213FDB1600E0372F /* NSString+TDigest.m */,
 				4D031E34213FDB0800E0372F /* UIImage+Scale.h */,
 				4D031E33213FDB0700E0372F /* UIImage+Scale.m */,
-				4D031E1C213F707F00E0372F /* NSString+MD5.h */,
-				4D031E1B213F707F00E0372F /* NSString+MD5.m */,
+				BC5CA21B2146AEE90050BA68 /* NSString+MD5.h */,
+				BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */,
 				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
 				4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */,
 				4DB7E5CF21269E55009FDA22 /* UIImage+TUtil.h */,
@@ -1116,6 +1116,7 @@
 			files = (
 				4DB48E2E213E6A1A00F6375C /* THTTPRequestTool.m in Sources */,
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
+				BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */,
 				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
@@ -1152,7 +1153,6 @@
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
-				4D031E1D213F707F00E0372F /* NSString+MD5.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
 				4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */,
