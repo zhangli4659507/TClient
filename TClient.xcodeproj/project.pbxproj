@@ -91,6 +91,7 @@
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
 		BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */; };
+		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
 		BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617321212C3D5C003AA3C4 /* TCRechargeRecordCell.m */; };
 		BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617322212C3D5C003AA3C4 /* TCRechargeRecordCell.xib */; };
@@ -269,6 +270,8 @@
 		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
 		BC5CA21B2146AEE90050BA68 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
 		BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
+		BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderListModel.h; sourceTree = "<group>"; };
+		BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderListModel.m; sourceTree = "<group>"; };
 		BC617317212C3BEE003AA3C4 /* TCRechargeRecordSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordSection.h; sourceTree = "<group>"; };
 		BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeRecordSection.m; sourceTree = "<group>"; };
 		BC617320212C3D5C003AA3C4 /* TCRechargeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeRecordCell.h; sourceTree = "<group>"; };
@@ -430,6 +433,7 @@
 		4D0FEED7212BF4E40021E9E8 /* QRCodeRegister */ = {
 			isa = PBXGroup;
 			children = (
+				BC5CA21E2146B33E0050BA68 /* Model */,
 				4D0FEEE9212C083A0021E9E8 /* Tool */,
 				4D0FEEE0212C04C00021E9E8 /* View */,
 				4D0FEEDF212C04B30021E9E8 /* VC */,
@@ -789,6 +793,15 @@
 				377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5CA21E2146B33E0050BA68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */,
+				BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BC617315212C3BBE003AA3C4 /* VC */ = {
@@ -1152,6 +1165,7 @@
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
+				BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,

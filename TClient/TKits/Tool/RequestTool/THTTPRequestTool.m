@@ -9,7 +9,7 @@
 #import "THTTPRequestTool.h"
 #import "AFNetworking.h"
 #import "NSString+MD5.h"
-static NSString *const BaseUrl = @"http://47.104.239.171";
+static NSString *const BaseUrl = @"http://test.168pt.vip";
 NSInteger const TRequestSuccessCode = 200;
 NSInteger const TRequestUnauthorizedCode = 401;
 NSInteger const TRequestParNullCode = 40001;
