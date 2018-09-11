@@ -7,7 +7,7 @@
 //
 
 #import "THTTPRequestTool.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import "NSString+MD5.h"
 static NSString *const BaseUrl = @"http://test.168pt.vip";
 NSInteger const TRequestSuccessCode = 200;
@@ -43,7 +43,7 @@ NSInteger const TRequestNetConnectFailedCode = 500;
     NSMutableDictionary *newdicPar = [NSMutableDictionary dictionaryWithDictionary:parDic];
     NSString *sign = [self signStrInfoWithParDic:signDicInfo];
     [newdicPar setObject:kUnNilStr(sign) forKey:@"sign"];
-    [self getRequestDataWithUrl:url par:parDic finishBlock:finshBlock];
+    [self getRequestDataWithUrl:url par:newdicPar finishBlock:finshBlock];
     
 }
 

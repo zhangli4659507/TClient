@@ -8,6 +8,14 @@
 
 #import "TCRegisterOrderListModel.h"
 
+@implementation TCRegisterOrderModel
+
+@end
+
 @implementation TCRegisterOrderListModel
 
++ (NSDictionary *)mj_objectClassInArray {
+    
+    return @{@"":[TCRegisterOrderModel class]};
+}
 @end

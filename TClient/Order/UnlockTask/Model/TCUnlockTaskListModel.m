@@ -8,6 +8,20 @@
 
 #import "TCUnlockTaskListModel.h"
 
+@implementation TCOrderUserInfoModel
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    
+    return @{@"recordId":@"id"};
+}
+@end
+
+@implementation TCUnlockOrderModel
++ (NSDictionary *)mj_objectClassInArray {
+    
+    return @{@"jd_user_list":[TCOrderUserInfoModel class]};
+}
+@end
+
 @implementation TCUnlockTaskListModel
 
 @end
