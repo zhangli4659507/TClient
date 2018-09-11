@@ -90,6 +90,8 @@
 		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
+		BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */; };
+		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
 		BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
@@ -268,6 +270,9 @@
 		BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSectionHeaderView.h; sourceTree = "<group>"; };
 		BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSectionHeaderView.m; sourceTree = "<group>"; };
 		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
+		BC34C5F62147F95400768C3E /* TCAROrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAROrderHeaderView.h; sourceTree = "<group>"; };
+		BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAROrderHeaderView.m; sourceTree = "<group>"; };
+		BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCAROrderHeaderView.xib; sourceTree = "<group>"; };
 		BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderListModel.h; sourceTree = "<group>"; };
 		BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderListModel.m; sourceTree = "<group>"; };
 		BC5CA2232146BA530050BA68 /* TCUnlockTaskListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskListModel.h; sourceTree = "<group>"; };
@@ -466,6 +471,9 @@
 				4D0FEEE1212C04EA0021E9E8 /* TCQROrderCell.h */,
 				4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */,
 				4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */,
+				BC34C5F62147F95400768C3E /* TCAROrderHeaderView.h */,
+				BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */,
+				BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1065,6 +1073,7 @@
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				4D0BB70F2141211800926491 /* TCChangePwdViewController.xib in Resources */,
 				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
+				BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
 				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
@@ -1173,6 +1182,7 @@
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
+				BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */,
 				BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,

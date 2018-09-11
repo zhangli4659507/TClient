@@ -10,6 +10,7 @@
 #import "TCQRSection.h"
 #import "TOTableViewTool.h"
 #import "TCRegisterOrderListModel.h"
+#import "TCAROrderHeaderView.h"
 @interface TCQRCodeRegisterVC ()
 @property (nonatomic, strong) TOTableViewTool *tableViewTool;
 @property (nonatomic, strong) TCQRSection *section;
@@ -30,6 +31,12 @@
    
 }
 
+- (void)viewDidLayoutSubviews {
+    
+    [super viewDidLayoutSubviews];
+    self.tableView.tableHeaderView.height = 95.f;
+}
+
 #pragma mark - setupSubview
 - (void) setupSubview {
     
@@ -44,6 +51,8 @@
     self.tableView.mj_footer.hidden = YES;
     [self.view addSubview:self.tableView];
     
+    TCAROrderHeaderView *headerView = [TCAROrderHeaderView loadInstanceFromNib];
+    self.tableView.tableHeaderView = headerView;
     self.tableViewTool.sectionArray = @[self.section];
 }
 
