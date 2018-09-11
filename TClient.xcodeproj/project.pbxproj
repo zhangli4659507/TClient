@@ -90,7 +90,6 @@
 		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
-		BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
 		BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
@@ -269,8 +268,6 @@
 		BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSectionHeaderView.h; sourceTree = "<group>"; };
 		BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSectionHeaderView.m; sourceTree = "<group>"; };
 		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
-		BC5CA21B2146AEE90050BA68 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
-		BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../../Downloads/T2TTest/Examda/Examda/TKits/Categorys/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
 		BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderListModel.h; sourceTree = "<group>"; };
 		BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderListModel.m; sourceTree = "<group>"; };
 		BC5CA2232146BA530050BA68 /* TCUnlockTaskListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskListModel.h; sourceTree = "<group>"; };
@@ -668,8 +665,6 @@
 				4D031E37213FDB1600E0372F /* NSString+TDigest.m */,
 				4D031E34213FDB0800E0372F /* UIImage+Scale.h */,
 				4D031E33213FDB0700E0372F /* UIImage+Scale.m */,
-				BC5CA21B2146AEE90050BA68 /* NSString+MD5.h */,
-				BC5CA21C2146AEE90050BA68 /* NSString+MD5.m */,
 				4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */,
 				4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */,
 				4DB7E5CF21269E55009FDA22 /* UIImage+TUtil.h */,
@@ -1142,7 +1137,6 @@
 			files = (
 				4DB48E2E213E6A1A00F6375C /* THTTPRequestTool.m in Sources */,
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
-				BC5CA21D2146AEE90050BA68 /* NSString+MD5.m in Sources */,
 				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
