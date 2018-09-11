@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCRegisterOrderListModel.h"
 extern NSString *const TCQROrderCellClassName;
 @interface TCQROrderCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *orderNumLbl;
@@ -14,5 +15,5 @@ extern NSString *const TCQROrderCellClassName;
 @property (weak, nonatomic) IBOutlet UILabel *orderReciveLbl;
 @property (weak, nonatomic) IBOutlet UILabel *createDateLbl;
 @property (weak, nonatomic) IBOutlet UILabel *orderStateLbl;
-
+- (void)setupUiWithOrderModel:(TCRegisterOrderModel *)orderModel;
 @end

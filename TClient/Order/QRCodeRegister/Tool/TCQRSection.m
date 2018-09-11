@@ -16,6 +16,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndex:(NSInteger)index {
     TCQROrderCell *cell = [tableView dequeueReusableCellWithIdentifier:TCQROrderCellClassName];
+    if (self.dataSource.count > index) {
+        [cell setupUiWithOrderModel:self.dataSource[index]];
+    }
     return cell;
 }
 

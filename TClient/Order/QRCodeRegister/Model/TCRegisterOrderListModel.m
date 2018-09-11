@@ -16,6 +16,6 @@
 
 + (NSDictionary *)mj_objectClassInArray {
     
-    return @{@"":[TCRegisterOrderModel class]};
+    return @{@"list":[TCRegisterOrderModel class]};
 }
 @end
