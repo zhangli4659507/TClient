@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCHomeViewController">
             <connections>
+                <outlet property="moneyHight" destination="O38-Fb-Lcm" id="Xnh-gr-uPU"/>
+                <outlet property="moneyView" destination="ZGj-i2-FoR" id="HQ5-kQ-pgh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -226,7 +228,7 @@
                 <constraint firstItem="QKr-rZ-HgL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WGn-Uj-rNx"/>
                 <constraint firstAttribute="bottom" secondItem="QKr-rZ-HgL" secondAttribute="bottom" id="s8O-sH-tyU"/>
             </constraints>
-            <point key="canvasLocation" x="31.5" y="67.5"/>
+            <point key="canvasLocation" x="130" y="-7"/>
         </view>
         <tapGestureRecognizer id="iu0-35-64E" userLabel="picUpTop">
             <connections>

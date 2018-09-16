@@ -91,6 +91,13 @@
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
 		BC17F0C5214DF46F00529024 /* TCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0C3214DF46F00529024 /* TCHomeViewController.m */; };
 		BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */; };
+		BC17F0CA214DFE8900529024 /* TCHomeCommissionTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0C9214DFE8900529024 /* TCHomeCommissionTypeView.m */; };
+		BC17F0CF214E000B00529024 /* TCHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0CE214E000B00529024 /* TCHomeModel.m */; };
+		BC17F0D2214E276800529024 /* TLodingHub.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0D1214E276800529024 /* TLodingHub.m */; };
+		BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0D3214E277500529024 /* TLodingHub.xib */; };
+		BC17F0D6214E296D00529024 /* loding.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0D5214E296D00529024 /* loding.gif */; };
+		BC17F0D9214E321400529024 /* TFailhub.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0D8214E321400529024 /* TFailhub.m */; };
+		BC17F0DB214E322200529024 /* TFailhub.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0DA214E322200529024 /* TFailhub.xib */; };
 		BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */; };
 		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
@@ -272,6 +279,17 @@
 		BC17F0C2214DF46F00529024 /* TCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCHomeViewController.h; sourceTree = "<group>"; };
 		BC17F0C3214DF46F00529024 /* TCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCHomeViewController.m; sourceTree = "<group>"; };
 		BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHomeViewController.xib; sourceTree = "<group>"; };
+		BC17F0C8214DFE8900529024 /* TCHomeCommissionTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCHomeCommissionTypeView.h; sourceTree = "<group>"; };
+		BC17F0C9214DFE8900529024 /* TCHomeCommissionTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCHomeCommissionTypeView.m; sourceTree = "<group>"; };
+		BC17F0CD214E000B00529024 /* TCHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCHomeModel.h; sourceTree = "<group>"; };
+		BC17F0CE214E000B00529024 /* TCHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCHomeModel.m; sourceTree = "<group>"; };
+		BC17F0D0214E276800529024 /* TLodingHub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLodingHub.h; sourceTree = "<group>"; };
+		BC17F0D1214E276800529024 /* TLodingHub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLodingHub.m; sourceTree = "<group>"; };
+		BC17F0D3214E277500529024 /* TLodingHub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLodingHub.xib; sourceTree = "<group>"; };
+		BC17F0D5214E296D00529024 /* loding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loding.gif; sourceTree = "<group>"; };
+		BC17F0D7214E321400529024 /* TFailhub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFailhub.h; sourceTree = "<group>"; };
+		BC17F0D8214E321400529024 /* TFailhub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFailhub.m; sourceTree = "<group>"; };
+		BC17F0DA214E322200529024 /* TFailhub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFailhub.xib; sourceTree = "<group>"; };
 		BC34C5F62147F95400768C3E /* TCAROrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAROrderHeaderView.h; sourceTree = "<group>"; };
 		BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAROrderHeaderView.m; sourceTree = "<group>"; };
 		BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCAROrderHeaderView.xib; sourceTree = "<group>"; };
@@ -602,6 +620,13 @@
 				4DB7E5682126626B009FDA22 /* T2TView.h */,
 				4DB7E60F2126B1BD009FDA22 /* TComputerTextHeightTool.h */,
 				4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */,
+				BC17F0D0214E276800529024 /* TLodingHub.h */,
+				BC17F0D1214E276800529024 /* TLodingHub.m */,
+				BC17F0D3214E277500529024 /* TLodingHub.xib */,
+				BC17F0D5214E296D00529024 /* loding.gif */,
+				BC17F0D7214E321400529024 /* TFailhub.h */,
+				BC17F0D8214E321400529024 /* TFailhub.m */,
+				BC17F0DA214E322200529024 /* TFailhub.xib */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -730,9 +755,9 @@
 		4DB7E5D721269F2C009FDA22 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BC17F0C2214DF46F00529024 /* TCHomeViewController.h */,
-				BC17F0C3214DF46F00529024 /* TCHomeViewController.m */,
-				BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */,
+				BC17F0CC214DFFEF00529024 /* Model */,
+				BC17F0C7214DFE4A00529024 /* View */,
+				BC17F0CB214DFE8E00529024 /* VC */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -803,6 +828,34 @@
 				377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC17F0C7214DFE4A00529024 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC17F0C8214DFE8900529024 /* TCHomeCommissionTypeView.h */,
+				BC17F0C9214DFE8900529024 /* TCHomeCommissionTypeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC17F0CB214DFE8E00529024 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BC17F0C2214DF46F00529024 /* TCHomeViewController.h */,
+				BC17F0C3214DF46F00529024 /* TCHomeViewController.m */,
+				BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC17F0CC214DFFEF00529024 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC17F0CD214E000B00529024 /* TCHomeModel.h */,
+				BC17F0CE214E000B00529024 /* TCHomeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BC5CA21E2146B33E0050BA68 /* Model */ = {
@@ -1071,7 +1124,9 @@
 			files = (
 				BC617324212C3D5C003AA3C4 /* TCRechargeRecordCell.xib in Resources */,
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
+				BC17F0DB214E322200529024 /* TFailhub.xib in Resources */,
 				4D9A31012140FF700084D8E4 /* TCSelectAreaView.xib in Resources */,
+				BC17F0D6214E296D00529024 /* loding.gif in Resources */,
 				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
 				4D0BB70F2141211800926491 /* TCChangePwdViewController.xib in Resources */,
@@ -1086,6 +1141,7 @@
 				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
+				BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1119,6 +1175,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TClient/Pods-TClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -1129,6 +1186,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -1156,6 +1214,7 @@
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
 				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
+				BC17F0D9214E321400529024 /* TFailhub.m in Sources */,
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
@@ -1165,6 +1224,7 @@
 				4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */,
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
 				BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */,
+				BC17F0CF214E000B00529024 /* TCHomeModel.m in Sources */,
 				BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */,
 				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
@@ -1201,6 +1261,7 @@
 				BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
+				BC17F0CA214DFE8900529024 /* TCHomeCommissionTypeView.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
 				4D0FEEDE212BF5900021E9E8 /* TCUnlockTaskVC.m in Sources */,
 				4D031E2D213FD5AD00E0372F /* ESandBoxTool.m in Sources */,
@@ -1212,6 +1273,7 @@
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
+				BC17F0D2214E276800529024 /* TLodingHub.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,

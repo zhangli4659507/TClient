@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TFailhub">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_data" translatesAutoresizingMaskIntoConstraints="NO" id="8Gs-tr-c7I">
+                    <rect key="frame" x="137.5" y="251" width="100" height="65"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-be-eeT">
+                    <rect key="frame" x="159.5" y="331" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOb-wE-A3x">
+                    <rect key="frame" x="143" y="363" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.15294117647058825" green="0.60392156862745094" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="6by-7l-ddc"/>
+                        <constraint firstAttribute="height" constant="30" id="wFn-fd-qKI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="重新加载"/>
+                    <connections>
+                        <action selector="actionReloadBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="4MV-8J-QRe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Gs-tr-c7I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="62r-Fe-Q3M"/>
+                <constraint firstItem="aOb-wE-A3x" firstAttribute="top" secondItem="VNK-be-eeT" secondAttribute="bottom" constant="15" id="6wH-eB-e1h"/>
+                <constraint firstItem="aOb-wE-A3x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9nn-5v-t78"/>
+                <constraint firstItem="8Gs-tr-c7I" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="EJz-e6-2vs"/>
+                <constraint firstItem="VNK-be-eeT" firstAttribute="top" secondItem="8Gs-tr-c7I" secondAttribute="bottom" constant="15" id="Tm6-8d-wPK"/>
+                <constraint firstItem="VNK-be-eeT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t8T-rx-QK7"/>
+            </constraints>
+            <connections>
+                <outlet property="infoLbl" destination="VNK-be-eeT" id="ysM-j6-wd7"/>
+                <outlet property="reloadBtn" destination="aOb-wE-A3x" id="yGq-of-S11"/>
+                <outlet property="typeImav" destination="8Gs-tr-c7I" id="idf-7I-pxi"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="-145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_data" width="100" height="65"/>
+    </resources>
+</document>
