@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moneyHight;
 @property (nonatomic, strong) TCHomeCommissionTypeView *moneyTypeView;
 @property (nonatomic, weak) TCHomeMoneyTypeModel *selectMoneyModel;
+@property (weak, nonatomic) IBOutlet UILabel *moneyLbl;
+@property (weak, nonatomic) IBOutlet UIButton *addMonryButton;
 @end
 
 @implementation TCHomeViewController
@@ -25,7 +27,6 @@
     [self setupSubview];
     [self layOutSubview];
     [self requestData];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -40,6 +41,9 @@
 
     self.moneyTypeView = [[TCHomeCommissionTypeView alloc] init];
     [self.moneyView addSubview:self.moneyTypeView];
+    
+    [T2TView setRoundCornerFor:self.addMonryButton radiu:4.f];
+    
 }
 
 - (void)layOutSubview {
@@ -77,9 +81,10 @@
 }
 
 - (void)setupData {
-    
+    self.moneyLbl.text = [NSString stringWithFormat:@"%.1lf元",self.homeModel.money];
+    WEAK_REF(self);
     CGFloat height = [self.moneyTypeView reloadWithConfigMoneyArr:self.homeModel.configArr selectModelBlock:^(TCHomeMoneyTypeModel *typeModel) {
-        
+        weak_self.selectMoneyModel = typeModel;
     } width:kScreenWidth - 72.f];
     self.moneyHight.constant = MAX(50.f, height);
 }
@@ -94,22 +99,18 @@
 - (IBAction)actionQRUp:(id)sender {
     
 }
+- (IBAction)actionAddMoney:(id)sender {
+}
+
+
+- (IBAction)actionReleaseLimit:(id)sender {
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)actionReleaseLimit:(id)sender {
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

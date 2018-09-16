@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCHomeViewController">
             <connections>
+                <outlet property="addMonryButton" destination="Bdy-A1-wB5" id="7KL-Mf-7aM"/>
                 <outlet property="moneyHight" destination="O38-Fb-Lcm" id="Xnh-gr-uPU"/>
+                <outlet property="moneyLbl" destination="J8g-0x-vIL" id="Brc-zx-aNp"/>
                 <outlet property="moneyView" destination="ZGj-i2-FoR" id="HQ5-kQ-pgh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -39,15 +41,18 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <state key="normal" title="充值"/>
+                                            <connections>
+                                                <action selector="actionAddMoney:" destination="-1" eventType="touchUpInside" id="5S7-LG-dbz"/>
+                                            </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-KP-iDs">
-                                            <rect key="frame" x="12" y="16.5" width="58" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-KP-iDs">
+                                            <rect key="frame" x="12" y="16.5" width="43" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-0x-vIL">
-                                            <rect key="frame" x="80" y="16.5" width="36" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-0x-vIL">
+                                            <rect key="frame" x="65" y="16.5" width="23" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.88235294119999996" green="0.23137254900000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -228,7 +233,7 @@
                 <constraint firstItem="QKr-rZ-HgL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WGn-Uj-rNx"/>
                 <constraint firstAttribute="bottom" secondItem="QKr-rZ-HgL" secondAttribute="bottom" id="s8O-sH-tyU"/>
             </constraints>
-            <point key="canvasLocation" x="130" y="-7"/>
+            <point key="canvasLocation" x="-157" y="-101"/>
         </view>
         <tapGestureRecognizer id="iu0-35-64E" userLabel="picUpTop">
             <connections>
