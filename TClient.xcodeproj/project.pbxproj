@@ -69,7 +69,6 @@
 		4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E59A2126626B009FDA22 /* UITableView+TRegisterCell.m */; };
 		4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5D021269E55009FDA22 /* UIImage+TUtil.m */; };
 		4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5D221269E75009FDA22 /* TTabBarViewController.m */; };
-		4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5D921269F52009FDA22 /* TCHomeViewController.m */; };
 		4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5DC21269F5F009FDA22 /* TCOrderViewController.m */; };
 		4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E5DF21269F69009FDA22 /* TCMineViewController.m */; };
 		4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7E6082126A9B4009FDA22 /* LaunchScreen.xib */; };
@@ -90,6 +89,8 @@
 		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
 		BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */; };
+		BC17F0C5214DF46F00529024 /* TCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0C3214DF46F00529024 /* TCHomeViewController.m */; };
+		BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */; };
 		BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */; };
 		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
@@ -234,8 +235,6 @@
 		4DB7E5D021269E55009FDA22 /* UIImage+TUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TUtil.m"; sourceTree = "<group>"; };
 		4DB7E5D221269E75009FDA22 /* TTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTabBarViewController.m; sourceTree = "<group>"; };
 		4DB7E5D321269E75009FDA22 /* TTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTabBarViewController.h; sourceTree = "<group>"; };
-		4DB7E5D821269F52009FDA22 /* TCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCHomeViewController.h; sourceTree = "<group>"; };
-		4DB7E5D921269F52009FDA22 /* TCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCHomeViewController.m; sourceTree = "<group>"; };
 		4DB7E5DB21269F5F009FDA22 /* TCOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCOrderViewController.h; sourceTree = "<group>"; };
 		4DB7E5DC21269F5F009FDA22 /* TCOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCOrderViewController.m; sourceTree = "<group>"; };
 		4DB7E5DE21269F69009FDA22 /* TCMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMineViewController.h; sourceTree = "<group>"; };
@@ -270,6 +269,9 @@
 		BC0FB795212C4D87005F8C57 /* TCMyFriendSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSectionHeaderView.h; sourceTree = "<group>"; };
 		BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSectionHeaderView.m; sourceTree = "<group>"; };
 		BC0FB798212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendSectionHeaderView.xib; sourceTree = "<group>"; };
+		BC17F0C2214DF46F00529024 /* TCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCHomeViewController.h; sourceTree = "<group>"; };
+		BC17F0C3214DF46F00529024 /* TCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCHomeViewController.m; sourceTree = "<group>"; };
+		BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHomeViewController.xib; sourceTree = "<group>"; };
 		BC34C5F62147F95400768C3E /* TCAROrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAROrderHeaderView.h; sourceTree = "<group>"; };
 		BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAROrderHeaderView.m; sourceTree = "<group>"; };
 		BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCAROrderHeaderView.xib; sourceTree = "<group>"; };
@@ -728,8 +730,9 @@
 		4DB7E5D721269F2C009FDA22 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4DB7E5D821269F52009FDA22 /* TCHomeViewController.h */,
-				4DB7E5D921269F52009FDA22 /* TCHomeViewController.m */,
+				BC17F0C2214DF46F00529024 /* TCHomeViewController.h */,
+				BC17F0C3214DF46F00529024 /* TCHomeViewController.m */,
+				BC17F0C4214DF46F00529024 /* TCHomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1078,6 +1081,7 @@
 				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
+				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
 				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
@@ -1186,11 +1190,11 @@
 				BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
+				BC17F0C5214DF46F00529024 /* TCHomeViewController.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
 				4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
-				4DB7E5DA21269F52009FDA22 /* TCHomeViewController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
 				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,

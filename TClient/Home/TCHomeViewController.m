@@ -2,12 +2,12 @@
 //  TCHomeViewController.m
 //  TClient
 //
-//  Created by Mark on 2018/8/17.
+//  Created by mark_zhang on 2018/9/16.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
 #import "TCHomeViewController.h"
-#import "TUploadTool.h"
+
 @interface TCHomeViewController ()
 
 @end
@@ -16,23 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"首页";
-    // Do any additional setup after loading the view.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
     self.navigationItem.leftBarButtonItem = nil;
-//    UIImage *image = kImaWithImaName(@"ico_head_portrait");
-//    [TUploadTool uploadImge:image finishBlock:^(NSString *imageUrlString) {
-//        
-//    }];
     
+    // Do any additional setup after loading the view from its nib.
+}
+- (IBAction)actionPicUp:(id)sender {
+}
+- (IBAction)actionQRUp:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)actionReleaseLimit:(id)sender {
 }
 
 /*
