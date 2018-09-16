@@ -15,6 +15,7 @@
 @property (nonatomic, strong) TOTableViewTool *tableViewTool;
 @property (nonatomic, strong) TCQRSection *section;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, weak) TCAROrderHeaderView *headerView;
 @property (nonatomic, assign) NSInteger pgIndex;
 @property (nonatomic, strong) NSMutableArray<TCRegisterOrderModel *> *dataArr;
 @property (nonatomic, assign) BOOL isRequest;
@@ -54,6 +55,7 @@
     TCAROrderHeaderView *headerView = [TCAROrderHeaderView loadInstanceFromNib];
     self.tableView.tableHeaderView = headerView;
     self.tableViewTool.sectionArray = @[self.section];
+    self.headerView = headerView;
 }
 
 #pragma mark - layoutSubview
@@ -93,6 +95,7 @@
         [self.tableView.mj_header endRefreshing];
         if (response.code == TRequestSuccessCode && [response.data isKindOfClass:[NSDictionary class]]) {
             TCRegisterOrderListModel *listModel = [TCRegisterOrderListModel mj_objectWithKeyValues:response.data];
+            
             [self setupDataWithListModel:listModel];
         } else {
             self.tableView.mj_footer.hidden = YES;
@@ -104,7 +107,7 @@
 
 
 - (void)setupDataWithListModel:(TCRegisterOrderListModel *)listModel {
-    
+    self.headerView.orderNumLbl.text = [NSString stringWithFormat:@"%ld",listModel.total_count];
     [self.dataArr addObjectsFromArray:listModel.list];
     self.tableView.mj_footer.hidden = listModel.page_index >= listModel.total_page;
     self.section.dataSource = self.dataArr;

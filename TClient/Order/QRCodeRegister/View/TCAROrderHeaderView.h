@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TCAROrderHeaderView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *alertInfoLbl;
+@property (weak, nonatomic) IBOutlet UILabel *orderNumLbl;
 
 @end

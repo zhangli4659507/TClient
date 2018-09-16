@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1660" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXZ-QP-tPT">
-                    <rect key="frame" x="50" y="204" width="29" height="15"/>
+                    <rect key="frame" x="50" y="204.5" width="29" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.88235294117647056" green="0.23137254901960785" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -49,6 +49,10 @@
                 <constraint firstItem="OXZ-QP-tPT" firstAttribute="leading" secondItem="sU4-TO-Oe2" secondAttribute="trailing" constant="1" id="zxg-C1-IxK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alertInfoLbl" destination="LKY-LG-h4J" id="Rg7-ox-WSc"/>
+                <outlet property="orderNumLbl" destination="OXZ-QP-tPT" id="z55-H9-31v"/>
+            </connections>
             <point key="canvasLocation" x="12.5" y="-68.5"/>
         </view>
     </objects>
