@@ -16,7 +16,7 @@
         (!finishBlock) ?: finishBlock(@"");
         return;
     }
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://47.104.239.171/api/Upload/xiadan_qrcode_upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://test.168pt.vip/api/Upload/xiadan_qrcode_upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         NSDateFormatter *formatter = DateFormatter();
         formatter.dateFormat = @"yyyyMMddHHmmss";
@@ -38,7 +38,7 @@
         } else {
             NSDictionary *dicInfo =   [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
             NSLog(@"%@",dicInfo);
-#warning 这里还没处理
+            (!finishBlock)?:finishBlock(dicInfo[@"path"]);
         }
     }];
     [uploadTask resume];

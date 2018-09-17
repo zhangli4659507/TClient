@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TClient/TKits/Tool/RequestTool/THTTPRequestTool.m"
-            timestampString = "558281207.5527"
+            timestampString = "558883150.128148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "+getRequestDataWithUrl:par:finishBlock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TClient/TKits/Tool/RequestTool/THTTPRequestTool.m"
-            timestampString = "558281207.552796"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "+postRequestDataWithUrl:par:finishBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
