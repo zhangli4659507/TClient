@@ -10,6 +10,7 @@
 #import "TCHomeModel.h"
 #import "TCHomeCommissionTypeView.h"
 #import "TUploadTool.h"
+#import "TCPushLimitViewController.h"
 @interface TCHomeViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) TCHomeModel *homeModel;
 @property (weak, nonatomic) IBOutlet UIView *moneyView;
@@ -194,6 +195,9 @@
 
 
 - (IBAction)actionReleaseLimit:(id)sender {
+    
+    TCPushLimitViewController *lvc = [[TCPushLimitViewController alloc] init];
+    [self.navigationController pushViewController:lvc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
