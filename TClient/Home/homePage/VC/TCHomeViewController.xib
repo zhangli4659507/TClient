@@ -233,7 +233,7 @@
                 <constraint firstItem="QKr-rZ-HgL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WGn-Uj-rNx"/>
                 <constraint firstAttribute="bottom" secondItem="QKr-rZ-HgL" secondAttribute="bottom" id="s8O-sH-tyU"/>
             </constraints>
-            <point key="canvasLocation" x="-157" y="-101"/>
+            <point key="canvasLocation" x="-18" y="-104"/>
         </view>
         <tapGestureRecognizer id="iu0-35-64E" userLabel="picUpTop">
             <connections>

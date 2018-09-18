@@ -29,5 +29,6 @@
 #import "TLodingHub.h"
 #import "TFailhub.h"
 #import "T2TView.h"
+#import "NSString+TDigest.h"
 
 #endif /* TClient_pch */

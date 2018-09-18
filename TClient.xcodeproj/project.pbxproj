@@ -98,6 +98,7 @@
 		BC17F0D6214E296D00529024 /* loding.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0D5214E296D00529024 /* loding.gif */; };
 		BC17F0D9214E321400529024 /* TFailhub.m in Sources */ = {isa = PBXBuildFile; fileRef = BC17F0D8214E321400529024 /* TFailhub.m */; };
 		BC17F0DB214E322200529024 /* TFailhub.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC17F0DA214E322200529024 /* TFailhub.xib */; };
+		BC31313A2151475200479FA1 /* TCPushLimitInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3131392151475200479FA1 /* TCPushLimitInfoModel.m */; };
 		BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */; };
 		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC48C45D214FE63D006195B0 /* TCPushLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC48C45B214FE63D006195B0 /* TCPushLimitViewController.m */; };
@@ -292,6 +293,8 @@
 		BC17F0D7214E321400529024 /* TFailhub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFailhub.h; sourceTree = "<group>"; };
 		BC17F0D8214E321400529024 /* TFailhub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFailhub.m; sourceTree = "<group>"; };
 		BC17F0DA214E322200529024 /* TFailhub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFailhub.xib; sourceTree = "<group>"; };
+		BC3131382151475200479FA1 /* TCPushLimitInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPushLimitInfoModel.h; sourceTree = "<group>"; };
+		BC3131392151475200479FA1 /* TCPushLimitInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPushLimitInfoModel.m; sourceTree = "<group>"; };
 		BC34C5F62147F95400768C3E /* TCAROrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAROrderHeaderView.h; sourceTree = "<group>"; };
 		BC34C5F72147F95400768C3E /* TCAROrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAROrderHeaderView.m; sourceTree = "<group>"; };
 		BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCAROrderHeaderView.xib; sourceTree = "<group>"; };
@@ -617,6 +620,8 @@
 		4DB7E5662126626B009FDA22 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				BC31313C21514DD800479FA1 /* LoadingHub */,
+				BC31313B21514DC400479FA1 /* FailHub */,
 				4D031E2F213FDAC800E0372F /* UploadImage */,
 				4D031E2E213FD5BA00E0372F /* FileCacheTool */,
 				4DB48E2A213E566200F6375C /* RequestTool */,
@@ -625,13 +630,6 @@
 				4DB7E5682126626B009FDA22 /* T2TView.h */,
 				4DB7E60F2126B1BD009FDA22 /* TComputerTextHeightTool.h */,
 				4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */,
-				BC17F0D0214E276800529024 /* TLodingHub.h */,
-				BC17F0D1214E276800529024 /* TLodingHub.m */,
-				BC17F0D3214E277500529024 /* TLodingHub.xib */,
-				BC17F0D5214E296D00529024 /* loding.gif */,
-				BC17F0D7214E321400529024 /* TFailhub.h */,
-				BC17F0D8214E321400529024 /* TFailhub.m */,
-				BC17F0DA214E322200529024 /* TFailhub.xib */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -862,6 +860,36 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BC3131372151473100479FA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC3131382151475200479FA1 /* TCPushLimitInfoModel.h */,
+				BC3131392151475200479FA1 /* TCPushLimitInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC31313B21514DC400479FA1 /* FailHub */ = {
+			isa = PBXGroup;
+			children = (
+				BC17F0D7214E321400529024 /* TFailhub.h */,
+				BC17F0D8214E321400529024 /* TFailhub.m */,
+				BC17F0DA214E322200529024 /* TFailhub.xib */,
+			);
+			path = FailHub;
+			sourceTree = "<group>";
+		};
+		BC31313C21514DD800479FA1 /* LoadingHub */ = {
+			isa = PBXGroup;
+			children = (
+				BC17F0D0214E276800529024 /* TLodingHub.h */,
+				BC17F0D1214E276800529024 /* TLodingHub.m */,
+				BC17F0D3214E277500529024 /* TLodingHub.xib */,
+				BC17F0D5214E296D00529024 /* loding.gif */,
+			);
+			path = LoadingHub;
+			sourceTree = "<group>";
+		};
 		BC48C457214FE609006195B0 /* homePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,6 +903,7 @@
 		BC48C458214FE616006195B0 /* pushLimit */ = {
 			isa = PBXGroup;
 			children = (
+				BC3131372151473100479FA1 /* Model */,
 				BC48C459214FE624006195B0 /* VC */,
 			);
 			path = pushLimit;
@@ -1307,6 +1336,7 @@
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
+				BC31313A2151475200479FA1 /* TCPushLimitInfoModel.m in Sources */,
 				BC17F0D2214E276800529024 /* TLodingHub.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,

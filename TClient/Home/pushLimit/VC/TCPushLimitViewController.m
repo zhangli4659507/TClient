@@ -8,10 +8,25 @@
 
 #import "TCPushLimitViewController.h"
 #import "WMMenuView.h"
-@interface TCPushLimitViewController ()<WMMenuViewDelegate,WMMenuViewDataSource>
-@property ( nonatomic,strong) IBOutlet WMMenuView *menuItemView;
-@property (weak, nonatomic) IBOutlet UIView *menuBgView;
-
+#import "TCPushLimitInfoModel.h"
+#import "TCSelectAreaView.h"
+@interface TCPushLimitViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *areaLbl;
+@property (weak, nonatomic) IBOutlet UITextField *wxText;
+@property (weak, nonatomic) IBOutlet UITextField *mobileTxt;
+@property (weak, nonatomic) IBOutlet UIButton *insuranceBtn;
+@property (weak, nonatomic) IBOutlet UIButton *noInsuranceBtn;
+@property (weak, nonatomic) IBOutlet UITextField *remarksTxt;
+@property (weak, nonatomic) IBOutlet UILabel *insuranceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *serviceMoneyLbl;
+@property (weak, nonatomic) IBOutlet UILabel *commissionLbl;
+@property (weak, nonatomic) IBOutlet UIButton *pushBtn;
+@property (weak, nonatomic) IBOutlet UILabel *alertInfoLbl;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *insuranceHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *insuranceSpace;
+@property (nonatomic, strong) TCPushLimitInfoModel *limitInfoModel;
+@property (nonatomic, assign) NSInteger insuranceType;//保费类型 1-需要保费 2-无需保费
+@property (nonatomic, strong) TAreaModel *selectAreaModel;//所选地区 为空表示不限地区
 @end
 
 @implementation TCPushLimitViewController
@@ -19,55 +34,124 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"发布解封";
-    [self setupSubview];
+    [self requestLimitInfoData];
 }
 
 - (void)setupSubview {
-    
-    self.menuItemView = [[WMMenuView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 40.f)];
-    self.menuItemView.progressViewIsNaughty = YES;
-    self.menuItemView.lineColor = kThemeColor;
-    self.menuItemView.delegate = self;
-    self.menuItemView.dataSource = self;
-    self.menuItemView.layoutMode = WMMenuViewLayoutModeLeft;
-    self.menuItemView.progressWidths = @[@(kScreenWidth/2),@(kScreenWidth/2)];
-    self.menuItemView.style = WMMenuViewStyleLine;
-    [self.menuBgView addSubview:self.menuItemView];
+    self.insuranceType = 1;
+    self.insuranceBtn.selected = YES;
+    self.noInsuranceBtn.selected = NO;
+    self.alertInfoLbl.text = [NSString stringWithFormat:@"注意事项：%@",self.limitInfoModel.describe];
+    self.serviceMoneyLbl.text = [NSString stringWithFormat:@"%.2lf元",self.limitInfoModel.service_price];
+    self.insuranceLbl.text = [NSString stringWithFormat:@"%.2lf元",self.limitInfoModel.bond_price];
+    self.commissionLbl.text = [NSString stringWithFormat:@"%.2lf - %.2lf元",self.limitInfoModel.bond_section_begin_price,self.limitInfoModel.bond_section_end_price];
+    [T2TView setRoundCornerFor:self.pushBtn radiu:20.f];
    
 }
 
-- (NSInteger)numbersOfTitlesInMenuView:(WMMenuView *)menu {
+#pragma mark - requestFunc
+
+- (void)requestLimitInfoData {
     
-    return 2;
-}
-- (NSString *)menuView:(WMMenuView *)menu titleAtIndex:(NSInteger)index {
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
+   
+    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
+    [TLodingHub setGifOnView:self.view withTitle:@"正在加载...."];
+    [TFailhub hidenALLFailhubWithSuperView:self.view];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/order_unseal_data" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
+        [TLodingHub hideAllHUDsForView:self.view];
+        if (response.code == TRequestSuccessCode && [response.data isKindOfClass:[NSDictionary class]]) {
+            
+            self.limitInfoModel = [TCPushLimitInfoModel mj_objectWithKeyValues:response.data];
+            [self setupSubview];
+        } else {
+            WEAK_REF(self);
+            [TFailhub showFailHubWithSuperView:self.view reloadBlock:^{
+                [weak_self requestLimitInfoData];
+            }];
+        }
+    }];
     
-    return index == 0 ? @"非好友解封填资料" : @"非好友解封不填资料";
 }
 
-- (UIColor *)menuView:(WMMenuView *)menu titleColorForState:(WMMenuItemState)state {
-    UIColor *color = [UIColor colorWithHexString:@"#333333"];
-    if (state == WMMenuItemStateNormal) {
-        color = [color colorWithAlphaComponent:0.5f];
+- (void)requestPostLimit {
+    
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
+    
+    NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",nil];
+    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType)}];
+    
+    if ([self.mobileTxt.text trimSpace].length > 0) {
+        [dataDicInfo setObject:[self.mobileTxt.text trimSpace] forKey:@"unseal_phone"];
+        [signDicInfo setObject:[self.mobileTxt.text trimSpace] forKey:@"unseal_phone"];
     }
-    return color;
-}
-
-- (CGFloat)menuView:(WMMenuView *)menu titleSizeForState:(WMMenuItemState)state {
-    if (state == WMMenuItemStateNormal) {
-        return 14.f;
+    if (self.selectAreaModel) {
+        [dataDicInfo setObject:@(self.selectAreaModel.areaId) forKey:@"province_id"];
+        [signDicInfo setObject:@(self.selectAreaModel.areaId) forKey:@"province_id"];
     }
-    return 17.f;
+    if (self.remarksTxt.text.length > 0) {
+        [dataDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
+        [signDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
+    }
+    [parInfoDic setObject:dataDicInfo forKey:@"data"];
+    [MBProgressHUD showMessage:@"正在上传...."];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/create_order_unseal" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"下单成功"];
+            [self performSelector:@selector(navBackAction) withObject:nil afterDelay:2];
+        } else {
+#warning 这里需要修改
+            [MBProgressHUD showError:response.msg];
+        }
+    }];
 }
 
-- (CGFloat)menuView:(WMMenuView *)menu itemMarginAtIndex:(NSInteger)index {
-    return 0.f;
+#pragma mark - actionFunc
+
+- (IBAction)actionPushLimit:(id)sender {
+    
+    [self.view endEditing:YES];
+    if ([self.wxText.text trimSpace].length == 0) {
+        [MBProgressHUD showError: @"请输入正确微信号"];
+        return;
+    }
+    [self requestPostLimit];
+    
 }
 
-- (CGFloat)menuView:(WMMenuView *)menu widthForItemAtIndex:(NSInteger)index {
-    return kScreenWidth/2.f;
+- (IBAction)actionInsuranceBtn:(id)sender {
+    
+     [self.view endEditing:YES];
+    self.insuranceBtn.selected = YES;
+    self.noInsuranceBtn.selected = NO;
+    self.insuranceHeight.constant = 17.f;
+    self.insuranceSpace.constant = 15.f;
+    self.insuranceType = 1;
 }
 
+
+- (IBAction)actionNoInsurance:(id)sender {
+    
+     [self.view endEditing:YES];
+    self.insuranceBtn.selected = NO;
+    self.noInsuranceBtn.selected = YES;
+    self.insuranceHeight.constant = 0.f;
+    self.insuranceSpace.constant = 0.f;
+    self.insuranceType = 2;
+}
+
+- (IBAction)actionSelectArea:(id)sender {
+    
+    [self.view endEditing:YES];
+    [TCSelectAreaView showAreaSlectedViewWithFinshSelectedBlock:^(TAreaModel *areaModel) {
+        self.areaLbl.text = kUnNilStr(areaModel.name);
+        self.selectAreaModel = areaModel;
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
