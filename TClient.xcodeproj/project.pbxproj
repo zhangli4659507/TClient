@@ -113,6 +113,15 @@
 		BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC61732E212C447D003AA3C4 /* TCAccountChangeSection.m */; };
 		BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617334212C46F8003AA3C4 /* TCMyFriendCell.m */; };
 		BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC617335212C46F8003AA3C4 /* TCMyFriendCell.xib */; };
+		BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9898E5215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m */; };
+		BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9898E6215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib */; };
+		BC9898EC215BB4A200B5EFF8 /* TCUnlockTaskListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9898EB215BB4A200B5EFF8 /* TCUnlockTaskListSection.m */; };
+		BC9898F3215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9898F2215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m */; };
+		BC9898F7215BC3B300B5EFF8 /* TCULODHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9898F6215BC3B300B5EFF8 /* TCULODHeaderView.m */; };
+		BC9898F9215BC3C000B5EFF8 /* TCULODHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9898F8215BC3C000B5EFF8 /* TCULODHeaderView.xib */; };
+		BC9898FD215BD08400B5EFF8 /* TCULODUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9898FB215BD08400B5EFF8 /* TCULODUserInfoCell.m */; };
+		BC9898FE215BD08400B5EFF8 /* TCULODUserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9898FC215BD08400B5EFF8 /* TCULODUserInfoCell.xib */; };
+		BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC989901215BD45D00B5EFF8 /* TCULODSection.m */; };
 		BCA56B0D212EE76500999DA5 /* TCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA56B0B212EE76500999DA5 /* TCRegisterViewController.m */; };
 		BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA56B0C212EE76500999DA5 /* TCRegisterViewController.xib */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
@@ -318,6 +327,21 @@
 		BC617333212C46F8003AA3C4 /* TCMyFriendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendCell.h; sourceTree = "<group>"; };
 		BC617334212C46F8003AA3C4 /* TCMyFriendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendCell.m; sourceTree = "<group>"; };
 		BC617335212C46F8003AA3C4 /* TCMyFriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMyFriendCell.xib; sourceTree = "<group>"; };
+		BC9898E4215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockListTableViewCell.h; sourceTree = "<group>"; };
+		BC9898E5215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnlockListTableViewCell.m; sourceTree = "<group>"; };
+		BC9898E6215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCUnlockListTableViewCell.xib; sourceTree = "<group>"; };
+		BC9898EA215BB4A200B5EFF8 /* TCUnlockTaskListSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskListSection.h; sourceTree = "<group>"; };
+		BC9898EB215BB4A200B5EFF8 /* TCUnlockTaskListSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnlockTaskListSection.m; sourceTree = "<group>"; };
+		BC9898F1215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockOrderDetailVC.h; sourceTree = "<group>"; };
+		BC9898F2215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnlockOrderDetailVC.m; sourceTree = "<group>"; };
+		BC9898F5215BC3B300B5EFF8 /* TCULODHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCULODHeaderView.h; sourceTree = "<group>"; };
+		BC9898F6215BC3B300B5EFF8 /* TCULODHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCULODHeaderView.m; sourceTree = "<group>"; };
+		BC9898F8215BC3C000B5EFF8 /* TCULODHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCULODHeaderView.xib; sourceTree = "<group>"; };
+		BC9898FA215BD08400B5EFF8 /* TCULODUserInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCULODUserInfoCell.h; sourceTree = "<group>"; };
+		BC9898FB215BD08400B5EFF8 /* TCULODUserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCULODUserInfoCell.m; sourceTree = "<group>"; };
+		BC9898FC215BD08400B5EFF8 /* TCULODUserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCULODUserInfoCell.xib; sourceTree = "<group>"; };
+		BC989900215BD45D00B5EFF8 /* TCULODSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCULODSection.h; sourceTree = "<group>"; };
+		BC989901215BD45D00B5EFF8 /* TCULODSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCULODSection.m; sourceTree = "<group>"; };
 		BCA56B0A212EE76500999DA5 /* TCRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterViewController.h; sourceTree = "<group>"; };
 		BCA56B0B212EE76500999DA5 /* TCRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterViewController.m; sourceTree = "<group>"; };
 		BCA56B0C212EE76500999DA5 /* TCRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRegisterViewController.xib; sourceTree = "<group>"; };
@@ -477,9 +501,8 @@
 		4D0FEEDB212BF5080021E9E8 /* UnlockTask */ = {
 			isa = PBXGroup;
 			children = (
-				BC5CA2222146BA150050BA68 /* Model */,
-				4D0FEEDC212BF5900021E9E8 /* TCUnlockTaskVC.h */,
-				4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */,
+				BC9898EF215BC07200B5EFF8 /* Detail */,
+				BC9898EE215BC06600B5EFF8 /* List */,
 			);
 			path = UnlockTask;
 			sourceTree = "<group>";
@@ -1024,6 +1047,86 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BC9898E3215BB26500B5EFF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898E4215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.h */,
+				BC9898E5215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m */,
+				BC9898E6215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC9898E9215BB48300B5EFF8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898EA215BB4A200B5EFF8 /* TCUnlockTaskListSection.h */,
+				BC9898EB215BB4A200B5EFF8 /* TCUnlockTaskListSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC9898ED215BC05D00B5EFF8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEEDC212BF5900021E9E8 /* TCUnlockTaskVC.h */,
+				4D0FEEDD212BF5900021E9E8 /* TCUnlockTaskVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC9898EE215BC06600B5EFF8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898ED215BC05D00B5EFF8 /* VC */,
+				BC9898E9215BB48300B5EFF8 /* Tool */,
+				BC9898E3215BB26500B5EFF8 /* View */,
+				BC5CA2222146BA150050BA68 /* Model */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BC9898EF215BC07200B5EFF8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898FF215BD3F200B5EFF8 /* Tool */,
+				BC9898F4215BC2B200B5EFF8 /* View */,
+				BC9898F0215BC07A00B5EFF8 /* VC */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BC9898F0215BC07A00B5EFF8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898F1215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.h */,
+				BC9898F2215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC9898F4215BC2B200B5EFF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC9898F5215BC3B300B5EFF8 /* TCULODHeaderView.h */,
+				BC9898F6215BC3B300B5EFF8 /* TCULODHeaderView.m */,
+				BC9898F8215BC3C000B5EFF8 /* TCULODHeaderView.xib */,
+				BC9898FA215BD08400B5EFF8 /* TCULODUserInfoCell.h */,
+				BC9898FB215BD08400B5EFF8 /* TCULODUserInfoCell.m */,
+				BC9898FC215BD08400B5EFF8 /* TCULODUserInfoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC9898FF215BD3F200B5EFF8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC989900215BD45D00B5EFF8 /* TCULODSection.h */,
+				BC989901215BD45D00B5EFF8 /* TCULODSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		BCA56B08212EE71E00999DA5 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,10 +1301,13 @@
 				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
+				BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
 				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
+				BC9898F9215BC3C000B5EFF8 /* TCULODHeaderView.xib in Resources */,
+				BC9898FE215BD08400B5EFF8 /* TCULODUserInfoCell.xib in Resources */,
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
 				BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
@@ -1272,9 +1378,11 @@
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
 				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
+				BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
+				BC9898F3215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m in Sources */,
 				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
 				BC17F0D9214E321400529024 /* TFailhub.m in Sources */,
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
@@ -1291,9 +1399,11 @@
 				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
+				BC9898F7215BC3B300B5EFF8 /* TCULODHeaderView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
 				4D031E17213F67F000E0372F /* TCUserManger.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
+				BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
@@ -1310,6 +1420,7 @@
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
 				BC48C45D214FE63D006195B0 /* TCPushLimitViewController.m in Sources */,
 				BC34C5F82147F95400768C3E /* TCAROrderHeaderView.m in Sources */,
+				BC9898EC215BB4A200B5EFF8 /* TCUnlockTaskListSection.m in Sources */,
 				BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
@@ -1323,6 +1434,7 @@
 				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,
 				BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */,
 				4DAEE01821256786009FFB4B /* TBaseViewcontroller.m in Sources */,
+				BC9898FD215BD08400B5EFF8 /* TCULODUserInfoCell.m in Sources */,
 				4DB7E5A72126626B009FDA22 /* MMPopupCategory.m in Sources */,
 				BC17F0CA214DFE8900529024 /* TCHomeCommissionTypeView.m in Sources */,
 				4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */,
