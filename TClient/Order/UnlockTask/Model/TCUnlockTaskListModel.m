@@ -23,5 +23,8 @@
 @end
 
 @implementation TCUnlockTaskListModel
-
++ (NSDictionary *)mj_objectClassInArray {
+    
+    return @{@"list":[TCUnlockOrderModel class]};
+}
 @end

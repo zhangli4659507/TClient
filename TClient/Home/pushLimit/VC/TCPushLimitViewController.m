@@ -105,7 +105,7 @@
             [self performSelector:@selector(navBackAction) withObject:nil afterDelay:2];
         } else {
 #warning 这里需要修改
-            [MBProgressHUD showError:response.msg];
+            [MBProgressHUD showError:[NSString stringWithFormat:@"%@",response.msg]];
         }
     }];
 }
