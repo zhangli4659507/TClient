@@ -11,6 +11,7 @@
 #import "TCUnlockListTableViewCell.h"
 #import "TCUnlockTaskListSection.h"
 #import "TOTableViewTool.h"
+#import "TCUnlockOrderDetailVC.h"
 @interface TCUnlockTaskVC ()
 @property (nonatomic, assign) NSUInteger pgIndex;
 @property (nonatomic, strong) UITableView *tableView;
@@ -111,6 +112,12 @@
     [self.dataSource addObjectsFromArray:listModel.list];
     self.tableView.mj_footer.hidden = listModel.page_index >= listModel.total_page;
     self.section.dataSource = self.dataSource;
+    WEAK_REF(self);
+    [self.section setDidSelectedBlock:^(TCUnlockOrderModel *model) {
+        TCUnlockOrderDetailVC *dvc = [[TCUnlockOrderDetailVC alloc] init];
+        dvc.orderModel = model;
+        [weak_self.navigationController pushViewController:dvc animated:YES];
+    }];
     [self.tableView reloadData];
 }
 

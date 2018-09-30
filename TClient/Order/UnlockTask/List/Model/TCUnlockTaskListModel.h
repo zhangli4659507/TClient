@@ -24,12 +24,11 @@
 @property (nonatomic, copy) NSString *service_price;//平台服务费
 @property (nonatomic, copy) NSString *bond_price;//保费
 @property (nonatomic, copy) NSString *unseal_price;
-@property (nonatomic, assign) NSInteger status;//订单状态 0下单成功 1付款成功 2-被接单 3-已完成（可投诉） 4-已完成（不可投诉了）
+@property (nonatomic, assign) NSInteger status;//订单状态 0下单成功 1付款成功 2-保号中 3-待解锁 4-解锁中 5 解锁待确认 6 解锁完成 7 已取消
 @property (nonatomic, assign) NSInteger type;//订单类型（1有保费 2 无保费）
 @property (nonatomic, copy) NSString *add_time;//下单时间
 @property (nonatomic, copy) NSString *jd_finish_time;//接单完成
 @property (nonatomic, copy) NSString *status_text;//订单状态显示标识
-
 @property (nonatomic, copy) NSArray<TCOrderUserInfoModel *> *jd_user_list;//接单用户列表
 
 @end

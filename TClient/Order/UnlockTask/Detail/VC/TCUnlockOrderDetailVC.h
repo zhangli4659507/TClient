@@ -7,7 +7,7 @@
 //
 
 #import "TBaseViewcontroller.h"
-
+@class TCUnlockOrderModel;
 @interface TCUnlockOrderDetailVC : TBaseViewcontroller
-
+@property (nonatomic, strong) TCUnlockOrderModel *orderModel;
 @end

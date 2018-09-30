@@ -12,6 +12,11 @@ NSString *const TCULODUserInfoCellClassName = @"TCULODUserInfoCell";
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [T2TView setRoundCornerFor:self.unLockButton radiu:13.5f];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.layoutMargins = UIEdgeInsetsZero;
+    self.separatorInset = UIEdgeInsetsZero;
+    self.preservesSuperviewLayoutMargins = YES;
     // Initialization code
 }
 - (IBAction)actionUnlockButton:(id)sender {

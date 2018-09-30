@@ -21,7 +21,7 @@ NSString *const TCUnlockListTableViewCellClassName = @"TCUnlockListTableViewCell
 }
 
 - (void)setupUIWithModel:(TCUnlockOrderModel *)orderModel {
-    self.orderNumLbl.text = [NSString stringWithFormat:@"订单号:%ld",orderModel.order_id];
+    self.orderNumLbl.text = [NSString stringWithFormat:@"订单号:%@",orderModel.order_sn];
     self.priceLbl.text = [NSString stringWithFormat:@"价格:%@元",kUnNilStr(orderModel.order_price)];
     self.peopleNumLbl.text = [NSString stringWithFormat:@"保号人数:%ld个",orderModel.jd_user_list.count];
     
