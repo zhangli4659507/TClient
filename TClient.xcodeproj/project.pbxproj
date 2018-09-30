@@ -31,6 +31,7 @@
 		4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */; };
 		4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */; };
 		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
+		4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */; };
 		4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */; };
 		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
 		4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */; };
@@ -178,6 +179,8 @@
 		4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQROrderCell.xib; sourceTree = "<group>"; };
 		4D0FEEE6212C08320021E9E8 /* TCQRSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQRSection.h; sourceTree = "<group>"; };
 		4D0FEEE7212C08320021E9E8 /* TCQRSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRSection.m; sourceTree = "<group>"; };
+		4D3C6A1221606D4500B78066 /* TCReChargeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCReChargeRecordModel.h; sourceTree = "<group>"; };
+		4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCReChargeRecordModel.m; sourceTree = "<group>"; };
 		4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
 		4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
 		4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCLoginViewController.xib; sourceTree = "<group>"; };
@@ -433,6 +436,7 @@
 		4D0FEEBF212BB20F0021E9E8 /* rechargeRecord */ = {
 			isa = PBXGroup;
 			children = (
+				4D3C6A1521606D4A00B78066 /* Model */,
 				BC61731F212C3C21003AA3C4 /* Cell */,
 				BC617316212C3BCF003AA3C4 /* Tool */,
 				BC617315212C3BBE003AA3C4 /* VC */,
@@ -536,6 +540,15 @@
 				4D0FEEE7212C08320021E9E8 /* TCQRSection.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		4D3C6A1521606D4A00B78066 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C6A1221606D4500B78066 /* TCReChargeRecordModel.h */,
+				4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4D469DB2212FFD7B000E76B8 /* Login */ = {
@@ -1378,6 +1391,7 @@
 				BC617336212C46F8003AA3C4 /* TCMyFriendCell.m in Sources */,
 				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
+				4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */,
 				BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
