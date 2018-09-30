@@ -44,14 +44,8 @@
 {
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         //判断设备是否支持相册
-        if (IOS8) {
             MMAlertView *alertView = [[MMAlertView alloc] initWithConfirmTitle:@"提示" detail:@"未开启访问相册权限，现在去开启！"];
             [alertView show];
-        }
-        else {
-            MMAlertView *alertView = [[MMAlertView alloc] initWithConfirmTitle:@"提示" detail:@"设备不支持访问相册，请在设置->隐私->照片中进行设置！"];
-            [alertView show];
-        }
         return NO;
     }
     return YES;

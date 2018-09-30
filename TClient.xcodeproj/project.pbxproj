@@ -38,6 +38,10 @@
 		4D3C6A252160A1CC00B78066 /* TSPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */; };
 		4D3C6A262160A1CC00B78066 /* TSPhotoFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */; };
 		4D3C6A272160A1CC00B78066 /* TSAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A212160A1CC00B78066 /* TSAudio.m */; };
+		4D3C6A2A2160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A282160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m */; };
+		4D3C6A2D2160B8CE00B78066 /* SSDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A2B2160B8CE00B78066 /* SSDes.m */; };
+		4D3C6A312160B8F300B78066 /* TSFailureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A2F2160B8F300B78066 /* TSFailureController.m */; };
+		4D3C6A322160B8F300B78066 /* TSFailureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C6A302160B8F300B78066 /* TSFailureController.xib */; };
 		4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */; };
 		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
 		4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */; };
@@ -198,6 +202,13 @@
 		4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhotoPicker.m; sourceTree = "<group>"; };
 		4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhotoFlash.m; sourceTree = "<group>"; };
 		4D3C6A212160A1CC00B78066 /* TSAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAudio.m; sourceTree = "<group>"; };
+		4D3C6A282160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureSession+TDeviceOrientation.m"; sourceTree = "<group>"; };
+		4D3C6A292160B82500B78066 /* AVCaptureSession+TDeviceOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureSession+TDeviceOrientation.h"; sourceTree = "<group>"; };
+		4D3C6A2B2160B8CE00B78066 /* SSDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDes.m; sourceTree = "<group>"; };
+		4D3C6A2C2160B8CE00B78066 /* SSDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDes.h; sourceTree = "<group>"; };
+		4D3C6A2E2160B8F200B78066 /* TSFailureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFailureController.h; sourceTree = "<group>"; };
+		4D3C6A2F2160B8F300B78066 /* TSFailureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSFailureController.m; sourceTree = "<group>"; };
+		4D3C6A302160B8F300B78066 /* TSFailureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSFailureController.xib; sourceTree = "<group>"; };
 		4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
 		4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
 		4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCLoginViewController.xib; sourceTree = "<group>"; };
@@ -571,6 +582,13 @@
 		4D3C6A162160A1AF00B78066 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				4D3C6A2E2160B8F200B78066 /* TSFailureController.h */,
+				4D3C6A2F2160B8F300B78066 /* TSFailureController.m */,
+				4D3C6A302160B8F300B78066 /* TSFailureController.xib */,
+				4D3C6A2C2160B8CE00B78066 /* SSDes.h */,
+				4D3C6A2B2160B8CE00B78066 /* SSDes.m */,
+				4D3C6A292160B82500B78066 /* AVCaptureSession+TDeviceOrientation.h */,
+				4D3C6A282160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m */,
 				4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */,
 				4D3C6A1C2160A1CB00B78066 /* TSAudio.h */,
 				4D3C6A212160A1CC00B78066 /* TSAudio.m */,
@@ -1351,6 +1369,7 @@
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */,
+				4D3C6A322160B8F300B78066 /* TSFailureController.xib in Resources */,
 				4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
@@ -1456,6 +1475,7 @@
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
 				4D3C6A262160A1CC00B78066 /* TSPhotoFlash.m in Sources */,
 				4D031E17213F67F000E0372F /* TCUserManger.m in Sources */,
+				4D3C6A2A2160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
 				BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
@@ -1486,6 +1506,7 @@
 				4D3C6A272160A1CC00B78066 /* TSAudio.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
+				4D3C6A312160B8F300B78066 /* TSFailureController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
 				4DB7E5AE2126626B009FDA22 /* UIColor+Hex.m in Sources */,
 				BC617323212C3D5C003AA3C4 /* TCRechargeRecordCell.m in Sources */,
@@ -1515,6 +1536,7 @@
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
 				4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */,
+				4D3C6A2D2160B8CE00B78066 /* SSDes.m in Sources */,
 				4D031E24213FCB0000E0372F /* TAreaTool.m in Sources */,
 				4DB7E59B2126626B009FDA22 /* T2TView.m in Sources */,
 				4DB7E5A42126626B009FDA22 /* TAlertController.m in Sources */,

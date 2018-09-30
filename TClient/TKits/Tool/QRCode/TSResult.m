@@ -8,7 +8,6 @@
 
 #import "TSResult.h"
 // tool
-#import "ERedirect.h"
 #import "SSDes.h"
 // vc
 #import "TSFailureController.h"
@@ -32,8 +31,7 @@
             resultString =  [@"http://" stringByAppendingString:resultString];
         }
         
-        ERedirect *r = [[ERedirect alloc] initWithVC:self.fromVc type:ERedirectedOpenURL data:resultString];
-        [ERedirectInterface turnToInterfaceWithModel:r];
+     
         return;
     }
     NSString *handleString = [resultString substringFromIndex:range.location+1];
@@ -43,21 +41,13 @@
 - (void)deCodeString:(NSString *)handleString
 {
     //解密数据
-    NSString *decryptString = [SSDes getDecryptWithString:handleString keyString:@"ea9377ea" ivString:nil];
-    NSDictionary *dataDict = [EAPPUnit dictionaryWithJsonString:decryptString];
-    ERedirect *r = [ERedirect mj_objectWithKeyValues:dataDict];
-    r.fromController = self.fromVc;
-    if (!r) {
-        //解析json失败
-        [self failedWithMessage:@"解析失败！"];
-        return;
-    }
-    [ERedirectInterface turnToInterfaceWithModel:r];
+   
+  
 }
 
 - (void)failedWithMessage:(NSString *)exceptionMsg
 {
-    [TRouterTool routerWithUrl:ShortURL_TSFailureController fromVc:self.fromVc.navigationController parameters:@{@"msg":kUnNilStr(exceptionMsg)}];
+    
 }
 
 @end
