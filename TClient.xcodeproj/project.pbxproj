@@ -32,6 +32,12 @@
 		4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */; };
 		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
 		4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */; };
+		4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A182160A1CA00B78066 /* TSResult.m */; };
+		4D3C6A232160A1CC00B78066 /* TCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */; };
+		4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */; };
+		4D3C6A252160A1CC00B78066 /* TSPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */; };
+		4D3C6A262160A1CC00B78066 /* TSPhotoFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */; };
+		4D3C6A272160A1CC00B78066 /* TSAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A212160A1CC00B78066 /* TSAudio.m */; };
 		4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */; };
 		4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */; };
 		4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A30F92140B8100084D8E4 /* TCUserInfoViewController.m */; };
@@ -181,6 +187,17 @@
 		4D0FEEE7212C08320021E9E8 /* TCQRSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRSection.m; sourceTree = "<group>"; };
 		4D3C6A1221606D4500B78066 /* TCReChargeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCReChargeRecordModel.h; sourceTree = "<group>"; };
 		4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCReChargeRecordModel.m; sourceTree = "<group>"; };
+		4D3C6A172160A1CA00B78066 /* TSResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResult.h; sourceTree = "<group>"; };
+		4D3C6A182160A1CA00B78066 /* TSResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResult.m; sourceTree = "<group>"; };
+		4D3C6A192160A1CB00B78066 /* TSPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhotoPicker.h; sourceTree = "<group>"; };
+		4D3C6A1A2160A1CB00B78066 /* TSPhotoFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhotoFlash.h; sourceTree = "<group>"; };
+		4D3C6A1B2160A1CB00B78066 /* TCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCaptureSession.h; sourceTree = "<group>"; };
+		4D3C6A1C2160A1CB00B78066 /* TSAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAudio.h; sourceTree = "<group>"; };
+		4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCaptureSession.m; sourceTree = "<group>"; };
+		4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noticeMusic.wav; sourceTree = "<group>"; };
+		4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhotoPicker.m; sourceTree = "<group>"; };
+		4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhotoFlash.m; sourceTree = "<group>"; };
+		4D3C6A212160A1CC00B78066 /* TSAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAudio.m; sourceTree = "<group>"; };
 		4D469DB4212FFDA1000E76B8 /* TCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
 		4D469DB5212FFDA1000E76B8 /* TCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
 		4D469DB6212FFDA1000E76B8 /* TCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCLoginViewController.xib; sourceTree = "<group>"; };
@@ -551,6 +568,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4D3C6A162160A1AF00B78066 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */,
+				4D3C6A1C2160A1CB00B78066 /* TSAudio.h */,
+				4D3C6A212160A1CC00B78066 /* TSAudio.m */,
+				4D3C6A1A2160A1CB00B78066 /* TSPhotoFlash.h */,
+				4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */,
+				4D3C6A1B2160A1CB00B78066 /* TCaptureSession.h */,
+				4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */,
+				4D3C6A192160A1CB00B78066 /* TSPhotoPicker.h */,
+				4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */,
+				4D3C6A172160A1CA00B78066 /* TSResult.h */,
+				4D3C6A182160A1CA00B78066 /* TSResult.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		4D469DB2212FFD7B000E76B8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +691,7 @@
 		4DB7E5662126626B009FDA22 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4D3C6A162160A1AF00B78066 /* QRCode */,
 				BC31313C21514DD800479FA1 /* LoadingHub */,
 				BC31313B21514DC400479FA1 /* FailHub */,
 				4D031E2F213FDAC800E0372F /* UploadImage */,
@@ -1315,6 +1351,7 @@
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */,
+				4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
 				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
@@ -1363,6 +1400,7 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TOWebViewController/TOWebViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1374,6 +1412,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TOWebViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXingObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1415,6 +1454,7 @@
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
 				BC9898F7215BC3B300B5EFF8 /* TCULODHeaderView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
+				4D3C6A262160A1CC00B78066 /* TSPhotoFlash.m in Sources */,
 				4D031E17213F67F000E0372F /* TCUserManger.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
 				BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */,
@@ -1422,12 +1462,14 @@
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
 				4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */,
+				4D3C6A252160A1CC00B78066 /* TSPhotoPicker.m in Sources */,
 				4DB7E5A52126626B009FDA22 /* MMAlertView.m in Sources */,
 				4D031E35213FDB0800E0372F /* UIImage+Scale.m in Sources */,
 				4D0FEED6212BE63A0021E9E8 /* TCRechargeCashVC.m in Sources */,
 				4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */,
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
 				4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */,
+				4D3C6A232160A1CC00B78066 /* TCaptureSession.m in Sources */,
 				BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
@@ -1441,6 +1483,7 @@
 				BC17F0C5214DF46F00529024 /* TCHomeViewController.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
 				4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */,
+				4D3C6A272160A1CC00B78066 /* TSAudio.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
@@ -1462,6 +1505,7 @@
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
+				4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */,
 				BC31313A2151475200479FA1 /* TCPushLimitInfoModel.m in Sources */,
 				BC17F0D2214E276800529024 /* TLodingHub.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,

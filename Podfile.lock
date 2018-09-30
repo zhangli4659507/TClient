@@ -25,6 +25,9 @@ PODS:
   - TOWebViewController (2.2.8):
     - TOWebViewController/Core (= 2.2.8)
   - TOWebViewController/Core (2.2.8)
+  - ZXingObjC (3.2.2):
+    - ZXingObjC/All (= 3.2.2)
+  - ZXingObjC/All (3.2.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -35,6 +38,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 3.7)
   - TOWebViewController (~> 2.2.8)
+  - ZXingObjC (~> 3.2.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +50,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - TOWebViewController
+    - ZXingObjC
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -56,7 +61,8 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TOWebViewController: 953a24619d32f7aa1d9d4098a74885a9236f7348
+  ZXingObjC: 2c95a0dc52daac69b23ec78fad8fa2fec05f8981
 
-PODFILE CHECKSUM: d5d6d04b7fa1a3d438298e0ca5b0464c90714039
+PODFILE CHECKSUM: 5e6adb9ba814faeecbe22163881077e73b103e51
 
 COCOAPODS: 1.5.3

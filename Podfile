@@ -11,5 +11,6 @@ target "TClient" do
     pod 'TOWebViewController', '~> 2.2.8'
     pod 'IQKeyboardManager'
     pod 'FLAnimatedImage', '~> 1.0.12'
+     pod 'ZXingObjC', '~> 3.2.2'
 end
 
