@@ -60,6 +60,7 @@
     self.tableHeaderView.platFormPriceLbl.text = [NSString stringWithFormat:@"平台服务费：%@元",self.orderModel.service_price];
     self.tableHeaderView.bondPriceLbl.text = [NSString stringWithFormat:@"保费：%@元",self.orderModel.bond_price];
     self.tableHeaderView.unlockPriceLbl.text = [NSString stringWithFormat:@"解封费：%@元",self.orderModel.order_price];
+    self.tableHeaderView.stateLbl.text = self.orderModel.status_text;
     if (self.orderModel.type != 1) {
         self.tableHeaderView.boundPriceSpace.constant = 0.f;
         self.tableHeaderView.boundPriceHeight.constant = 0.f;

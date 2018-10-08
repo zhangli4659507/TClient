@@ -125,10 +125,10 @@
 - (NSArray<TCMHCellConfigModel *> *)seccondSectionItems {
     TCUserInfoModel *userModel = [TCUserManger shareUserManger].userModel;
     
-    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_search" title:@"订单查询" actionHandleBlock:^{
-        TCRegisterQueryVC *ivc = [[TCRegisterQueryVC alloc] init];
-        [self.navigationController pushViewController:ivc animated:YES];
-    }];
+//    TCMHBasicCellConfigModel *registerQueryItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_search" title:@"订单查询" actionHandleBlock:^{
+//        TCRegisterQueryVC *ivc = [[TCRegisterQueryVC alloc] init];
+//        [self.navigationController pushViewController:ivc animated:YES];
+//    }];
     
     TCMHBasicCellConfigModel *rechargeRecordItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_czjl" title:@"充值记录" actionHandleBlock:^{
         TCRechargeRecordVC *ivc = [[TCRechargeRecordVC alloc] init];
@@ -143,17 +143,17 @@
     TCMHInfoCellConfigModel *myInviteCodeItem = [[TCMHInfoCellConfigModel alloc] initWithHeadImaName:@"icon_mine_wdtjm" title:@"我的推荐码" actionHandleBlock:nil];
     myInviteCodeItem.info = userModel.referral_code;
     
-    TCMHBasicCellConfigModel *inviteFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"incon_mine_yqhs" title:@"邀请号商" actionHandleBlock:^{
-        TCInviteFriendVC *ivc = [[TCInviteFriendVC alloc] init];
-        [self.navigationController pushViewController:ivc animated:YES];
-    }];
+//    TCMHBasicCellConfigModel *inviteFriendItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"incon_mine_yqhs" title:@"邀请号商" actionHandleBlock:^{
+//        TCInviteFriendVC *ivc = [[TCInviteFriendVC alloc] init];
+//        [self.navigationController pushViewController:ivc animated:YES];
+//    }];
     
-    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_xjhs" title:@"下级号商" actionHandleBlock:^{
-        TCUnderMerchantVC *ivc = [[TCUnderMerchantVC alloc] init];
-        [self.navigationController pushViewController:ivc animated:YES];
-    }];
+//    TCMHBasicCellConfigModel *UnderMerchantItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_xjhs" title:@"下级号商" actionHandleBlock:^{
+//        TCUnderMerchantVC *ivc = [[TCUnderMerchantVC alloc] init];
+//        [self.navigationController pushViewController:ivc animated:YES];
+//    }];
     
-    return @[registerQueryItem,rechargeRecordItem,accountChangeItem,myInviteCodeItem,inviteFriendItem,UnderMerchantItem];
+    return @[rechargeRecordItem,accountChangeItem,myInviteCodeItem];
 }
 
 - (NSArray<TCMHCellConfigModel *> *)thirdSectionItems {
