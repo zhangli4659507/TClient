@@ -138,6 +138,10 @@
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
+		BCF87452216E47EA001B0BE2 /* TCCommonSenseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */; };
+		BCF87455216E4816001B0BE2 /* TCCommonSenseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87454216E4816001B0BE2 /* TCCommonSenseModel.m */; };
+		BCF87459216E4F70001B0BE2 /* TCCommonSesenseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87457216E4F70001B0BE2 /* TCCommonSesenseCell.m */; };
+		BCF8745A216E4F70001B0BE2 /* TCCommonSesenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF87458216E4F70001B0BE2 /* TCCommonSesenseCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -382,6 +386,13 @@
 		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
 		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
 		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
+		BCF87450216E47EA001B0BE2 /* TCCommonSenseSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSenseSection.h; sourceTree = "<group>"; };
+		BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCommonSenseSection.m; sourceTree = "<group>"; };
+		BCF87453216E4816001B0BE2 /* TCCommonSenseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSenseModel.h; sourceTree = "<group>"; };
+		BCF87454216E4816001B0BE2 /* TCCommonSenseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCommonSenseModel.m; sourceTree = "<group>"; };
+		BCF87456216E4F70001B0BE2 /* TCCommonSesenseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSesenseCell.h; sourceTree = "<group>"; };
+		BCF87457216E4F70001B0BE2 /* TCCommonSesenseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCommonSesenseCell.m; sourceTree = "<group>"; };
+		BCF87458216E4F70001B0BE2 /* TCCommonSesenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCCommonSesenseCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,8 +515,10 @@
 		4D0FEECF212BB35A0021E9E8 /* CommonSense */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FEED0212BB37B0021E9E8 /* TCCommonSenseVC.h */,
-				4D0FEED1212BB37B0021E9E8 /* TCCommonSenseVC.m */,
+				BCF8744F216E47BE001B0BE2 /* Tool */,
+				BCF8744E216E47B8001B0BE2 /* View */,
+				BCF8744D216E47B2001B0BE2 /* Model */,
+				BCF8744C216E47AB001B0BE2 /* VC */,
 			);
 			path = CommonSense;
 			sourceTree = "<group>";
@@ -1291,6 +1304,43 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		BCF8744C216E47AB001B0BE2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FEED0212BB37B0021E9E8 /* TCCommonSenseVC.h */,
+				4D0FEED1212BB37B0021E9E8 /* TCCommonSenseVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BCF8744D216E47B2001B0BE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCF87453216E4816001B0BE2 /* TCCommonSenseModel.h */,
+				BCF87454216E4816001B0BE2 /* TCCommonSenseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCF8744E216E47B8001B0BE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCF87456216E4F70001B0BE2 /* TCCommonSesenseCell.h */,
+				BCF87457216E4F70001B0BE2 /* TCCommonSesenseCell.m */,
+				BCF87458216E4F70001B0BE2 /* TCCommonSesenseCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCF8744F216E47BE001B0BE2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BCF87450216E47EA001B0BE2 /* TCCommonSenseSection.h */,
+				BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1371,6 +1421,7 @@
 				BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */,
 				4D3C6A322160B8F300B78066 /* TSFailureController.xib in Resources */,
 				4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */,
+				BCF8745A216E4F70001B0BE2 /* TCCommonSesenseCell.xib in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
 				4D469DB8212FFDA1000E76B8 /* TCLoginViewController.xib in Resources */,
@@ -1450,6 +1501,7 @@
 				4D031E27213FD56F00E0372F /* EGetCacheSize.m in Sources */,
 				4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */,
 				4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */,
+				BCF87455216E4816001B0BE2 /* TCCommonSenseModel.m in Sources */,
 				BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
@@ -1500,11 +1552,13 @@
 				BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */,
 				4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */,
 				4DB7E5A22126626B009FDA22 /* MBProgressHUD+MJ.m in Sources */,
+				BCF87459216E4F70001B0BE2 /* TCCommonSesenseCell.m in Sources */,
 				BC17F0C5214DF46F00529024 /* TCHomeViewController.m in Sources */,
 				4DCAF674212AB7B00087EE00 /* TCMHTableFootView.m in Sources */,
 				4D031E21213FCA9600E0372F /* TAreaModel.m in Sources */,
 				4D3C6A272160A1CC00B78066 /* TSAudio.m in Sources */,
 				BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */,
+				BCF87452216E47EA001B0BE2 /* TCCommonSenseSection.m in Sources */,
 				4DB7E5AA2126626B009FDA22 /* TPopViewController.m in Sources */,
 				4D3C6A312160B8F300B78066 /* TSFailureController.m in Sources */,
 				4DB7E5A82126626B009FDA22 /* MMPopupWindow.m in Sources */,
