@@ -85,6 +85,7 @@
 		4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7E6082126A9B4009FDA22 /* LaunchScreen.xib */; };
 		4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */; };
 		4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */; };
+		4DC56E5D216F41B8009B234C /* TCAccountChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC56E5C216F41B8009B234C /* TCAccountChangeModel.m */; };
 		4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF627212A4C270087EE00 /* TOTableViewTool.m */; };
 		4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF628212A4C270087EE00 /* TOBaseSection.m */; };
 		4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF665212AB7930087EE00 /* TCMineHeaderSection.m */; };
@@ -298,6 +299,8 @@
 		4DB7E60D2126B17C009FDA22 /* UIBarButtonItem+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WB.h"; sourceTree = "<group>"; };
 		4DB7E60F2126B1BD009FDA22 /* TComputerTextHeightTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TComputerTextHeightTool.h; sourceTree = "<group>"; };
 		4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TComputerTextHeightTool.m; sourceTree = "<group>"; };
+		4DC56E5B216F41B8009B234C /* TCAccountChangeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAccountChangeModel.h; sourceTree = "<group>"; };
+		4DC56E5C216F41B8009B234C /* TCAccountChangeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAccountChangeModel.m; sourceTree = "<group>"; };
 		4DCAF625212A4C260087EE00 /* TOTableViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTableViewTool.h; sourceTree = "<group>"; };
 		4DCAF626212A4C260087EE00 /* TOBaseSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOBaseSection.h; sourceTree = "<group>"; };
 		4DCAF627212A4C270087EE00 /* TOTableViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTableViewTool.m; sourceTree = "<group>"; };
@@ -486,6 +489,7 @@
 		4D0FEEC3212BB2570021E9E8 /* accountChange */ = {
 			isa = PBXGroup;
 			children = (
+				4DC56E5A216F419F009B234C /* Model */,
 				BC61732C212C4458003AA3C4 /* Tool */,
 				BC617326212C430E003AA3C4 /* View */,
 				BC617325212C4303003AA3C4 /* VC */,
@@ -865,6 +869,15 @@
 				BC48C457214FE609006195B0 /* homePage */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4DC56E5A216F419F009B234C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DC56E5B216F41B8009B234C /* TCAccountChangeModel.h */,
+				4DC56E5C216F41B8009B234C /* TCAccountChangeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4DCAF624212A4C140087EE00 /* TableViewTool */ = {
@@ -1527,6 +1540,7 @@
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
 				4D3C6A262160A1CC00B78066 /* TSPhotoFlash.m in Sources */,
 				4D031E17213F67F000E0372F /* TCUserManger.m in Sources */,
+				4DC56E5D216F41B8009B234C /* TCAccountChangeModel.m in Sources */,
 				4D3C6A2A2160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m in Sources */,
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
 				BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */,

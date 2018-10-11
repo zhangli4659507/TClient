@@ -8,6 +8,7 @@
 
 #import "TCAccountChangeSection.h"
 #import "TCAccountChangeCell.h"
+#import "TCAccountChangeModel.h"
 @implementation TCAccountChangeSection
 - (void)tableViewRegisterView:(UITableView *)tableView {
     
@@ -17,6 +18,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndex:(NSInteger)index {
     
     TCAccountChangeCell *cell = [tableView dequeueReusableCellWithIdentifier:TCAccountChangeCellClassName];
+    
+    if (self.dataSource.count > index) {
+        [cell configDataWithModel:self.dataSource[index]];
+    }
+    
     return cell;
     
 }

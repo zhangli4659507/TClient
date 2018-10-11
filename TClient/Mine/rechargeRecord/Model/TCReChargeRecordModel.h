@@ -24,6 +24,4 @@
 @property (nonatomic, assign) NSInteger page_size;
 @property (nonatomic, assign) NSInteger page_index;
 @property (nonatomic, copy) NSArray<TCReChargeRecordListModel *> *list;
-
-
 @end

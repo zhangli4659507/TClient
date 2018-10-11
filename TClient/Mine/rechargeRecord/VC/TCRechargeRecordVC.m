@@ -42,6 +42,7 @@
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestRefresh)];
     self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(requestMoreData)];
+    self.tableView.mj_footer.hidden = YES;
 }
 
 #pragma mark - layoutSubview
@@ -83,9 +84,8 @@
     if (self.pageIndex == 1) {
          [TLodingHub setGifOnView:self.view withTitle:nil];
     }
-#warning 这里还未测试通过
     [TFailhub hidenALLFailhubWithSuperView:self.view];
-    [THTTPRequestTool postSignRequestDataWithUrl:@"api/service/recharge/recharge_list" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/recharge/recharge_list" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
         [TLodingHub hideAllHUDsForView:self.view];
         [self.tableView.mj_footer endRefreshing];
         [self.tableView.mj_header endRefreshing];
