@@ -86,6 +86,9 @@
 		4DB7E60E2126B17C009FDA22 /* UIBarButtonItem+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E60C2126B17C009FDA22 /* UIBarButtonItem+WB.m */; };
 		4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */; };
 		4DC56E5D216F41B8009B234C /* TCAccountChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC56E5C216F41B8009B234C /* TCAccountChangeModel.m */; };
+		4DC56E61216F4CFD009B234C /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC56E5F216F4CFD009B234C /* TCConnetServiceViewController.m */; };
+		4DC56E62216F4CFD009B234C /* TCConnetServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC56E60216F4CFD009B234C /* TCConnetServiceViewController.xib */; };
+		4DC56E66216F4FCC009B234C /* TCServiceInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC56E65216F4FCC009B234C /* TCServiceInfoModel.m */; };
 		4DCAF629212A4C270087EE00 /* TOTableViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF627212A4C270087EE00 /* TOTableViewTool.m */; };
 		4DCAF62A212A4C270087EE00 /* TOBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF628212A4C270087EE00 /* TOBaseSection.m */; };
 		4DCAF669212AB7930087EE00 /* TCMineHeaderSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF665212AB7930087EE00 /* TCMineHeaderSection.m */; };
@@ -138,7 +141,6 @@
 		BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA56B0C212EE76500999DA5 /* TCRegisterViewController.xib */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
-		BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */; };
 		BCF87452216E47EA001B0BE2 /* TCCommonSenseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */; };
 		BCF87455216E4816001B0BE2 /* TCCommonSenseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87454216E4816001B0BE2 /* TCCommonSenseModel.m */; };
 		BCF87459216E4F70001B0BE2 /* TCCommonSesenseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87457216E4F70001B0BE2 /* TCCommonSesenseCell.m */; };
@@ -301,6 +303,11 @@
 		4DB7E6102126B1BD009FDA22 /* TComputerTextHeightTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TComputerTextHeightTool.m; sourceTree = "<group>"; };
 		4DC56E5B216F41B8009B234C /* TCAccountChangeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAccountChangeModel.h; sourceTree = "<group>"; };
 		4DC56E5C216F41B8009B234C /* TCAccountChangeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAccountChangeModel.m; sourceTree = "<group>"; };
+		4DC56E5E216F4CFD009B234C /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
+		4DC56E5F216F4CFD009B234C /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
+		4DC56E60216F4CFD009B234C /* TCConnetServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCConnetServiceViewController.xib; sourceTree = "<group>"; };
+		4DC56E64216F4FCC009B234C /* TCServiceInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCServiceInfoModel.h; sourceTree = "<group>"; };
+		4DC56E65216F4FCC009B234C /* TCServiceInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCServiceInfoModel.m; sourceTree = "<group>"; };
 		4DCAF625212A4C260087EE00 /* TOTableViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTableViewTool.h; sourceTree = "<group>"; };
 		4DCAF626212A4C260087EE00 /* TOBaseSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOBaseSection.h; sourceTree = "<group>"; };
 		4DCAF627212A4C270087EE00 /* TOTableViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTableViewTool.m; sourceTree = "<group>"; };
@@ -387,8 +394,6 @@
 		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
 		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
 		BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUserChangeViewController.m; sourceTree = "<group>"; };
-		BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCConnetServiceViewController.h; sourceTree = "<group>"; };
-		BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCConnetServiceViewController.m; sourceTree = "<group>"; };
 		BCF87450216E47EA001B0BE2 /* TCCommonSenseSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSenseSection.h; sourceTree = "<group>"; };
 		BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCommonSenseSection.m; sourceTree = "<group>"; };
 		BCF87453216E4816001B0BE2 /* TCCommonSenseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCommonSenseModel.h; sourceTree = "<group>"; };
@@ -880,6 +885,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4DC56E63216F4FAE009B234C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DC56E64216F4FCC009B234C /* TCServiceInfoModel.h */,
+				4DC56E65216F4FCC009B234C /* TCServiceInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4DCAF624212A4C140087EE00 /* TableViewTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1267,6 +1281,7 @@
 		BCC722F6212AF002002AB760 /* ConnectService */ = {
 			isa = PBXGroup;
 			children = (
+				4DC56E63216F4FAE009B234C /* Model */,
 				BCC722F7212AF012002AB760 /* VC */,
 			);
 			path = ConnectService;
@@ -1275,8 +1290,9 @@
 		BCC722F7212AF012002AB760 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				BCC722F8212AF02D002AB760 /* TCConnetServiceViewController.h */,
-				BCC722F9212AF02D002AB760 /* TCConnetServiceViewController.m */,
+				4DC56E5E216F4CFD009B234C /* TCConnetServiceViewController.h */,
+				4DC56E5F216F4CFD009B234C /* TCConnetServiceViewController.m */,
+				4DC56E60216F4CFD009B234C /* TCConnetServiceViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1444,6 +1460,7 @@
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
 				BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
+				4DC56E62216F4CFD009B234C /* TCConnetServiceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1518,8 +1535,10 @@
 				BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */,
 				4D0FEECA212BB2D80021E9E8 /* TCInviteFriendVC.m in Sources */,
 				BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */,
+				4DC56E61216F4CFD009B234C /* TCConnetServiceViewController.m in Sources */,
 				4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */,
 				BC9898F3215BC2A700B5EFF8 /* TCUnlockOrderDetailVC.m in Sources */,
+				4DC56E66216F4FCC009B234C /* TCServiceInfoModel.m in Sources */,
 				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
 				BC17F0D9214E321400529024 /* TFailhub.m in Sources */,
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
@@ -1532,7 +1551,6 @@
 				4DB7E59F2126626B009FDA22 /* WMMenuView.m in Sources */,
 				BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */,
 				BC17F0CF214E000B00529024 /* TCHomeModel.m in Sources */,
-				BCC722FA212AF02D002AB760 /* TCConnetServiceViewController.m in Sources */,
 				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
