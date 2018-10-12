@@ -172,10 +172,10 @@
         [self.navigationController pushViewController:cvc animated:YES];
     }];
     
-    TCMHBasicCellConfigModel *commonSenseItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_cjwt" title:@"常见问题" actionHandleBlock:^{
-        TCCommonSenseVC *avc = [[TCCommonSenseVC alloc] init];
-        [self.navigationController pushViewController:avc animated:YES];
-    }];
+//    TCMHBasicCellConfigModel *commonSenseItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_cjwt" title:@"常见问题" actionHandleBlock:^{
+//        TCCommonSenseVC *avc = [[TCCommonSenseVC alloc] init];
+//        [self.navigationController pushViewController:avc animated:YES];
+//    }];
     TCMHBasicCellConfigModel *cacheItem = [[TCMHBasicCellConfigModel alloc] initWithHeadImaName:@"icon_mine_qchc" title:@"清除缓存" actionHandleBlock:nil];
     WEAK_REF(cacheItem);
     WEAK_REF(self);
@@ -200,7 +200,7 @@
         [self.tableView reloadData];
     }];
     
-    return @[userInfoItem,collectServiceItem,changePwdItem,commonSenseItem,cacheItem];
+    return @[userInfoItem,collectServiceItem,changePwdItem,cacheItem];
 }
 
 #pragma mark - getterFunc

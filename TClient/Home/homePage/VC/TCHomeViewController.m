@@ -11,6 +11,7 @@
 #import "TCHomeCommissionTypeView.h"
 #import "TUploadTool.h"
 #import "TCPushLimitViewController.h"
+#import "TCCommonSenseVC.h"
 @interface TCHomeViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) TCHomeModel *homeModel;
 @property (weak, nonatomic) IBOutlet UIView *moneyView;
@@ -30,6 +31,8 @@
     [self setupSubview];
     [self layOutSubview];
     [self requestData];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"公告" titleColor:[UIColor whiteColor] target:self action:@selector(actionCommonInfo)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -182,6 +185,12 @@
 }
 
 #pragma mark - actionFunc
+
+- (void)actionCommonInfo {
+    TCCommonSenseVC *cvc = [[TCCommonSenseVC alloc] init];
+    [self.navigationController pushViewController:cvc animated:YES];
+    
+}
 
 - (IBAction)actionPicUp:(id)sender {
     [self callActionSheetFunc];
