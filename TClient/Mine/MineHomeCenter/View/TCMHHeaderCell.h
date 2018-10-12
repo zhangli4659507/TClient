@@ -18,7 +18,7 @@ extern NSString *const TCMHHeaderCellClassName;
 @property (weak, nonatomic) IBOutlet UIImageView *adImav;
 @property (weak, nonatomic) IBOutlet UIButton *msgBtn;
 @property (weak, nonatomic) IBOutlet UILabel *orderNumLbl;
-
+@property (nonatomic, copy) void (^actionRecharge)();
 @property (weak, nonatomic) IBOutlet UIButton *RechargeBtn;
 - (void)reloadUi;
 @end

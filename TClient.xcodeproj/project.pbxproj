@@ -31,6 +31,8 @@
 		4D0FEEE4212C04EA0021E9E8 /* TCQROrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE2212C04EA0021E9E8 /* TCQROrderCell.m */; };
 		4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */; };
 		4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FEEE7212C08320021E9E8 /* TCQRSection.m */; };
+		4D366A36217097E5004B5E1D /* TCRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D366A34217097E5004B5E1D /* TCRechargeViewController.m */; };
+		4D366A37217097E5004B5E1D /* TCRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D366A35217097E5004B5E1D /* TCRechargeViewController.xib */; };
 		4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */; };
 		4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A182160A1CA00B78066 /* TSResult.m */; };
 		4D3C6A232160A1CC00B78066 /* TCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */; };
@@ -196,6 +198,9 @@
 		4D0FEEE3212C04EA0021E9E8 /* TCQROrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQROrderCell.xib; sourceTree = "<group>"; };
 		4D0FEEE6212C08320021E9E8 /* TCQRSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCQRSection.h; sourceTree = "<group>"; };
 		4D0FEEE7212C08320021E9E8 /* TCQRSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCQRSection.m; sourceTree = "<group>"; };
+		4D366A33217097E5004B5E1D /* TCRechargeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRechargeViewController.h; sourceTree = "<group>"; };
+		4D366A34217097E5004B5E1D /* TCRechargeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRechargeViewController.m; sourceTree = "<group>"; };
+		4D366A35217097E5004B5E1D /* TCRechargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRechargeViewController.xib; sourceTree = "<group>"; };
 		4D3C6A1221606D4500B78066 /* TCReChargeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCReChargeRecordModel.h; sourceTree = "<group>"; };
 		4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCReChargeRecordModel.m; sourceTree = "<group>"; };
 		4D3C6A172160A1CA00B78066 /* TSResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResult.h; sourceTree = "<group>"; };
@@ -592,6 +597,24 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		4D366A31217097B1004B5E1D /* recharge */ = {
+			isa = PBXGroup;
+			children = (
+				4D366A32217097C3004B5E1D /* VC */,
+			);
+			path = recharge;
+			sourceTree = "<group>";
+		};
+		4D366A32217097C3004B5E1D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4D366A33217097E5004B5E1D /* TCRechargeViewController.h */,
+				4D366A34217097E5004B5E1D /* TCRechargeViewController.m */,
+				4D366A35217097E5004B5E1D /* TCRechargeViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		4D3C6A1521606D4A00B78066 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +893,7 @@
 		4DB7E5D721269F2C009FDA22 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4D366A31217097B1004B5E1D /* recharge */,
 				BC48C458214FE616006195B0 /* pushLimit */,
 				BC48C457214FE609006195B0 /* homePage */,
 			);
@@ -1458,6 +1482,7 @@
 				BC9898F9215BC3C000B5EFF8 /* TCULODHeaderView.xib in Resources */,
 				BC9898FE215BD08400B5EFF8 /* TCULODUserInfoCell.xib in Resources */,
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
+				4D366A37217097E5004B5E1D /* TCRechargeViewController.xib in Resources */,
 				BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */,
 				4DB7E5A32126626B009FDA22 /* MBProgressHUD.bundle in Resources */,
 				4DC56E62216F4CFD009B234C /* TCConnetServiceViewController.xib in Resources */,
@@ -1614,6 +1639,7 @@
 				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
 				4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */,
 				BC31313A2151475200479FA1 /* TCPushLimitInfoModel.m in Sources */,
+				4D366A36217097E5004B5E1D /* TCRechargeViewController.m in Sources */,
 				BC17F0D2214E276800529024 /* TLodingHub.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,

@@ -46,6 +46,11 @@ NSString *const TCMHHeaderCellClassName = @"TCMHHeaderCell";
     self.orderNumLbl.text = kUnNilStr(manger.userModel.money);
 }
 
+- (IBAction)actionRecharge:(id)sender {
+    
+    (!self.actionRecharge)?:self.actionRecharge();
+}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

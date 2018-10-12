@@ -12,6 +12,7 @@
 #import "TUploadTool.h"
 #import "TCPushLimitViewController.h"
 #import "TCCommonSenseVC.h"
+#import "TCRechargeViewController.h"
 @interface TCHomeViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) TCHomeModel *homeModel;
 @property (weak, nonatomic) IBOutlet UIView *moneyView;
@@ -28,6 +29,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    self.title = @"首页";
     [self setupSubview];
     [self layOutSubview];
     [self requestData];
@@ -200,6 +202,10 @@
     
 }
 - (IBAction)actionAddMoney:(id)sender {
+    
+    TCRechargeViewController *rvc = [[TCRechargeViewController alloc] init];
+    [self.navigationController pushViewController:rvc animated:YES];
+    
 }
 
 

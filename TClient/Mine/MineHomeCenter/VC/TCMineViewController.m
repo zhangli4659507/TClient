@@ -27,6 +27,7 @@
 #import "TCRegisterViewController.h"
 #import "TCMHTableFootView.h"
 #import "EGetCacheSize.h"
+#import "TCRechargeViewController.h"
 #define TMCHHeadViewHeight (152.f + kNavBarHeight)
 @interface TCMineViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -105,6 +106,11 @@
 - (void)setupData {
     
     TCMineHeaderSection *section = [[TCMineHeaderSection alloc] init];
+    WEAK_REF(self);
+    [section setDidSelectedBlock:^(id  _Nonnull model) {
+        TCRechargeViewController *rvc = [[TCRechargeViewController alloc] init];
+        [weak_self.navigationController pushViewController:rvc animated:YES];
+    }];
     [section tableViewRegisterView:self.tableView];
     section.dataSource = @[@1];
 
