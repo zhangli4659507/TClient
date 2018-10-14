@@ -13,6 +13,8 @@
 #import "TCPushLimitViewController.h"
 #import "TCCommonSenseVC.h"
 #import "TCRechargeViewController.h"
+#import "TScanController.h"
+#import "TNavViewController.h"
 @interface TCHomeViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) TCHomeModel *homeModel;
 @property (weak, nonatomic) IBOutlet UIView *moneyView;
@@ -126,6 +128,23 @@
     }];
 }
 
+- (void)requestQRWithUrl:(NSString *)urlContent {
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
+    [parInfoDic setObject:@{@"order_price":@(self.selectMoneyModel.money),@"qrcode_url":kUnNilStr(urlContent)} forKey:@"data"];
+    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"order_price":@(self.selectMoneyModel.money),@"qrcode_url":kUnNilStr(urlContent)}];
+    [MBProgressHUD showMessage:@"正在提交..."];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/create_order_qrcode" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"成功"];
+        } else {
+            [MBProgressHUD showError:response.msg];
+        }
+    }];
+    
+}
+
 
 #pragma mark - privateFunc
 
@@ -199,6 +218,16 @@
 }
 
 - (IBAction)actionQRUp:(id)sender {
+    TScanController *svc = [[TScanController alloc] init];
+    TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:svc];
+    WEAK_REF(self);
+    [svc setScanSuccessBlock:^(NSString *successUrl) {
+       
+        [weak_self requestQRWithUrl:successUrl];
+    }];
+    [self presentViewController:nav animated:YES completion:^{
+        
+    }];
     
 }
 - (IBAction)actionAddMoney:(id)sender {

@@ -34,7 +34,6 @@
 		4D366A36217097E5004B5E1D /* TCRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D366A34217097E5004B5E1D /* TCRechargeViewController.m */; };
 		4D366A37217097E5004B5E1D /* TCRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D366A35217097E5004B5E1D /* TCRechargeViewController.xib */; };
 		4D3C6A1421606D4500B78066 /* TCReChargeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */; };
-		4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A182160A1CA00B78066 /* TSResult.m */; };
 		4D3C6A232160A1CC00B78066 /* TCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */; };
 		4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */; };
 		4D3C6A252160A1CC00B78066 /* TSPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */; };
@@ -120,6 +119,10 @@
 		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC48C45D214FE63D006195B0 /* TCPushLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC48C45B214FE63D006195B0 /* TCPushLimitViewController.m */; };
 		BC48C45E214FE63D006195B0 /* TCPushLimitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC48C45C214FE63D006195B0 /* TCPushLimitViewController.xib */; };
+		BC5504BF217365E9003CBEC1 /* TScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504BD217365E9003CBEC1 /* TScanController.m */; };
+		BC5504C521736661003CBEC1 /* TScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504C021736660003CBEC1 /* TScanView.m */; };
+		BC5504C621736661003CBEC1 /* TSTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504C121736660003CBEC1 /* TSTopView.m */; };
+		BC5504C721736661003CBEC1 /* TSTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5504C221736660003CBEC1 /* TSTopView.xib */; };
 		BC5CA2212146B3A90050BA68 /* TCRegisterOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */; };
 		BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA2242146BA530050BA68 /* TCUnlockTaskListModel.m */; };
 		BC617319212C3BEE003AA3C4 /* TCRechargeRecordSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC617318212C3BEE003AA3C4 /* TCRechargeRecordSection.m */; };
@@ -203,8 +206,6 @@
 		4D366A35217097E5004B5E1D /* TCRechargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRechargeViewController.xib; sourceTree = "<group>"; };
 		4D3C6A1221606D4500B78066 /* TCReChargeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCReChargeRecordModel.h; sourceTree = "<group>"; };
 		4D3C6A1321606D4500B78066 /* TCReChargeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCReChargeRecordModel.m; sourceTree = "<group>"; };
-		4D3C6A172160A1CA00B78066 /* TSResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResult.h; sourceTree = "<group>"; };
-		4D3C6A182160A1CA00B78066 /* TSResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResult.m; sourceTree = "<group>"; };
 		4D3C6A192160A1CB00B78066 /* TSPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhotoPicker.h; sourceTree = "<group>"; };
 		4D3C6A1A2160A1CB00B78066 /* TSPhotoFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhotoFlash.h; sourceTree = "<group>"; };
 		4D3C6A1B2160A1CB00B78066 /* TCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCaptureSession.h; sourceTree = "<group>"; };
@@ -360,6 +361,14 @@
 		BC48C45A214FE63D006195B0 /* TCPushLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPushLimitViewController.h; sourceTree = "<group>"; };
 		BC48C45B214FE63D006195B0 /* TCPushLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPushLimitViewController.m; sourceTree = "<group>"; };
 		BC48C45C214FE63D006195B0 /* TCPushLimitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCPushLimitViewController.xib; sourceTree = "<group>"; };
+		BC5504BD217365E9003CBEC1 /* TScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TScanController.m; sourceTree = "<group>"; };
+		BC5504BE217365E9003CBEC1 /* TScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TScanController.h; sourceTree = "<group>"; };
+		BC5504C021736660003CBEC1 /* TScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TScanView.m; sourceTree = "<group>"; };
+		BC5504C121736660003CBEC1 /* TSTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTopView.m; sourceTree = "<group>"; };
+		BC5504C221736660003CBEC1 /* TSTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSTopView.xib; sourceTree = "<group>"; };
+		BC5504C321736661003CBEC1 /* TSTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTopView.h; sourceTree = "<group>"; };
+		BC5504C421736661003CBEC1 /* TScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TScanView.h; sourceTree = "<group>"; };
+		BC5504C8217366BF003CBEC1 /* TBlockTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBlockTool.h; sourceTree = "<group>"; };
 		BC5CA21F2146B3A90050BA68 /* TCRegisterOrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderListModel.h; sourceTree = "<group>"; };
 		BC5CA2202146B3A90050BA68 /* TCRegisterOrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderListModel.m; sourceTree = "<group>"; };
 		BC5CA2232146BA530050BA68 /* TCUnlockTaskListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnlockTaskListModel.h; sourceTree = "<group>"; };
@@ -627,24 +636,9 @@
 		4D3C6A162160A1AF00B78066 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				4D3C6A2E2160B8F200B78066 /* TSFailureController.h */,
-				4D3C6A2F2160B8F300B78066 /* TSFailureController.m */,
-				4D3C6A302160B8F300B78066 /* TSFailureController.xib */,
-				4D3C6A2C2160B8CE00B78066 /* SSDes.h */,
-				4D3C6A2B2160B8CE00B78066 /* SSDes.m */,
-				4D3C6A292160B82500B78066 /* AVCaptureSession+TDeviceOrientation.h */,
-				4D3C6A282160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m */,
-				4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */,
-				4D3C6A1C2160A1CB00B78066 /* TSAudio.h */,
-				4D3C6A212160A1CC00B78066 /* TSAudio.m */,
-				4D3C6A1A2160A1CB00B78066 /* TSPhotoFlash.h */,
-				4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */,
-				4D3C6A1B2160A1CB00B78066 /* TCaptureSession.h */,
-				4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */,
-				4D3C6A192160A1CB00B78066 /* TSPhotoPicker.h */,
-				4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */,
-				4D3C6A172160A1CA00B78066 /* TSResult.h */,
-				4D3C6A182160A1CA00B78066 /* TSResult.m */,
+				BC5504CB217367AA003CBEC1 /* View */,
+				BC5504CA2173679E003CBEC1 /* VC */,
+				BC5504C92173677D003CBEC1 /* Tool */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -1073,6 +1067,51 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		BC5504C92173677D003CBEC1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC5504C8217366BF003CBEC1 /* TBlockTool.h */,
+				4D3C6A2C2160B8CE00B78066 /* SSDes.h */,
+				4D3C6A2B2160B8CE00B78066 /* SSDes.m */,
+				4D3C6A292160B82500B78066 /* AVCaptureSession+TDeviceOrientation.h */,
+				4D3C6A282160B82500B78066 /* AVCaptureSession+TDeviceOrientation.m */,
+				4D3C6A1E2160A1CB00B78066 /* noticeMusic.wav */,
+				4D3C6A1C2160A1CB00B78066 /* TSAudio.h */,
+				4D3C6A212160A1CC00B78066 /* TSAudio.m */,
+				4D3C6A1A2160A1CB00B78066 /* TSPhotoFlash.h */,
+				4D3C6A202160A1CB00B78066 /* TSPhotoFlash.m */,
+				4D3C6A1B2160A1CB00B78066 /* TCaptureSession.h */,
+				4D3C6A1D2160A1CB00B78066 /* TCaptureSession.m */,
+				4D3C6A192160A1CB00B78066 /* TSPhotoPicker.h */,
+				4D3C6A1F2160A1CB00B78066 /* TSPhotoPicker.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC5504CA2173679E003CBEC1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BC5504BE217365E9003CBEC1 /* TScanController.h */,
+				BC5504BD217365E9003CBEC1 /* TScanController.m */,
+				4D3C6A2E2160B8F200B78066 /* TSFailureController.h */,
+				4D3C6A2F2160B8F300B78066 /* TSFailureController.m */,
+				4D3C6A302160B8F300B78066 /* TSFailureController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BC5504CB217367AA003CBEC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5504C421736661003CBEC1 /* TScanView.h */,
+				BC5504C021736660003CBEC1 /* TScanView.m */,
+				BC5504C321736661003CBEC1 /* TSTopView.h */,
+				BC5504C121736660003CBEC1 /* TSTopView.m */,
+				BC5504C221736660003CBEC1 /* TSTopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BC5CA21E2146B33E0050BA68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1429,7 +1468,7 @@
 					4DAEDFD8212563C2009FFB4B = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1473,6 +1512,7 @@
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
 				BC9898E8215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.xib in Resources */,
 				4D3C6A322160B8F300B78066 /* TSFailureController.xib in Resources */,
+				BC5504C721736661003CBEC1 /* TSTopView.xib in Resources */,
 				4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */,
 				BCF8745A216E4F70001B0BE2 /* TCCommonSesenseCell.xib in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
@@ -1578,6 +1618,7 @@
 				BC17F0CF214E000B00529024 /* TCHomeModel.m in Sources */,
 				4D0FEEDA212BF4FE0021E9E8 /* TCQRCodeRegisterVC.m in Sources */,
 				4DB7E5AD2126626B009FDA22 /* NSObject+EFoundation.m in Sources */,
+				BC5504C621736661003CBEC1 /* TSTopView.m in Sources */,
 				4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */,
 				BC9898F7215BC3B300B5EFF8 /* TCULODHeaderView.m in Sources */,
 				4DB7E5DD21269F5F009FDA22 /* TCOrderViewController.m in Sources */,
@@ -1637,9 +1678,9 @@
 				4DAEDFDE212563C2009FFB4B /* AppDelegate.m in Sources */,
 				BC61732F212C447D003AA3C4 /* TCAccountChangeSection.m in Sources */,
 				4D0BB70E2141211800926491 /* TCChangePwdViewController.m in Sources */,
-				4D3C6A222160A1CC00B78066 /* TSResult.m in Sources */,
 				BC31313A2151475200479FA1 /* TCPushLimitInfoModel.m in Sources */,
 				4D366A36217097E5004B5E1D /* TCRechargeViewController.m in Sources */,
+				BC5504BF217365E9003CBEC1 /* TScanController.m in Sources */,
 				BC17F0D2214E276800529024 /* TLodingHub.m in Sources */,
 				4DB7E5A12126626B009FDA22 /* MBProgressHUD.m in Sources */,
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
@@ -1656,6 +1697,7 @@
 				4DB7E59E2126626B009FDA22 /* WMScrollView.m in Sources */,
 				4DB7E6112126B1BD009FDA22 /* TComputerTextHeightTool.m in Sources */,
 				4DB7E5D421269E76009FDA22 /* TTabBarViewController.m in Sources */,
+				BC5504C521736661003CBEC1 /* TScanView.m in Sources */,
 				BCA56B0D212EE76500999DA5 /* TCRegisterViewController.m in Sources */,
 				BC61732A212C432A003AA3C4 /* TCAccountChangeCell.m in Sources */,
 				4DB7E59D2126626B009FDA22 /* WMMenuItem.m in Sources */,
@@ -1782,8 +1824,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UF52T2NV2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
 				INFOPLIST_FILE = TClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1803,16 +1846,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V8P9H52NC3;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UF52T2NV2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
 				INFOPLIST_FILE = TClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.233.TClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TClient;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
