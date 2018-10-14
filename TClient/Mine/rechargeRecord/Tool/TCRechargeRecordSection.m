@@ -17,6 +17,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndex:(NSInteger)index {
     
     TCRechargeRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:TCRechargeRecordCellClassName];
+    if (self.dataSource.count > index) {
+        [cell configWithModel:self.dataSource[index]];
+    }
     return cell;
 }
 

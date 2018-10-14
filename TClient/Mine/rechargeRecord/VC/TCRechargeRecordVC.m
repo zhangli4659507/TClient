@@ -25,7 +25,7 @@
     self.title = @"充值记录";
     [self setupSubview];
     [self layoutSubview];
-    [self.tableView.mj_footer beginRefreshing];
+    [self.tableView.mj_header beginRefreshing];
     // Do any additional setup after loading the view.
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "TCRechargeRecordCell.h"
+#import "TCReChargeRecordModel.h"
 NSString *const TCRechargeRecordCellClassName = @"TCRechargeRecordCell";
 @implementation TCRechargeRecordCell
 
@@ -15,6 +16,14 @@ NSString *const TCRechargeRecordCellClassName = @"TCRechargeRecordCell";
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.layoutMargins = self.separatorInset = UIEdgeInsetsZero;
     // Initialization code
+}
+
+- (void)configWithModel:(TCReChargeRecordListModel *)model {
+    
+    self.priceLbl.text = [NSString stringWithFormat:@"¥%@",model.money];
+    self.stateLbl.text = model.status_name;
+    self.dateLbl.text = model.create_time;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -222,7 +222,6 @@
     TNavViewController *nav = [[TNavViewController alloc] initWithRootViewController:svc];
     WEAK_REF(self);
     [svc setScanSuccessBlock:^(NSString *successUrl) {
-       
         [weak_self requestQRWithUrl:successUrl];
     }];
     [self presentViewController:nav animated:YES completion:^{
