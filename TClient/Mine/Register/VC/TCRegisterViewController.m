@@ -104,7 +104,7 @@
 - (void)requestSendCode {
     
     [MBProgressHUD showMessage:@"正在加载..."];
-    [THTTPRequestTool postRequestDataWithUrl:@"api/sms/send" par:@{@"data":@{@"mobile":kUnNilStr(self.userNameTxt.text),@"event":@"register"}} finishBlock:^(TResponse *response) {
+    [THTTPRequestTool postRequestDataWithUrl:@"api/sms/send" par:@{@"data":@{@"mobile":kUnNilStr(self.userNameTxt.text),@"event":@"register",@"type":@(1)}} finishBlock:^(TResponse *response) {
         if (response.code == TRequestSuccessCode) {
             [MBProgressHUD showSuccess:@"发送成功"];
             [self startTime];
