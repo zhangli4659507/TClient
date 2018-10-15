@@ -9,6 +9,7 @@
 #import "TCRechargeViewController.h"
 #import "TCRechargeRecordVC.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "AppDelegate.h"
 @interface TCRechargeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *moneyTxt;
 @property (weak, nonatomic) IBOutlet UILabel *balanceLbl;
@@ -71,7 +72,7 @@
 
 - (void)alipayWithSignKey:(NSString *)key {
     
-    [[AlipaySDK defaultService] payOrder:kUnNilStr(key) fromScheme:@"alipayTClient" callback:^(NSDictionary *resultDic) {
+    void(^payBlock)(NSDictionary *) = ^ (NSDictionary *resultDic) {
         if ([resultDic isKindOfClass:[NSDictionary class]] ) {
             EPayStateCode code = [resultDic[@"resultStatus"] integerValue];
             if (code == EPayStateSuccess) {
@@ -85,14 +86,16 @@
                 [MBProgressHUD showError:@"订单支付失败"];
             }
             else if (code == EPayStateNetWorkError) {
-                 [MBProgressHUD showError:@"网络连接错误"];
+                [MBProgressHUD showError:@"网络连接错误"];
             }
             else if (code == EPayStateUserCancel) {
                 [MBProgressHUD showError:@"您取消了支付~"];
             }
         }
         [self navBackAction];
-    }];
+    };
+    [[AlipaySDK defaultService] payOrder:kUnNilStr(key) fromScheme:@"alipayTClient" callback:[payBlock copy]];
+    ((AppDelegate *)([UIApplication sharedApplication].delegate)).alipayResultBlock = [payBlock copy];
 }
 
 - (IBAction)actionAddMoneyRecord:(id)sender {

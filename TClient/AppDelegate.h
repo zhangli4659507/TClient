@@ -11,5 +11,6 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) TTabBarViewController *tabBarVc;
+@property (nonatomic, copy) void (^alipayResultBlock)(NSDictionary *reultDicInfo);
 @end
 

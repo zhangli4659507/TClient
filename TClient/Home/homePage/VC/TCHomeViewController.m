@@ -35,6 +35,7 @@
     [self setupSubview];
     [self layOutSubview];
     [self requestData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestData) name:TMoney_change_notiName object:nil];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"公告" titleColor:[UIColor whiteColor] target:self action:@selector(actionCommonInfo)];
 }
@@ -101,8 +102,7 @@
 }
 
 - (void)uploadImageWithIma:(UIImage *)image {
-    
-    
+
     [MBProgressHUD showMessage:@"正在上传...." toView:self.view];
     
     [TUploadTool uploadImge:image finishBlock:^(NSString *imageUrlString) {
