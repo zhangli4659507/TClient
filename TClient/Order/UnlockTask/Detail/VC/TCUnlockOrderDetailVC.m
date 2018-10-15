@@ -49,6 +49,7 @@
     [self.view addSubview:self.tableView];
     
    TCULODHeaderView *tableHeaderView = [TCULODHeaderView loadInstanceFromNib];
+    [tableHeaderView.unLockButton addTarget:self action:@selector(actionUnclok) forControlEvents:UIControlEventTouchUpInside];
     self.tableView.tableHeaderView = tableHeaderView;
     self.tableHeaderView = tableHeaderView;
     
@@ -82,6 +83,15 @@
         make.bottom.equalTo(self.mas_bottomLayoutGuide);
     }];
 }
+
+#pragma mark - actionfunc
+
+- (void)actionUnclok {
+    
+    [self requestUnlock];
+    
+    }
+
 
 #pragma mark - setupData
 
@@ -121,6 +131,25 @@
             [TFailhub showFailHubWithSuperView:self.view reloadBlock:^{
                 [weak_self requetData];
             }];
+        }
+    }];
+}
+
+- (void)requestUnlock {
+    
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"data":@{@"order_id":@(self.orderModel.order_id)}}];
+    NSDictionary *signDic = @{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"order_id":@(self.orderModel.order_id)};
+    [MBProgressHUD showMessage:@"正在处理..."];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/recharge/pay_unseal_order_price" par:parInfoDic signDicInfo:signDic finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"处理成功"];
+            self.orderModel.pay_status = 1;
+            [self setupUI];
+        } else {
+            
+            [MBProgressHUD showError:kUnNilStr(response.msg)];
         }
     }];
 }
