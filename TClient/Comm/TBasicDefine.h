@@ -48,7 +48,17 @@ NS_INLINE NSString *TimeYMDTextWithDatestr(NSString *originalText)
     return timeText;
 }
 
+typedef NS_ENUM(NSInteger, EPayStateCode) {
+    EPayStateSuccess = 9000, //订单支付成功
+    EPayStateFail = 4000, //订单支付失败
+    EPayStateUserCancel = 6001, //用户中途取消
+    EPayStateNetWorkError = 6002, //网络连接错误
+    EPayStateIsHandle = 8000, //正在处理中
+    
+};
+
 static NSString *const TLogin_success_notiName = @"TLogin_success_notiName";
+static NSString *const TMoney_change_notiName = @"TMoney_change_notiName";
 static NSString *const TLogin_Out_NotiName = @"TLogin_Out_NotiName";
 static NSString *const TLogin_Token_SaveKey = @"TLogin_Token_SaveKey";
 static NSString *const TLogin_Mobile_saveKey = @"TLogin_Mobile_saveKey";

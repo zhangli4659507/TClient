@@ -101,6 +101,18 @@
 		4DCAF678212AB7B00087EE00 /* TCMHHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF672212AB7B00087EE00 /* TCMHHeaderCell.m */; };
 		4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */; };
 		4DCAF67C212AB7E20087EE00 /* TNUHeadBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */; };
+		4DEC49A121746C3600B5A87E /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DEC499F21746C3600B5A87E /* AlipaySDK.bundle */; };
+		4DEC49A221746C3600B5A87E /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49A021746C3600B5A87E /* AlipaySDK.framework */; };
+		4DEC49A421746C6200B5A87E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49A321746C6200B5A87E /* SystemConfiguration.framework */; };
+		4DEC49A621746C6A00B5A87E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49A521746C6A00B5A87E /* CoreTelephony.framework */; };
+		4DEC49A821746C7200B5A87E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49A721746C7200B5A87E /* QuartzCore.framework */; };
+		4DEC49AA21746C7D00B5A87E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49A921746C7D00B5A87E /* CoreGraphics.framework */; };
+		4DEC49AC21746C8600B5A87E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49AB21746C8600B5A87E /* UIKit.framework */; };
+		4DEC49AE21746C8F00B5A87E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49AD21746C8F00B5A87E /* Foundation.framework */; };
+		4DEC49B021746C9500B5A87E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49AF21746C9500B5A87E /* CFNetwork.framework */; };
+		4DEC49B221746C9F00B5A87E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49B121746C9F00B5A87E /* CoreMotion.framework */; };
+		4DEC49B421746CB400B5A87E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49B321746CB400B5A87E /* libc++.tbd */; };
+		4DEC49B621746CBB00B5A87E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC49B521746CBB00B5A87E /* libz.tbd */; };
 		87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */; };
 		BC0FB793212C4B7B005F8C57 /* TCMyFriendSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */; };
 		BC0FB797212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB796212C4D87005F8C57 /* TCMyFriendSectionHeaderView.m */; };
@@ -333,6 +345,18 @@
 		4DCAF673212AB7B00087EE00 /* TCMHInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHInfoTableViewCell.m; sourceTree = "<group>"; };
 		4DCAF67A212AB7E10087EE00 /* TNUHeadBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNUHeadBgView.h; sourceTree = "<group>"; };
 		4DCAF67B212AB7E10087EE00 /* TNUHeadBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNUHeadBgView.m; sourceTree = "<group>"; };
+		4DEC499F21746C3600B5A87E /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		4DEC49A021746C3600B5A87E /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		4DEC49A321746C6200B5A87E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DEC49A521746C6A00B5A87E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4DEC49A721746C7200B5A87E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DEC49A921746C7D00B5A87E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DEC49AB21746C8600B5A87E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DEC49AD21746C8F00B5A87E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DEC49AF21746C9500B5A87E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4DEC49B121746C9F00B5A87E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4DEC49B321746CB400B5A87E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4DEC49B521746CBB00B5A87E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		668AA330E3A3DC0E9812374E /* Pods-TClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TClient/Pods-TClient.release.xcconfig"; sourceTree = "<group>"; };
 		BC0FB791212C4B7B005F8C57 /* TCMyFriendSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMyFriendSection.h; sourceTree = "<group>"; };
 		BC0FB792212C4B7B005F8C57 /* TCMyFriendSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMyFriendSection.m; sourceTree = "<group>"; };
@@ -422,7 +446,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEC49B621746CBB00B5A87E /* libz.tbd in Frameworks */,
+				4DEC49B421746CB400B5A87E /* libc++.tbd in Frameworks */,
+				4DEC49B221746C9F00B5A87E /* CoreMotion.framework in Frameworks */,
+				4DEC49B021746C9500B5A87E /* CFNetwork.framework in Frameworks */,
+				4DEC49AE21746C8F00B5A87E /* Foundation.framework in Frameworks */,
+				4DEC49AC21746C8600B5A87E /* UIKit.framework in Frameworks */,
+				4DEC49AA21746C7D00B5A87E /* CoreGraphics.framework in Frameworks */,
+				4DEC49A821746C7200B5A87E /* QuartzCore.framework in Frameworks */,
+				4DEC49A621746C6A00B5A87E /* CoreTelephony.framework in Frameworks */,
+				4DEC49A421746C6200B5A87E /* SystemConfiguration.framework in Frameworks */,
 				87793A2AC15CC579EC6FBB9C /* Pods_TClient.framework in Frameworks */,
+				4DEC49A221746C3600B5A87E /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +771,7 @@
 		4DB7E56521266255009FDA22 /* TKits */ = {
 			isa = PBXGroup;
 			children = (
+				4DEC499E21746C2200B5A87E /* AliPay */,
 				4DB7E58E2126626B009FDA22 /* Category */,
 				4DB7E5762126626B009FDA22 /* MBProgressHUD-private */,
 				4DB7E57C2126626B009FDA22 /* MMPopupView-private */,
@@ -972,9 +1008,28 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		4DEC499E21746C2200B5A87E /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				4DEC499F21746C3600B5A87E /* AlipaySDK.bundle */,
+				4DEC49A021746C3600B5A87E /* AlipaySDK.framework */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
 		B571CAB525815AE8F29CEAFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DEC49B521746CBB00B5A87E /* libz.tbd */,
+				4DEC49B321746CB400B5A87E /* libc++.tbd */,
+				4DEC49B121746C9F00B5A87E /* CoreMotion.framework */,
+				4DEC49AF21746C9500B5A87E /* CFNetwork.framework */,
+				4DEC49AD21746C8F00B5A87E /* Foundation.framework */,
+				4DEC49AB21746C8600B5A87E /* UIKit.framework */,
+				4DEC49A921746C7D00B5A87E /* CoreGraphics.framework */,
+				4DEC49A721746C7200B5A87E /* QuartzCore.framework */,
+				4DEC49A521746C6A00B5A87E /* CoreTelephony.framework */,
+				4DEC49A321746C6200B5A87E /* SystemConfiguration.framework */,
 				377B444E7A9DDC5E4A67C660 /* Pods_TClient.framework */,
 			);
 			name = Frameworks;
@@ -1521,6 +1576,7 @@
 				4DAEDFE6212563C5009FFB4B /* Assets.xcassets in Resources */,
 				BC9898F9215BC3C000B5EFF8 /* TCULODHeaderView.xib in Resources */,
 				BC9898FE215BD08400B5EFF8 /* TCULODUserInfoCell.xib in Resources */,
+				4DEC49A121746C3600B5A87E /* AlipaySDK.bundle in Resources */,
 				BC0FB799212C4D92005F8C57 /* TCMyFriendSectionHeaderView.xib in Resources */,
 				4D366A37217097E5004B5E1D /* TCRechargeViewController.xib in Resources */,
 				BC17F0D4214E277500529024 /* TLodingHub.xib in Resources */,
@@ -1827,6 +1883,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UF52T2NV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TClient/TKits/AliPay",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
 				INFOPLIST_FILE = TClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1849,6 +1909,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UF52T2NV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TClient/TKits/AliPay",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TClient/TClient.pch";
 				INFOPLIST_FILE = TClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

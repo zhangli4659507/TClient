@@ -44,6 +44,7 @@ NSString *const TCMHHeaderCellClassName = @"TCMHHeaderCell";
     self.nickNameLbl.text = kUnNilStr(manger.userModel.nickname);
     [self.delegateBtn setTitle:kUnNilStr(manger.userModel.type_name) forState:UIControlStateNormal];
     self.orderNumLbl.text = kUnNilStr(manger.userModel.money);
+    [self.delegateBtn setTitle:kUnNilStr(manger.userModel.type_name) forState:UIControlStateNormal];
 }
 
 - (IBAction)actionRecharge:(id)sender {

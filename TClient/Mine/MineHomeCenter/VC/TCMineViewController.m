@@ -46,6 +46,7 @@
     [self setupData];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupData) name:TLogin_Out_NotiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupData) name:TLogin_success_notiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupData) name:TMoney_change_notiName object:nil];
     // Do any additional setup after loading the view.
 }
 
