@@ -20,6 +20,7 @@ NSString *const TCULODUserInfoCellClassName = @"TCULODUserInfoCell";
     // Initialization code
 }
 - (IBAction)actionUnlockButton:(id)sender {
+    !self.unlockHandlerBlock?:self.unlockHandlerBlock();
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

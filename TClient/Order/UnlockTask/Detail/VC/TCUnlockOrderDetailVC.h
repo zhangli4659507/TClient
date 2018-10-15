@@ -9,5 +9,6 @@
 #import "TBaseViewcontroller.h"
 @class TCUnlockOrderModel;
 @interface TCUnlockOrderDetailVC : TBaseViewcontroller
-@property (nonatomic, strong) TCUnlockOrderModel *orderModel;
+//订单id
+@property (nonatomic, assign) NSInteger order_id;
 @end

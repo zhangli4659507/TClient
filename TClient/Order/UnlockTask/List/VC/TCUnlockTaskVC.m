@@ -115,7 +115,7 @@
     WEAK_REF(self);
     [self.section setDidSelectedBlock:^(TCUnlockOrderModel *model) {
         TCUnlockOrderDetailVC *dvc = [[TCUnlockOrderDetailVC alloc] init];
-        dvc.orderModel = model;
+        dvc.order_id = model.order_id;
         [weak_self.navigationController pushViewController:dvc animated:YES];
     }];
     [self.tableView reloadData];

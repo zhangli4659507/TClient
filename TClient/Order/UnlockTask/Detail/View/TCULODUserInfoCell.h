@@ -12,5 +12,5 @@ extern NSString *const TCULODUserInfoCellClassName;
 @property (weak, nonatomic) IBOutlet UILabel *wxLbl;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLbl;
 @property (weak, nonatomic) IBOutlet UIButton *unLockButton;
-
+@property (nonatomic, copy) void (^unlockHandlerBlock)();
 @end

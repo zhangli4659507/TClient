@@ -22,6 +22,10 @@
         TCOrderUserInfoModel *userInfoModel = self.dataSource[index];
         cell.wxLbl.text = kUnNilStr(userInfoModel.jd_wx_sn);
         cell.phoneNumLbl.text = kUnNilStr(userInfoModel.jd_phone);
+        WEAK_REF(self);
+        [cell setUnlockHandlerBlock:^{
+            !weak_self.didSelectedBlock?:weak_self.didSelectedBlock(self.dataSource[index]);
+        }];
     }
     return cell;
 }
