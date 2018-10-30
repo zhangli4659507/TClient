@@ -156,6 +156,9 @@
 		BC989902215BD45D00B5EFF8 /* TCULODSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BC989901215BD45D00B5EFF8 /* TCULODSection.m */; };
 		BCA56B0D212EE76500999DA5 /* TCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA56B0B212EE76500999DA5 /* TCRegisterViewController.m */; };
 		BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA56B0C212EE76500999DA5 /* TCRegisterViewController.xib */; };
+		BCB941DC2188AD1E0065E84B /* TCShowUnsealPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB941DB2188AD1E0065E84B /* TCShowUnsealPriceView.m */; };
+		BCB941E02188AE010065E84B /* TCUnsealPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB941DE2188AE010065E84B /* TCUnsealPriceTableViewCell.m */; };
+		BCB941E12188AE010065E84B /* TCUnsealPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB941DF2188AE010065E84B /* TCUnsealPriceTableViewCell.xib */; };
 		BCC722D9212AE4EB002AB760 /* TCMHCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */; };
 		BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC722F4212AEFFC002AB760 /* TCUserChangeViewController.m */; };
 		BCF87452216E47EA001B0BE2 /* TCCommonSenseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF87451216E47EA001B0BE2 /* TCCommonSenseSection.m */; };
@@ -428,6 +431,11 @@
 		BCA56B0A212EE76500999DA5 /* TCRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterViewController.h; sourceTree = "<group>"; };
 		BCA56B0B212EE76500999DA5 /* TCRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterViewController.m; sourceTree = "<group>"; };
 		BCA56B0C212EE76500999DA5 /* TCRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRegisterViewController.xib; sourceTree = "<group>"; };
+		BCB941DA2188AD1E0065E84B /* TCShowUnsealPriceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCShowUnsealPriceView.h; sourceTree = "<group>"; };
+		BCB941DB2188AD1E0065E84B /* TCShowUnsealPriceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCShowUnsealPriceView.m; sourceTree = "<group>"; };
+		BCB941DD2188AE010065E84B /* TCUnsealPriceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUnsealPriceTableViewCell.h; sourceTree = "<group>"; };
+		BCB941DE2188AE010065E84B /* TCUnsealPriceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCUnsealPriceTableViewCell.m; sourceTree = "<group>"; };
+		BCB941DF2188AE010065E84B /* TCUnsealPriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCUnsealPriceTableViewCell.xib; sourceTree = "<group>"; };
 		BCC722D6212AE4EB002AB760 /* TCMHCellConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMHCellConfigModel.m; sourceTree = "<group>"; };
 		BCC722D7212AE4EB002AB760 /* TCMHCellConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMHCellConfigModel.h; sourceTree = "<group>"; };
 		BCC722F3212AEFFC002AB760 /* TCUserChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUserChangeViewController.h; sourceTree = "<group>"; };
@@ -1106,6 +1114,7 @@
 		BC48C458214FE616006195B0 /* pushLimit */ = {
 			isa = PBXGroup;
 			children = (
+				BCB941D92188ACF80065E84B /* View */,
 				BC3131372151473100479FA1 /* Model */,
 				BC48C459214FE624006195B0 /* VC */,
 			);
@@ -1370,6 +1379,18 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		BCB941D92188ACF80065E84B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCB941DA2188AD1E0065E84B /* TCShowUnsealPriceView.h */,
+				BCB941DB2188AD1E0065E84B /* TCShowUnsealPriceView.m */,
+				BCB941DD2188AE010065E84B /* TCUnsealPriceTableViewCell.h */,
+				BCB941DE2188AE010065E84B /* TCUnsealPriceTableViewCell.m */,
+				BCB941DF2188AE010065E84B /* TCUnsealPriceTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCC722DB212AE4FA002AB760 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1555,6 +1576,7 @@
 				4DCAF677212AB7B00087EE00 /* TCMHHeaderCell.xib in Resources */,
 				BC17F0DB214E322200529024 /* TFailhub.xib in Resources */,
 				4D9A31012140FF700084D8E4 /* TCSelectAreaView.xib in Resources */,
+				BCB941E12188AE010065E84B /* TCUnsealPriceTableViewCell.xib in Resources */,
 				BC17F0D6214E296D00529024 /* loding.gif in Resources */,
 				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
@@ -1685,6 +1707,7 @@
 				4DAEDFEC212563C5009FFB4B /* main.m in Sources */,
 				BC9898E7215BB2AB00B5EFF8 /* TCUnlockListTableViewCell.m in Sources */,
 				4DB7E5AB2126626B009FDA22 /* MMPopupItem.m in Sources */,
+				BCB941E02188AE010065E84B /* TCUnsealPriceTableViewCell.m in Sources */,
 				4DCAF679212AB7B00087EE00 /* TCMHInfoTableViewCell.m in Sources */,
 				4DB7E59C2126626B009FDA22 /* WMPageController.m in Sources */,
 				4D0FEEC2212BB23D0021E9E8 /* TCRechargeRecordVC.m in Sources */,
@@ -1743,6 +1766,7 @@
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
 				4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */,
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
+				BCB941DC2188AD1E0065E84B /* TCShowUnsealPriceView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
 				4D031E1A213F687600E0372F /* TCUserInfoModel.m in Sources */,
 				4D3C6A2D2160B8CE00B78066 /* SSDes.m in Sources */,

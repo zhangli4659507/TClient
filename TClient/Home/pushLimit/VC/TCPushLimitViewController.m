@@ -10,6 +10,7 @@
 #import "WMMenuView.h"
 #import "TCPushLimitInfoModel.h"
 #import "TCSelectAreaView.h"
+#import "TCShowUnsealPriceView.h"
 @interface TCPushLimitViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *areaLbl;
 @property (weak, nonatomic) IBOutlet UITextField *wxText;
@@ -24,7 +25,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *alertInfoLbl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *insuranceHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *insuranceSpace;
+@property (weak, nonatomic) IBOutlet UILabel *unsealPriceLbl;
 @property (nonatomic, strong) TCPushLimitInfoModel *limitInfoModel;
+@property (nonatomic, assign) CGFloat unselPrice;//解封佣金
 @property (nonatomic, assign) NSInteger insuranceType;//保费类型 1-需要保费 2-无需保费
 @property (nonatomic, strong) TAreaModel *selectAreaModel;//所选地区 为空表示不限地区
 @end
@@ -82,8 +85,8 @@
     NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
     NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
     
-    NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",nil];
-    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType)}];
+    NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",@(self.unselPrice),@"unseal_price",nil];
+    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType),@"unseal_price":@(self.unselPrice)}];
     
     if ([self.mobileTxt.text trimSpace].length > 0) {
         [dataDicInfo setObject:[self.mobileTxt.text trimSpace] forKey:@"unseal_phone"];
@@ -104,7 +107,6 @@
             [MBProgressHUD showSuccess:@"下单成功"];
             [self performSelector:@selector(navBackAction) withObject:nil afterDelay:2];
         } else {
-#warning 这里需要修改
             [MBProgressHUD showError:[NSString stringWithFormat:@"%@",response.msg]];
         }
     }];
@@ -112,11 +114,21 @@
 
 #pragma mark - actionFunc
 
+- (IBAction)actionSelectMoney:(id)sender {
+    [TCShowUnsealPriceView showUnsealPriceViewWithUnsealPriceArr:self.limitInfoModel.unseal_price selectBlock:^(CGFloat unsealPrice) {
+        self.unselPrice = unsealPrice;
+        self.unsealPriceLbl.text = [NSString stringWithFormat:@"%.0lf元",unsealPrice];
+    }];
+    
+}
 - (IBAction)actionPushLimit:(id)sender {
     
     [self.view endEditing:YES];
     if ([self.wxText.text trimSpace].length == 0) {
         [MBProgressHUD showError: @"请输入正确微信号"];
+        return;
+    } else if (self.unselPrice == 0) {
+        [MBProgressHUD showError: @"请先选择解封佣金"];
         return;
     }
     [self requestPostLimit];

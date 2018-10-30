@@ -16,4 +16,5 @@
 @property (nonatomic, assign) CGFloat nobond_section_begin_price;//没有保费的起始金额
 @property (nonatomic, assign) CGFloat nobond_section_end_price;//没有保费的结束金额
 @property (nonatomic, copy) NSString *describe;//描述
+@property (nonatomic, copy) NSArray<NSNumber *> *unseal_price;//解封佣金
 @end
