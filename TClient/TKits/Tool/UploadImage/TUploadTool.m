@@ -16,7 +16,7 @@
         (!finishBlock) ?: finishBlock(@"");
         return;
     }
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://test.168pt.vip/api/Upload/xiadan_qrcode_upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://pro.168pt.vip/api/Upload/xiadan_qrcode_upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         NSDateFormatter *formatter = DateFormatter();
         formatter.dateFormat = @"yyyyMMddHHmmss";
