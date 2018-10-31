@@ -88,18 +88,18 @@
     NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",@(self.unselPrice),@"unseal_price",nil];
     NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType),@"unseal_price":@(self.unselPrice)}];
     
-    if ([self.mobileTxt.text trimSpace].length > 0) {
-        [dataDicInfo setObject:[self.mobileTxt.text trimSpace] forKey:@"unseal_phone"];
-        [signDicInfo setObject:[self.mobileTxt.text trimSpace] forKey:@"unseal_phone"];
-    }
-    if (self.selectAreaModel) {
-        [dataDicInfo setObject:@(self.selectAreaModel.areaId) forKey:@"province_id"];
-        [signDicInfo setObject:@(self.selectAreaModel.areaId) forKey:@"province_id"];
-    }
-    if (self.remarksTxt.text.length > 0) {
+//    if ([self.mobileTxt.text trimSpace].length > 0) {
+        [dataDicInfo setObject:[kUnNilStr(self.mobileTxt.text) trimSpace] forKey:@"unseal_phone"];
+        [signDicInfo setObject:[kUnNilStr(self.mobileTxt.text) trimSpace] forKey:@"unseal_phone"];
+//    }
+//    if (self.selectAreaModel) {
+    [dataDicInfo setObject:@(self.selectAreaModel?self.selectAreaModel.areaId:0) forKey:@"province_id"];
+        [signDicInfo setObject:@(self.selectAreaModel?self.selectAreaModel.areaId:0) forKey:@"province_id"];
+//    }
+//    if (self.remarksTxt.text.length > 0) {
         [dataDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
         [signDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
-    }
+//    }
     [parInfoDic setObject:dataDicInfo forKey:@"data"];
     [MBProgressHUD showMessage:@"正在上传...."];
     [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/create_order_unseal" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {
