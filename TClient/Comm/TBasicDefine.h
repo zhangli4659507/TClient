@@ -67,6 +67,29 @@ static NSString *const TLogin_pwd_saveKey = @"TLogin_pwd_saveKey";
 static NSString *const TApi_key_Str = @"wmi";
 static NSString *const TSecret_key_Str = @"FF850EABD8BCAF3BCF2E0695B1C4C8FD";
 
+NS_INLINE BOOL iPhoneNameIsX()
+{
+    if (![UIScreen instancesRespondToSelector:@selector(currentMode)]) return NO;
+    if (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)) {
+        //x 正常模式  || xs xs max xcode9 打包版
+        return YES;
+    }
+    if (CGSizeEqualToSize(CGSizeMake(750, 1624), [[UIScreen mainScreen] currentMode].size)) {
+        //xr xcode9 打包版
+        return YES;
+    }
+    if (CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size)) {
+        //xr 正常模式
+        return YES;
+    }
+    if (CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size)) {
+        //xsmax 正常模式
+        return YES;
+    }
+    return NO;
+    
+}
+
 #define WEAK_REF(obj)\
 __weak typeof(obj) weak_##obj = obj; \
 
@@ -74,15 +97,15 @@ __weak typeof(obj) weak_##obj = obj; \
 #define kIsIOS10 (device_version() >= 10.0)
 #define kIsIOS11 (device_version() >= 11.0)
 #define kIsiOS11Condition @available(iOS 11.0, *)
-#define Device_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//#define Device_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 //当前状态条占的高度
 #define kCurrentHeightForStatus CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
 //当前状态条最大高度
-#define kMaxHeightForStatus (Device_Is_iPhoneX ? 44 : 20)
+#define kMaxHeightForStatus (iPhoneNameIsX ? 44 : 20)
 //导航栏高度
-#define kNavBarHeight (Device_Is_iPhoneX ? 88 : 64)
+#define kNavBarHeight (iPhoneNameIsX ? 88 : 64)
 //iPhone X 下部安全区域高度
-#define kSafeBottomLayGuideHeight (Device_Is_iPhoneX ? 34 : 0)
+#define kSafeBottomLayGuideHeight (iPhoneNameIsX ? 34 : 0)
 #define kCurrentWindow [UIApplication sharedApplication].keyWindow
 #define kUnNilStr(str) ((str && ![str isEqual:[NSNull null]])?str:@"")
 
