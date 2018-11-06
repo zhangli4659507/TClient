@@ -453,7 +453,7 @@
                 <constraint firstItem="vBY-xY-BoH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mfh-zj-sD9"/>
                 <constraint firstAttribute="bottom" secondItem="vBY-xY-BoH" secondAttribute="bottom" id="gXW-1a-eVD"/>
             </constraints>
-            <point key="canvasLocation" x="-383" y="-25"/>
+            <point key="canvasLocation" x="41" y="12"/>
         </view>
         <tapGestureRecognizer id="Tcc-Mq-GAF" userLabel="selectArea">
             <connections>

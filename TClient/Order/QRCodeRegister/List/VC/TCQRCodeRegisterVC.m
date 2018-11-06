@@ -11,6 +11,7 @@
 #import "TOTableViewTool.h"
 #import "TCRegisterOrderListModel.h"
 #import "TCAROrderHeaderView.h"
+#import "TCRegisterOrderDetailVc.h"
 @interface TCQRCodeRegisterVC ()
 @property (nonatomic, strong) TOTableViewTool *tableViewTool;
 @property (nonatomic, strong) TCQRSection *section;
@@ -44,7 +45,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self.tableViewTool;
     self.tableView.dataSource = self.tableViewTool;
-    self.tableView.allowsSelection = NO;
+//    self.tableView.allowsSelection = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, CGFLOAT_MIN)];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, CGFLOAT_MIN)];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(pushDownRefesh)];
@@ -122,7 +123,23 @@
     [self.dataArr addObjectsFromArray:listModel.list];
     self.tableView.mj_footer.hidden = listModel.page_index >= listModel.total_page;
     self.section.dataSource = self.dataArr;
+    WEAK_REF(self);
+    [self.section setDidSelectedBlock:^(id  _Nonnull model) {
+        [weak_self routerDetailWithOrderModel:model];
+    }];
     [self.tableView reloadData];
+}
+
+- (void)routerDetailWithOrderModel:(TCRegisterOrderModel *)orderModel {
+ 
+    TCRegisterOrderDetailVc *dev = [[TCRegisterOrderDetailVc alloc] init];
+    dev.order_id = orderModel.order_id;
+    WEAK_REF(self);
+    [dev setRefreshBlock:^{
+        [weak_self.tableView.mj_header beginRefreshing];
+    }];
+    [self.navigationController pushViewController:dev animated:YES];
+    
 }
 
 #pragma mark - getter

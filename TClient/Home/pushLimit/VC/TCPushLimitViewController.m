@@ -38,6 +38,14 @@
     [super viewDidLoad];
     self.title = @"发布解封";
     [self requestLimitInfoData];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"解封教程" titleColor:[UIColor whiteColor] target:self action:@selector(actionPushLimitTutorial)];
+}
+
+- (void)actionPushLimitTutorial {
+#warning 这里为替换正式版地址
+    TOWebViewController *web = [[TOWebViewController alloc] initWithURLString:@"http://test.168pt.vip/wap/article/article_detail/type/2.html"];
+    [self.navigationController pushViewController:web animated:YES];
+    
 }
 
 - (void)setupSubview {
@@ -84,22 +92,15 @@
     NSDateFormatter *dateFormatter = DateFormatter();
     NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
     NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str)}];
-    
-    NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",@(self.unselPrice),@"unseal_price",nil];
-    NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType),@"unseal_price":@(self.unselPrice)}];
-    
-//    if ([self.mobileTxt.text trimSpace].length > 0) {
+     
+       NSMutableDictionary *dataDicInfo = [NSMutableDictionary dictionaryWithObjectsAndKeys:kUnNilStr([self.wxText.text trimSpace]),@"unseal_wx",@(self.insuranceType),@"type",@(self.unselPrice),@"unseal_price",nil];
+        NSMutableDictionary *signDicInfo = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"unseal_wx":kUnNilStr([self.wxText.text trimSpace]),@"type":@(self.insuranceType),@"unseal_price":@(self.unselPrice)}];
         [dataDicInfo setObject:[kUnNilStr(self.mobileTxt.text) trimSpace] forKey:@"unseal_phone"];
         [signDicInfo setObject:[kUnNilStr(self.mobileTxt.text) trimSpace] forKey:@"unseal_phone"];
-//    }
-//    if (self.selectAreaModel) {
-    [dataDicInfo setObject:@(self.selectAreaModel?self.selectAreaModel.areaId:0) forKey:@"province_id"];
+        [dataDicInfo setObject:@(self.selectAreaModel?self.selectAreaModel.areaId:0) forKey:@"province_id"];
         [signDicInfo setObject:@(self.selectAreaModel?self.selectAreaModel.areaId:0) forKey:@"province_id"];
-//    }
-//    if (self.remarksTxt.text.length > 0) {
         [dataDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
         [signDicInfo setObject:kUnNilStr(self.remarksTxt.text) forKey:@"remark"];
-//    }
     [parInfoDic setObject:dataDicInfo forKey:@"data"];
     [MBProgressHUD showMessage:@"正在上传...."];
     [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/create_order_unseal" par:parInfoDic signDicInfo:signDicInfo finishBlock:^(TResponse *response) {

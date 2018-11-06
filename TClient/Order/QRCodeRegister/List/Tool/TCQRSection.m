@@ -22,4 +22,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndex:(NSInteger)index {
+     if (self.dataSource.count > index) {
+    !self.didSelectedBlock?:self.didSelectedBlock(self.dataSource[index]);
+     }
+}
+
 @end

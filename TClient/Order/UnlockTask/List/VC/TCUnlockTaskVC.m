@@ -116,6 +116,9 @@
     [self.section setDidSelectedBlock:^(TCUnlockOrderModel *model) {
         TCUnlockOrderDetailVC *dvc = [[TCUnlockOrderDetailVC alloc] init];
         dvc.order_id = model.order_id;
+        [dvc setRefreshBlock:^{
+            [weak_self.tableView.mj_header beginRefreshing];
+        }];
         [weak_self.navigationController pushViewController:dvc animated:YES];
     }];
     [self.tableView reloadData];

@@ -1,15 +1,18 @@
 //
-//  TCUnlockOrderDetailVC.h
+//  TCRegisterOrderDetailVc.h
 //  TClient
 //
-//  Created by mark_zhang on 2018/9/26.
+//  Created by mark_zhang on 2018/11/6.
 //  Copyright © 2018年 Mark. All rights reserved.
 //
 
 #import "TBaseViewcontroller.h"
-@class TCUnlockOrderModel;
-@interface TCUnlockOrderDetailVC : TBaseViewcontroller
-//订单id
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface TCRegisterOrderDetailVc : TBaseViewcontroller
 @property (nonatomic, assign) NSInteger order_id;
 @property (nonatomic, copy) void (^refreshBlock)(void);
 @end
+
+NS_ASSUME_NONNULL_END

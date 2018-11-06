@@ -11,6 +11,8 @@
 #import "TOTableViewTool.h"
 #import "TCUnlockTaskListModel.h"
 #import "TCULODHeaderView.h"
+#import "TCOrderComplaintVC.h"
+#import "TCULODFooterView.h"
 @interface TCUnlockOrderDetailVC ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) TOTableViewTool *tableViewTool;
@@ -56,9 +58,24 @@
 }
 
 - (void)setupUI {
+     self.tableView.tableFooterView = nil;
     
-     self.tableHeaderView.height = self.orderModel.type == 1 ? 140.f : 120.f;
+   
     
+    if (self.orderModel.status == 3 && !self.orderModel.is_complain) {
+        [self addComplaintRightItem];
+        
+        TCULODFooterView *footerView = [TCULODFooterView loadInstanceFromNib];
+        footerView.height = 60.f;
+        footerView.backgroundColor = [UIColor clearColor];
+        WEAK_REF(self);
+        [footerView setActionOkBlock:^{
+            [weak_self requestOk];
+        }];
+        self.tableView.tableFooterView = footerView;
+    }
+    
+    self.tableHeaderView.height = self.orderModel.type == 1 ? 140.f : 120.f;
     self.tableHeaderView.orderNumLbl.text = [NSString stringWithFormat:@"订单号：%@",self.orderModel.order_sn];
     self.tableHeaderView.platFormPriceLbl.text = [NSString stringWithFormat:@"平台服务费：%@元",self.orderModel.service_price];
     self.tableHeaderView.bondPriceLbl.text = [NSString stringWithFormat:@"保费：%@元",self.orderModel.bond_price];
@@ -90,7 +107,7 @@
     
     [self requestUnlock];
     
-    }
+}
 
 
 #pragma mark - setupData
@@ -108,6 +125,25 @@
     [self.tableView reloadData];
 }
 
+- (void)addComplaintRightItem {
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"投诉" titleColor:[UIColor whiteColor] target:self action:@selector(routerComplaint)];
+    
+}
+
+- (void)routerComplaint {
+    TCOrderComplaintVC *cvc = [[TCOrderComplaintVC alloc] init];
+    cvc.order_id = self.order_id;
+    cvc.complaintType = TCOrderComplaintUnclock;
+    WEAK_REF(self);
+    [cvc setComplaintSuccessBlock:^{
+        [weak_self requetData];
+    }];
+    [self.navigationController pushViewController:cvc animated:YES];
+    
+}
+
+
 #pragma mark - requestFunc
 
 - (void)requetData {
@@ -118,11 +154,12 @@
     NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"data":@{@"order_id":@(self.order_id)}}];
     NSDictionary *signDic = @{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"order_id":@(self.order_id)};
     [TFailhub hidenALLFailhubWithSuperView:self.view];
-    
+    self.navigationItem.rightBarButtonItem = nil;
     [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/order_unseal_detail" par:parInfoDic signDicInfo:signDic finishBlock:^(TResponse *response) {
         [TLodingHub hideAllHUDsForView:self.view];
         if (response.code == TRequestSuccessCode && [response.data isKindOfClass:[NSDictionary class]]) {
             self.orderModel = [TCUnlockOrderModel mj_objectWithKeyValues:response.data];
+           
             [self setupData];
             [self setupUI];
         } else {
@@ -133,6 +170,25 @@
             }];
         }
     }];
+}
+
+-(void)requestOk {
+    
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"data":@{@"jiedan_id":@(self.order_id)}}];
+    NSDictionary *signDic = @{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"jiedan_id":@(self.order_id)};
+    [MBProgressHUD showMessage:@"正在处理"];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/unseal_order_finish" par:parInfoDic signDicInfo:signDic finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"操作成功"];
+            !self.refreshBlock?:self.refreshBlock();
+            [self navBackAction];
+        } else {
+            [MBProgressHUD showError:kUnNilStr(response.msg)];
+        };
+    }];
+    
 }
 
 - (void)requestUnlock {

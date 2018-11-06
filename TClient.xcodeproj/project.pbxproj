@@ -131,6 +131,13 @@
 		BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC34C5F92147F96400768C3E /* TCAROrderHeaderView.xib */; };
 		BC48C45D214FE63D006195B0 /* TCPushLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC48C45B214FE63D006195B0 /* TCPushLimitViewController.m */; };
 		BC48C45E214FE63D006195B0 /* TCPushLimitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC48C45C214FE63D006195B0 /* TCPushLimitViewController.xib */; };
+		BC5140A32191B8FC001697E3 /* TCOrderComplaintVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5140A12191B8FC001697E3 /* TCOrderComplaintVC.m */; };
+		BC5140A42191B8FC001697E3 /* TCOrderComplaintVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5140A22191B8FC001697E3 /* TCOrderComplaintVC.xib */; };
+		BC5140AA2191C4D8001697E3 /* TCRegisterOrderDetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5140A82191C4D8001697E3 /* TCRegisterOrderDetailVc.m */; };
+		BC5140AB2191C4D8001697E3 /* TCRegisterOrderDetailVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5140A92191C4D8001697E3 /* TCRegisterOrderDetailVc.xib */; };
+		BC5140AF2191C6D9001697E3 /* TCRegisterOrderDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5140AE2191C6D9001697E3 /* TCRegisterOrderDetailModel.m */; };
+		BC5140B22191CEE8001697E3 /* TCULODFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5140B12191CEE8001697E3 /* TCULODFooterView.m */; };
+		BC5140B42191CEF2001697E3 /* TCULODFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5140B32191CEF2001697E3 /* TCULODFooterView.xib */; };
 		BC5504BF217365E9003CBEC1 /* TScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504BD217365E9003CBEC1 /* TScanController.m */; };
 		BC5504C521736661003CBEC1 /* TScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504C021736660003CBEC1 /* TScanView.m */; };
 		BC5504C621736661003CBEC1 /* TSTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5504C121736660003CBEC1 /* TSTopView.m */; };
@@ -388,6 +395,17 @@
 		BC48C45A214FE63D006195B0 /* TCPushLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPushLimitViewController.h; sourceTree = "<group>"; };
 		BC48C45B214FE63D006195B0 /* TCPushLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPushLimitViewController.m; sourceTree = "<group>"; };
 		BC48C45C214FE63D006195B0 /* TCPushLimitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCPushLimitViewController.xib; sourceTree = "<group>"; };
+		BC5140A02191B8FC001697E3 /* TCOrderComplaintVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCOrderComplaintVC.h; sourceTree = "<group>"; };
+		BC5140A12191B8FC001697E3 /* TCOrderComplaintVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCOrderComplaintVC.m; sourceTree = "<group>"; };
+		BC5140A22191B8FC001697E3 /* TCOrderComplaintVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCOrderComplaintVC.xib; sourceTree = "<group>"; };
+		BC5140A72191C4D8001697E3 /* TCRegisterOrderDetailVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderDetailVc.h; sourceTree = "<group>"; };
+		BC5140A82191C4D8001697E3 /* TCRegisterOrderDetailVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderDetailVc.m; sourceTree = "<group>"; };
+		BC5140A92191C4D8001697E3 /* TCRegisterOrderDetailVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCRegisterOrderDetailVc.xib; sourceTree = "<group>"; };
+		BC5140AD2191C6D9001697E3 /* TCRegisterOrderDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCRegisterOrderDetailModel.h; sourceTree = "<group>"; };
+		BC5140AE2191C6D9001697E3 /* TCRegisterOrderDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRegisterOrderDetailModel.m; sourceTree = "<group>"; };
+		BC5140B02191CEE8001697E3 /* TCULODFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCULODFooterView.h; sourceTree = "<group>"; };
+		BC5140B12191CEE8001697E3 /* TCULODFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCULODFooterView.m; sourceTree = "<group>"; };
+		BC5140B32191CEF2001697E3 /* TCULODFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCULODFooterView.xib; sourceTree = "<group>"; };
 		BC5504BD217365E9003CBEC1 /* TScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TScanController.m; sourceTree = "<group>"; };
 		BC5504BE217365E9003CBEC1 /* TScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TScanController.h; sourceTree = "<group>"; };
 		BC5504C021736660003CBEC1 /* TScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TScanView.m; sourceTree = "<group>"; };
@@ -601,10 +619,8 @@
 		4D0FEED7212BF4E40021E9E8 /* QRCodeRegister */ = {
 			isa = PBXGroup;
 			children = (
-				BC5CA21E2146B33E0050BA68 /* Model */,
-				4D0FEEE9212C083A0021E9E8 /* Tool */,
-				4D0FEEE0212C04C00021E9E8 /* View */,
-				4D0FEEDF212C04B30021E9E8 /* VC */,
+				BC5140A62191C4A5001697E3 /* List */,
+				BC5140A52191C49C001697E3 /* Detail */,
 			);
 			path = QRCodeRegister;
 			sourceTree = "<group>";
@@ -920,6 +936,7 @@
 		4DB7E5D621269F0C009FDA22 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				BC51409F2191B89A001697E3 /* Complaint */,
 				4D0FEEDB212BF5080021E9E8 /* UnlockTask */,
 				4D0FEED7212BF4E40021E9E8 /* QRCodeRegister */,
 				4DB7E5DB21269F5F009FDA22 /* TCOrderViewController.h */,
@@ -1129,6 +1146,47 @@
 				BC48C45C214FE63D006195B0 /* TCPushLimitViewController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		BC51409F2191B89A001697E3 /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+				BC5140A02191B8FC001697E3 /* TCOrderComplaintVC.h */,
+				BC5140A12191B8FC001697E3 /* TCOrderComplaintVC.m */,
+				BC5140A22191B8FC001697E3 /* TCOrderComplaintVC.xib */,
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
+		BC5140A52191C49C001697E3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BC5140AC2191C6B6001697E3 /* Model */,
+				BC5140A72191C4D8001697E3 /* TCRegisterOrderDetailVc.h */,
+				BC5140A82191C4D8001697E3 /* TCRegisterOrderDetailVc.m */,
+				BC5140A92191C4D8001697E3 /* TCRegisterOrderDetailVc.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BC5140A62191C4A5001697E3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA21E2146B33E0050BA68 /* Model */,
+				4D0FEEE9212C083A0021E9E8 /* Tool */,
+				4D0FEEE0212C04C00021E9E8 /* View */,
+				4D0FEEDF212C04B30021E9E8 /* VC */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BC5140AC2191C6B6001697E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5140AD2191C6D9001697E3 /* TCRegisterOrderDetailModel.h */,
+				BC5140AE2191C6D9001697E3 /* TCRegisterOrderDetailModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BC5504C92173677D003CBEC1 /* Tool */ = {
@@ -1348,6 +1406,9 @@
 				BC9898FA215BD08400B5EFF8 /* TCULODUserInfoCell.h */,
 				BC9898FB215BD08400B5EFF8 /* TCULODUserInfoCell.m */,
 				BC9898FC215BD08400B5EFF8 /* TCULODUserInfoCell.xib */,
+				BC5140B02191CEE8001697E3 /* TCULODFooterView.h */,
+				BC5140B12191CEE8001697E3 /* TCULODFooterView.m */,
+				BC5140B32191CEF2001697E3 /* TCULODFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1580,10 +1641,12 @@
 				BC17F0D6214E296D00529024 /* loding.gif in Resources */,
 				BC617337212C46F8003AA3C4 /* TCMyFriendCell.xib in Resources */,
 				4D0FEEE5212C04EA0021E9E8 /* TCQROrderCell.xib in Resources */,
+				BC5140AB2191C4D8001697E3 /* TCRegisterOrderDetailVc.xib in Resources */,
 				4D0BB70F2141211800926491 /* TCChangePwdViewController.xib in Resources */,
 				BC61732B212C432A003AA3C4 /* TCAccountChangeCell.xib in Resources */,
 				BC34C5FA2147F96400768C3E /* TCAROrderHeaderView.xib in Resources */,
 				4DB7E6092126A9B4009FDA22 /* LaunchScreen.xib in Resources */,
+				BC5140B42191CEF2001697E3 /* TCULODFooterView.xib in Resources */,
 				4D9A30FC2140B8100084D8E4 /* TCUserInfoViewController.xib in Resources */,
 				4DCAF675212AB7B00087EE00 /* TCMHTableFootView.xib in Resources */,
 				4DCAF676212AB7B00087EE00 /* TCMHInfoTableViewCell.xib in Resources */,
@@ -1591,6 +1654,7 @@
 				4D3C6A322160B8F300B78066 /* TSFailureController.xib in Resources */,
 				BC5504C721736661003CBEC1 /* TSTopView.xib in Resources */,
 				4D3C6A242160A1CC00B78066 /* noticeMusic.wav in Resources */,
+				BC5140A42191B8FC001697E3 /* TCOrderComplaintVC.xib in Resources */,
 				BCF8745A216E4F70001B0BE2 /* TCCommonSesenseCell.xib in Resources */,
 				BC17F0C6214DF46F00529024 /* TCHomeViewController.xib in Resources */,
 				BCA56B0E212EE76500999DA5 /* TCRegisterViewController.xib in Resources */,
@@ -1684,6 +1748,7 @@
 				4DC56E66216F4FCC009B234C /* TCServiceInfoModel.m in Sources */,
 				4D0FEECE212BB3370021E9E8 /* TCUnderMerchantVC.m in Sources */,
 				BC17F0D9214E321400529024 /* TFailhub.m in Sources */,
+				BC5140AF2191C6D9001697E3 /* TCRegisterOrderDetailModel.m in Sources */,
 				4D0FEEBE212BB2010021E9E8 /* TCRegisterQueryVC.m in Sources */,
 				4DB7E5D121269E55009FDA22 /* UIImage+TUtil.m in Sources */,
 				4DB7E5E021269F69009FDA22 /* TCMineViewController.m in Sources */,
@@ -1719,7 +1784,9 @@
 				4D0FEEC6212BB27E0021E9E8 /* TCAccountChangeVC.m in Sources */,
 				4D9A30FB2140B8100084D8E4 /* TCUserInfoViewController.m in Sources */,
 				4D3C6A232160A1CC00B78066 /* TCaptureSession.m in Sources */,
+				BC5140A32191B8FC001697E3 /* TCOrderComplaintVC.m in Sources */,
 				BC5CA2252146BA530050BA68 /* TCUnlockTaskListModel.m in Sources */,
+				BC5140AA2191C4D8001697E3 /* TCRegisterOrderDetailVc.m in Sources */,
 				4DAEE01B212573A8009FFB4B /* TNavViewController.m in Sources */,
 				4DB7E5A62126626B009FDA22 /* MMSheetView.m in Sources */,
 				4D469DB7212FFDA1000E76B8 /* TCLoginViewController.m in Sources */,
@@ -1765,6 +1832,7 @@
 				4DB7E5B02126626B009FDA22 /* NSString+MD5.m in Sources */,
 				BCC722F5212AEFFC002AB760 /* TCUserChangeViewController.m in Sources */,
 				4D0FEEE8212C08320021E9E8 /* TCQRSection.m in Sources */,
+				BC5140B22191CEE8001697E3 /* TCULODFooterView.m in Sources */,
 				4DB7E5A02126626B009FDA22 /* WMProgressView.m in Sources */,
 				BCB941DC2188AD1E0065E84B /* TCShowUnsealPriceView.m in Sources */,
 				4DB7E5B12126626B009FDA22 /* UITableView+TRegisterCell.m in Sources */,
