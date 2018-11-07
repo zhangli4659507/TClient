@@ -15,9 +15,9 @@
 #import "IQKeyboardManager.h"
 #import "TCLoginViewController.h"
 #import "TAreaTool.h"
-
-
 #import <AlipaySDK/AlipaySDK.h>
+#import <PgySDK/PgyManager.h>
+#import <PgyUpdate/PgyUpdateManager.h>
 @interface AppDelegate ()
 
 @end
@@ -45,6 +45,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_Out_NotiName object:nil];
     [self changeRootVc];
     [TAreaTool areaModelListWithFinishBlock:nil];
+#warning 这里key还未填写
+    [[PgyManager sharedPgyManager] startManagerWithAppId:@"PGY_APP_ID"];
+    //启动更新检查SDK
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"PGY_APP_ID"];
+    [[PgyUpdateManager sharedPgyManager] checkUpdate];
+    [[PgyManager sharedPgyManager] setEnableFeedback:NO];
     return YES;
 }
 
