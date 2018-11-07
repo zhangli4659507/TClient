@@ -19,6 +19,8 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
+  - Pgyer (2.8.9)
+  - PgyUpdate (1.6)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -36,6 +38,8 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
+  - Pgyer
+  - PgyUpdate
   - SDWebImage (~> 3.7)
   - TOWebViewController (~> 2.2.8)
   - ZXingObjC (~> 3.2.2)
@@ -48,6 +52,8 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - MJRefresh
+    - Pgyer
+    - PgyUpdate
     - SDWebImage
     - TOWebViewController
     - ZXingObjC
@@ -59,10 +65,12 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Pgyer: 830654e51e23f754cce5d8b3ea9ba72be68452eb
+  PgyUpdate: cd6c2ada5928f36a9f904d8f96a9b3b53e190755
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TOWebViewController: 953a24619d32f7aa1d9d4098a74885a9236f7348
   ZXingObjC: 2c95a0dc52daac69b23ec78fad8fa2fec05f8981
 
-PODFILE CHECKSUM: 5e6adb9ba814faeecbe22163881077e73b103e51
+PODFILE CHECKSUM: 43dbf9cf303a952fbc33d879961badb496bcd700
 
 COCOAPODS: 1.5.3
