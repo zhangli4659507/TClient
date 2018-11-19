@@ -49,9 +49,12 @@
 }
 
 - (void)setupSubview {
-    self.insuranceType = 1;
-    self.insuranceBtn.selected = YES;
-    self.noInsuranceBtn.selected = NO;
+    
+    self.insuranceBtn.selected = NO;
+    self.noInsuranceBtn.selected = YES;
+    self.insuranceHeight.constant = 0.f;
+    self.insuranceSpace.constant = 0.f;
+    self.insuranceType = 2;
     self.alertInfoLbl.text = [NSString stringWithFormat:@"注意事项：%@",self.limitInfoModel.describe];
     self.serviceMoneyLbl.text = [NSString stringWithFormat:@"%.2lf元",self.limitInfoModel.service_price];
     self.insuranceLbl.text = [NSString stringWithFormat:@"%.2lf元",self.limitInfoModel.bond_price];
@@ -130,6 +133,9 @@
         return;
     } else if (self.unselPrice == 0) {
         [MBProgressHUD showError: @"请先选择解封佣金"];
+        return;
+    } else if (self.selectAreaModel == nil) {
+        [MBProgressHUD showError: @"请先选择地区"];
         return;
     }
     [self requestPostLimit];
