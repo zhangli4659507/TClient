@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *peopleNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *timeLbl;
 @property (weak, nonatomic) IBOutlet UIButton *okBtn;
+@property (weak, nonatomic) IBOutlet UIButton *giveUpBtn;
+@property (weak, nonatomic) IBOutlet UIButton *failBtnn;
 @property (nonatomic, strong) TCRegisterOrderDetailModel *orderModel;
 
 @end
@@ -37,9 +39,53 @@
     self.timeLbl.text = self.orderModel.add_time;
     self.peopleNameLbl.text = kUnNilStr(self.orderModel.nickname);
     self.priceLbl.text = [NSString stringWithFormat:@"%@元",self.orderModel.order_price];
-    [self addComplaintRightItem];
+    self.failBtnn.hidden =  !(self.orderModel.status == 2 || self.orderModel.status == 4 || self.orderModel.status == 6);
+    self.giveUpBtn.hidden = self.orderModel.status != 1;
+    self.okBtn.hidden = self.orderModel.status != 4;
+    self.navigationItem.rightBarButtonItem = nil;
+    if (self.orderModel.status == 3 || self.orderModel.status == 6) {
+        [self addComplaintRightItem];
+    }
+}
+
+- (IBAction)actionFailBtn:(id)sender {
+    
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"data":@{@"order_id":@(self.order_id)}}];
+    NSDictionary *signDic = @{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"order_id":@(self.order_id)};
+    [MBProgressHUD showMessage:@"正在处理"];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/register_order_fail" par:parInfoDic signDicInfo:signDic finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"操作成功"];
+            !self.refreshBlock?:self.refreshBlock();
+            [self navBackAction];
+        } else {
+            [MBProgressHUD showError:kUnNilStr(response.msg)];
+        };
+    }];
     
 }
+
+- (IBAction)actionGiveupBtn:(id)sender {
+    
+    NSDateFormatter *dateFormatter = DateFormatter();
+    NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
+    NSMutableDictionary *parInfoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"data":@{@"order_id":@(self.order_id)}}];
+    NSDictionary *signDic = @{@"timestamp":kUnNilStr(timestamp),@"api_key":kUnNilStr(TApi_key_Str),@"order_id":@(self.order_id)};
+    [MBProgressHUD showMessage:@"正在处理"];
+    [THTTPRequestTool postSignRequestDataWithUrl:@"api/xiadan/order/register_give_up" par:parInfoDic signDicInfo:signDic finishBlock:^(TResponse *response) {
+        if (response.code == TRequestSuccessCode) {
+            [MBProgressHUD showSuccess:@"操作成功"];
+            !self.refreshBlock?:self.refreshBlock();
+            [self navBackAction];
+        } else {
+            [MBProgressHUD showError:kUnNilStr(response.msg)];
+        };
+    }];
+    
+}
+
 - (IBAction)actionOkBtn:(id)sender {
     
     NSDateFormatter *dateFormatter = DateFormatter();

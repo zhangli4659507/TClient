@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCRegisterOrderDetailVc">
             <connections>
+                <outlet property="failBtnn" destination="l1D-E8-Dae" id="Cb9-Wa-zBs"/>
+                <outlet property="giveUpBtn" destination="fFx-gN-ao1" id="ZWe-4s-gLD"/>
                 <outlet property="okBtn" destination="YeF-Qd-PVc" id="PhB-Uq-Nry"/>
                 <outlet property="orderSignLbl" destination="tRk-Bh-NmQ" id="AsW-Ae-6o2"/>
                 <outlet property="orderStateLbl" destination="bMx-pq-l2c" id="kz8-lE-h0U"/>
@@ -221,7 +223,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-Qd-PVc">
-                    <rect key="frame" x="30" y="230" width="315" height="40"/>
+                    <rect key="frame" x="30" y="230" width="152.5" height="40"/>
                     <color key="backgroundColor" red="0.1529411765" green="0.60392156860000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="LZo-25-4Xz"/>
@@ -232,6 +234,30 @@
                         <action selector="actionOkBtn:" destination="-1" eventType="touchUpInside" id="72n-1s-6zQ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-gN-ao1">
+                    <rect key="frame" x="192.5" y="230" width="152.5" height="40"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.60392156860000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hht-NT-1GL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="放弃"/>
+                    <connections>
+                        <action selector="actionGiveupBtn:" destination="-1" eventType="touchUpInside" id="j4g-OO-Mb4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-E8-Dae">
+                    <rect key="frame" x="30" y="285" width="152.5" height="40"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.60392156860000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0LO-i8-usa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="失败"/>
+                    <connections>
+                        <action selector="actionFailBtn:" destination="-1" eventType="touchUpInside" id="t8N-3X-3Y6"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -240,21 +266,27 @@
                 <constraint firstItem="JOU-2C-fzQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5ON-rp-Iii"/>
                 <constraint firstAttribute="trailing" secondItem="JUw-sm-u2j" secondAttribute="trailing" id="7DX-5V-zTP"/>
                 <constraint firstItem="JUw-sm-u2j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8VF-Se-Nwa"/>
+                <constraint firstAttribute="trailing" secondItem="fFx-gN-ao1" secondAttribute="trailing" constant="30" id="99k-5O-PdD"/>
                 <constraint firstAttribute="trailing" secondItem="1df-Wb-xNV" secondAttribute="trailing" id="CoK-Cd-ehS"/>
-                <constraint firstAttribute="trailing" secondItem="YeF-Qd-PVc" secondAttribute="trailing" constant="30" id="Efc-v9-Mii"/>
+                <constraint firstItem="l1D-E8-Dae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="FWW-S9-rXf"/>
                 <constraint firstAttribute="trailing" secondItem="O4l-Wl-zjG" secondAttribute="trailing" id="HV6-YU-c5i"/>
                 <constraint firstItem="O4l-Wl-zjG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JNg-z3-5Qb"/>
+                <constraint firstItem="fFx-gN-ao1" firstAttribute="width" secondItem="YeF-Qd-PVc" secondAttribute="width" id="Nah-7I-P4Q"/>
                 <constraint firstItem="1df-Wb-xNV" firstAttribute="top" secondItem="QUe-WN-uLF" secondAttribute="bottom" id="SqV-ll-p66"/>
                 <constraint firstItem="YeF-Qd-PVc" firstAttribute="top" secondItem="JOU-2C-fzQ" secondAttribute="bottom" constant="30" id="Udb-XQ-6bM"/>
+                <constraint firstItem="fFx-gN-ao1" firstAttribute="centerY" secondItem="YeF-Qd-PVc" secondAttribute="centerY" id="bxs-x3-lbz"/>
                 <constraint firstAttribute="trailing" secondItem="JOU-2C-fzQ" secondAttribute="trailing" id="dGB-5N-IDc"/>
                 <constraint firstItem="1df-Wb-xNV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fpd-qA-KTl"/>
                 <constraint firstItem="QUe-WN-uLF" firstAttribute="top" secondItem="JUw-sm-u2j" secondAttribute="bottom" id="hAY-rq-cpA"/>
                 <constraint firstItem="JOU-2C-fzQ" firstAttribute="top" secondItem="O4l-Wl-zjG" secondAttribute="bottom" id="k9q-96-SCm"/>
+                <constraint firstItem="l1D-E8-Dae" firstAttribute="top" secondItem="YeF-Qd-PVc" secondAttribute="bottom" constant="15" id="lBw-ne-jvj"/>
                 <constraint firstItem="QUe-WN-uLF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oSy-Lj-Sjr"/>
                 <constraint firstItem="O4l-Wl-zjG" firstAttribute="top" secondItem="1df-Wb-xNV" secondAttribute="bottom" id="uHa-GV-Z4s"/>
+                <constraint firstItem="fFx-gN-ao1" firstAttribute="leading" secondItem="YeF-Qd-PVc" secondAttribute="trailing" constant="10" id="uuN-kO-Umk"/>
                 <constraint firstAttribute="trailing" secondItem="QUe-WN-uLF" secondAttribute="trailing" id="x3I-Ah-jem"/>
+                <constraint firstItem="l1D-E8-Dae" firstAttribute="width" secondItem="YeF-Qd-PVc" secondAttribute="width" id="x7f-RK-oEm"/>
             </constraints>
-            <point key="canvasLocation" x="81" y="-98"/>
+            <point key="canvasLocation" x="80.799999999999997" y="-98.50074962518741"/>
         </view>
     </objects>
 </document>

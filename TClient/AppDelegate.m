@@ -45,10 +45,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeRootVc) name:TLogin_Out_NotiName object:nil];
     [self changeRootVc];
     [TAreaTool areaModelListWithFinishBlock:nil];
-#warning 这里key还未填写
-    [[PgyManager sharedPgyManager] startManagerWithAppId:@"PGY_APP_ID"];
+    [[PgyManager sharedPgyManager] startManagerWithAppId:@"8d8768491ae0e489a4cd1acbcca1d087"];
     //启动更新检查SDK
-    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"PGY_APP_ID"];
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"8d8768491ae0e489a4cd1acbcca1d087"];
     [[PgyUpdateManager sharedPgyManager] checkUpdate];
     [[PgyManager sharedPgyManager] setEnableFeedback:NO];
     return YES;
