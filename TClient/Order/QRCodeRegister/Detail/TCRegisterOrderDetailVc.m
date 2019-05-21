@@ -39,9 +39,9 @@
     self.timeLbl.text = self.orderModel.add_time;
     self.peopleNameLbl.text = kUnNilStr(self.orderModel.nickname);
     self.priceLbl.text = [NSString stringWithFormat:@"%@元",self.orderModel.order_price];
-    self.failBtnn.hidden =  !(self.orderModel.status == 2 || self.orderModel.status == 4 || self.orderModel.status == 6);
+    self.failBtnn.hidden =  !(self.orderModel.status == 2 || self.orderModel.status == 3 || self.orderModel.status == 6);
     self.giveUpBtn.hidden = self.orderModel.status != 1;
-    self.okBtn.hidden = self.orderModel.status != 4;
+    self.okBtn.hidden = self.orderModel.status != 3;
     self.navigationItem.rightBarButtonItem = nil;
     if (self.orderModel.status == 3 || self.orderModel.status == 6) {
         [self addComplaintRightItem];
